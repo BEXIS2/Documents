@@ -63,7 +63,7 @@ On this tab the user with the upload rights is able to manage the attachments fo
 With the help of the search manager, you can make search UI more operative. This part is available from **Setup > Manage search**. 
 You need to click on the Refresh Search button, to make the search result effective.
 
-![image info](./Images/searchmanager.png)
+![image info](./Images/searchManager.png)
 
 To add a new search component, click on the Create Search Attribute button. The configuration files consist of one element – the field element, and several attributes. The element represent each lucene field and its attribute are used to configure indexing, searching, and display. Take mouse over each question mark near by a field and you can see the help information.
 
