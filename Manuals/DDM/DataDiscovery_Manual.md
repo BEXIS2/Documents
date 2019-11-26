@@ -4,7 +4,7 @@
 # 1 Search UI
 Search UI contains some parts to make search easier. In this way, you are able to look for all details of datasets, but not for the uploaded data. You can control the search UI via search manager explained in section 3.
 
-![image info](./Images/searchui.png)
+![image info](https://github.com/BEXIS2/Documents/blob/master/Manuals/DDM/Images/searchui.png)
 
 ## 1.1	Categories 
 Categories are defined by number 1 in the image above. The main nodes like “Project Name” are based on nodes in the metadata. The elements are values in the metadata from a main node and can be used to restrict the current selection. The numbers next to the elements and main nodes show the number of existing data sets in the database. This list changes according to the current selection. After selection the results and the facets updated. With the “more” button it is possible to select more than one element at the same time.
