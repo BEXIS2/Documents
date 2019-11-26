@@ -29,47 +29,47 @@ About each dataset created in the BEXIS 2, you can find a detail contains Meta D
 On this tab you have access to the Meta data of the selected datasets. You are able edit this dataset or make a copy of that.
 
 
-![image info](./Images/metadata.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/metadata.png)
 
 ## 2.2	Primary Data
 On this tab you have access to the primary data of the selected dataset. A User can download selected data in an Excel file, comma separated in a CSV file, or tab separated in a TXT or TSV file. Also a user can filter and sort the data before and download only a subset of the dataset. For filtering  use the funnel button next to the variable.
 
-![image info](./Images/primarydata.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/primarydata.png)
 
 ## 2.3	Data Structure
 On this tab you have access to the data structure of the selected datasets.
 
-![image info](./Images/structure.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/structure.png)
 
 
 ## 2.4	Dataset Permissions
 On this tab you have access to the Dataset Permissions Manager.
 
-![image info](./Images/datapermissions.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/datapermissions.png)
 
 ## 2.5	Publish a Dataset Version
 On this tab you are able to publish the latest version of your dataset. In this Version a Zip file will be generated and prepared for download for a specific defined datacenter. More information can be found in the data dissemination manual.
 
-![image info](./Images/publish.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/publish.png)
 
 
 ## 2.6	Attachments
 On this tab the user with the upload rights is able to manage the attachments for the dataset.  Other users can only see or download the attachments.
 
 
-![image info](./Images/attachments.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/attachments.png)
 
 # 3	Search Manager
 With the help of the search manager, you can make search UI more operative. This part is available from **Setup > Manage search**. 
 You need to click on the Refresh Search button, to make the search result effective.
 
-![image info](./Images/searchManager.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/searchManager.png)
 
 To add a new search component, click on the Create Search Attribute button. The configuration files consist of one element – the field element, and several attributes. The element represent each lucene field and its attribute are used to configure indexing, searching, and display. Take mouse over each question mark near by a field and you can see the help information.
 
 You can use the buttons for edit and delete a search component. 
 
-![image info](./Images/searchattribute.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/searchattribute.png)
 
 
 We, therefore, go through each of the elements attributes of the configuration file.
@@ -108,15 +108,15 @@ Analyzed: This specifies if the field should be analyzed or not. Only analyzed f
 ## 4.1	My Datasets
 On this page, users can see which datasets they are accessing and which rights they have on the datasets.
 
-![image info](./Images/dashboard.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/dashboard.png)
 
 
 ## 4.2	Requests
 This page lists all your requests.
-![image info](./Images/requests.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/requests.png)
 
  
 ## 4.3	Decision
 The page lists open requests for your datasets. You can accept or decline the request by clicking the buttons on the right.
 
-![image info](./Images/decision.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/decision.png)
