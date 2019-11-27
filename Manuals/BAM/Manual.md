@@ -23,6 +23,7 @@ Here you can define “partytypes”, “customattributes” and “relationship
 |**[DisplayName]** |** |this Attribute is optional. If it is not available system will use Name to present the party name everywhere and it might be not user-friendly.
 
 **Attribute attributes:** Each party type has some custom attributes.
+
 |         |           |
 | ------- |:--------| 
 | **Name:** | Name of the custom attribute.
@@ -35,6 +36,7 @@ Here you can define “partytypes”, “customattributes” and “relationship
 
   
 **PartyRelationshipType attributes**
+
 |         |         |
 | ------- |:--------| 
 | **Name** | PartyrelationshipType name should be unique among the others. It is better to avoid spaces and special characters.
@@ -45,11 +47,12 @@ Here you can define “partytypes”, “customattributes” and “relationship
 | **[MinCardinality]** | By default it is unlimited and if it is set to a number it forces the user to have at least this number relationships.
 
 **PartyTypePair attributes**
+
 |         |         |
 | ------- |:--------| 
-| **Title**  |The title of this pair.
-| **AllowedSource** |source party type is obligatory and should be exactly the same name as we defined for partytype.
-| **AllowedTarget** |Target party type is obligatory and should be exactly the same name as we defined for partytype.
+| **Title**  | The title of this pair.
+| **AllowedSource** | source party type is obligatory and should be exactly the same name as we defined for partytype.
+| **AllowedTarget** | Target party type is obligatory and should be exactly the same name as we defined for partytype.
 | **[Description]** | It shows some info about this type to user in a tooltip.
 
 
