@@ -34,7 +34,7 @@ Users can register and the system administrator can assign the appropriate permi
 
 ### 1 Registration
 
-The registration form is accessible through the menu bar. All fields are mandatory and it is also required to agree on the Terms and Conditions and Privacy Policy. To complete the registration process, the email address needs to be confirmed by the user. In most cases, the user will be also asked then to provide further account details (e.g. full name, related project, ...).
+The registration form is accessible through the menu bar. All fields are mandatory and it is also required to agree on the Terms and Conditions and Privacy Policy. To complete the registration process, the email address needs to be confirmed by the user. In most cases, the user will be also asked to provide further account details (e.g. full name, related project, ...).
 
 ![registration](./Images/register.png)
 
