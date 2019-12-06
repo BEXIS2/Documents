@@ -1,4 +1,4 @@
-# BEXIS 2.13 Business Module
+# BEXIS 2.13 Business Adminstration Module (BAM)
 
 ## Overview
 
@@ -14,20 +14,22 @@ Party package is managing all kinds of entities such as people, organizations, p
 In the workspace a PartyTypes.xml is placed under “…\Workspace\Modules\BAM”.
 Here you can define “partytypes”, “customattributes” and “relationshiptype”.
 ### PartyType:
+ **[ ]** optional attributes
  
 **PartyType attributes**
 
 |         |           |
 | ------- |:--------| 
-| **Name:** | Partytype name should be unique among the other party types. It is better to avoid spaces and special characters.
-|**[DisplayName]** |** |this Attribute is optional. If it is not available system will use Name to present the party name everywhere and it might be not user-friendly.
+| **Name:** | Party type name should be unique among the other party types. It is better to avoid spaces and special characters.
+| **[DisplayName]** | Name shown in the UI. If not set, the **Name** is used, which might be not very user-friendly.
 
 **Attribute attributes:** Each party type has some custom attributes.
 
 |         |           |
 | ------- |:--------| 
 | **Name:** | Name of the custom attribute.
-| **[Type]** |** |By default if there is no attribute it consider it as “String” and will show a text box to user. It could be “bool” which shows  two radio buttons with true/false values to user.
+| **[DisplayName]** | Name shown in the UI. If not set, the **Name** is used, which might be not very user-friendly.
+| **[Type]** | By default it is considered as “String” and will show a text box to user. It could be “bool” which shows two radio buttons with true/false values to user.
 | **[IsMain]** |every party should have a name and it comes from its custom attributes. If there are more than one “IsMain” attribute it will merge them together by space. In the picture above for “PersonMember”, name and family are the main fields for example. It is false by default.
 | **[ValidValues]** |If a dropdownlist needs , this attribute is useful. Values should be separated by a “,”.
 | **[IsUnique]** | By default it is false but if it is set to true it means that this attribute of this party should be unique among the other parties which has the same party type. 
@@ -40,7 +42,7 @@ Here you can define “partytypes”, “customattributes” and “relationship
 |         |         |
 | ------- |:--------| 
 | **Name** | PartyrelationshipType name should be unique among the others. It is better to avoid spaces and special characters.
-| **[DisplayName]** | If it is not available system will use Name to present the party name everywhere and it might be not user-friendly.
+| **[DisplayName]** | Name shown in the UI. If not set, the **Name** is used, which might be not very user-friendly.
 | **[Description]** | It shows some info about this type to user in a tooltip.
 | **[IndicatesHierarchy]** | If it is set to true it means that there is a hierarchy relationship between all the pairs as the source is root and target is the child of it.
 | **[MaxCardinality]** |  By default it is unlimited and if it is set to a number it forces the user to not have more than this number relationships.
