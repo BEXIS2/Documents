@@ -42,7 +42,9 @@ The registration form is accessible through the menu bar. All fields are mandato
 
 First, press Login button. The system redirects you to the login form and you have to enter your account credentials (user name and password). If the login is successful, you will see Dashboard. Otherwise, the system will notify you about the status and reason why the logon was not successful.
 
-![login](./Images/login.png)
+
+<a href="url" title="login"><img src="./Images/login.png" align="center" height="300" ></a>
+
 
 ### 3 Dataset permissions
 
