@@ -3,36 +3,41 @@
 
 <!-- TOC -->
 
-- [1. Overview](#1-overview)
-- [2. Create Dataset](#2-create-dataset)
-	- [2.1. Copy an existing Dataset](#21-copy-an-existing-dataset)
-	- [2.2. Content](#22-content)
-	- [2.3. Messages](#23-messages)
-- [2. Upload Data](#2-upload-data)
-	- [2.1. Upload Tabular Data](#21-upload-tabular-data)
-	- [2.2. Select File](#22-select-file)
-	- [2.3. Get File Information](#23-get-file-information)
-	- [2.4. Specify Dataset](#24-specify-dataset)
-	- [2.5. Choose Update Method](#25-choose-update-method)
-	- [2.6. Validation](#26-validation)
-	- [2.7. Summary](#27-summary)
-	- [2.8. Upload File](#28-upload-file)
-- [2. Import Data](#2-import-data)
-- [3. Select File](#3-select-file)
-	- [3.1. Metadata](#31-metadata)
-	- [3.2. Select Areas](#32-select-areas)
-	- [3.3. Verification](#33-verification)
-	- [3.4. Summary](#34-summary)
-- [2. Push Big File](#2-push-big-file)
-- [3. Manage Metadata Structure](#3-manage-metadata-structure)
-	- [3.1. Select File](#31-select-file)
-	- [3.2. Read Source](#32-read-source)
-	- [3.3. Set Parameters](#33-set-parameters)
-	- [3.4. Summary](#34-summary)
+- [A: Overview](#a-overview)
+
+- [B: Manual for users](#b-manual-for-users)
+
+- [1 Create Dataset](#1-create-dataset)
+	- [1.1 Copy an existing Dataset](#11-copy-an-existing-dataset)
+	- [1.2 Metadata](#12-content)
+	- [1.3 Messages](#13-messages)
+- [2 Upload Data](#2-upload-data)
+	- [2.1 Upload Tabular Data](#21-upload-tabular-data)
+	- [2.2 Select File](#22-select-file)
+	- [2.3 Get File Information](#23-get-file-information)
+	- [2.4 Specify Dataset](#24-specify-dataset)
+	- [2.5 Choose Update Method](#25-choose-update-method)
+	- [2.6 Validation](#26-validation)
+	- [2.7 Summary](#27-summary)
+	- [2.8 Upload File](#28-upload-file)
+- [3 Import Data](#3-import-data)
+	- [3.1 Select File](#31-select-file)
+	- [3.2 Metadata](#32-metadata)
+	- [3.3 Select Areas](#33-select-areas)
+	- [3.4 Verification](#34-verification)
+	- [3.5 Summary](#35-summary)
+- [4 Push Big File](#4-push-big-file)
+
+- [C: Manual for administrators](#c-manual-for-administrators)
+	- [1 Manage Metadata Structure](#1-manage-metadata-structure)
+		- [1.1. Select File](#11-select-file)
+		- [1.2. Read Source](#12-read-source)
+		- [1.3. Set Parameters](#13-set-parameters)
+		- [1.4. Summary](#14-summary)
 
 <!-- /TOC -->
 
-## 1. Overview
+## A: Overview
 
 The Data Collection Module provides tools to create new datasets, enter metadata, upload data to the system, and import metadata structures (i.e. schemas). There are some workflows available under the Collect tab and also in the Setup:
 
@@ -42,7 +47,7 @@ The Data Collection Module provides tools to create new datasets, enter metadata
 *   Push Big File
 *   Manage Metadata Structure
 
-## 2. Create Dataset
+### 1 Create Dataset
 
 This wizard will assist you in creating a new dataset in BEXIS2\. The Wizard is very flexible and builds up differently depending on the selected Metadata structure. Therefore, we describe only the basic functions here.
 
@@ -52,13 +57,13 @@ The first step is to generate an empty or a copy of an existing dataset based on
 
 The next stage is determined by the selected metadata structure.
 
-### 2.1. Copy an existing Dataset
+#### 1.1 Copy an existing Dataset
 
 By choosing an existing Dataset instead of creating a new one, you are able to make a copy of that dataset. Related to the Dataset, you can choose a Data Structure, but there is only one related Metadata Structure for each dataset.
 
 You are able to use predefined content or change fields as you want.
 
-### 2.2. Content
+#### 1.2 Content
 
 The content area is where you enter metadata describing your dataset. The forms provided here may look different and contain different attributes depending on the metadata schema (structure) you have chosen in the first step.
 
@@ -78,31 +83,31 @@ You could edit a submitted dataset or make a copy of that by clicking on the Edi
 
 When an input is faulty, the input field is highlighted in red. If you go with the mouse over the box, you get information about what is wrong.
 
-### 2.3. Messages
+#### 1.3 Messages
 
 The content area is where you enter metadata describing your dataset. The forms provided here may look different and contain different attributes depending on the metadata schema (structure) you have chosen in the first step.
 
 ![messages](./Images/messages.png)
 
-## 2. Upload Data
+### 2 Upload Data
 
 To upload your data, please go to the Collect > Upload Data via main menu. This wizard will assist you in uploading data into the BEXIS2 repository. A dataset can be structured or unstructured (i.e tabular or file).
 
 ![Upload Data](./Images/upload_data.png) 
 
-### 2.1. Upload Tabular Data
+#### 2.1. Upload Tabular Data
 
 The term "Tabular data" is used for all datasets where there internal structure of the data is "known" to the system. For example, in a data table the header, which defines the columns (i.e. variables) is the structure of the data. Before uploading/importing data to the system the data structure needs to be created through the Data Structure Manager.
 
 Uploading a tabular data follows the following steps.
 
-### 2.2. Select File
+#### 2.2 Select File
 
 In the first step an existing file containing your data needs to be selected. You can either select a file from your local computer or a file that has been uploaded to the server prior to starting the Upload Wizard. The second option is designed for files larger than 4 MB that may take several minutes to transfer. The wizard supports file formats of Microsoft Excel or ASCII. Microsoft Excel files are required to use a template created while creating a Data Structure (refer to [Data Planning User Guide](~/rpm/Help/index#_overview) for more details). Once a file has been successfully selected, click the Next button and proceed to the next step.
 
 ![Upload_Tabular](./Images/upload_tabular.jpg) 
 
-### 2.3. Get File Information
+#### 2.3 Get File Information
 
 For all Microsoft Excel files using a BEXIS2 template the file information and data structure is automatically extracted and this step is omitted. Please refer to the [Data Planning User Guide](~/rpm/Help/index#_overview) for more details on how to create such a template.
 
@@ -126,11 +131,11 @@ Further, your data file may contain a header defining variable names, types etc.
 
 Finally, the row/column where the actual data values start needs to be specified.
 
-### 2.4. Specify Dataset
+#### 2.4 Specify Dataset
 
 In BEXIS2 your data is stored and managed as part of a dataset. A dataset may contain one or more of your data files. But all data files within one dataset must be of the same data structure, i.e. the number of variables and their properties must be identical in each file. To upload your data to the system, please select one existing dataset from the dropdown list.
 
-### 2.5. Choose Update Method
+#### 2.5 Choose Update Method
 
 While adding data to an existing dataset you need to specify how you want to update.
 
@@ -140,7 +145,7 @@ By Update the user need to specify a unique identifier (e.g. primary key) for ea
 
 By Append, the lines are uploaded directly to the data without checking for duplication.
 
-### 2.6. Validation
+#### 2.6 Validation
 
 With this step, the selected data file is validated against the selected data structure. Both, the structure of the data (e.g. variable properties) and whether the data values fit to the specified structure (e.g. data type, value range) is evaluated.
 
@@ -148,11 +153,11 @@ Click on Validate button to validate the data file.
 
 If you go back and change something in the process of uploading, you need to validate the file again.
 
-### 2.7. Summary
+#### 2.7 Summary
 
 With this final step a summary of your uploaded data file is provided. Please check the information and click the Finish button to confirm and finalize the upload.
 
-### 2.8. Upload File
+#### 2.8 Upload File
 
 An unstructured data could be either selected from your local computer or could be a file that has been uploaded to the server. In the case of unstructured data, we do not read the contents of the data. We copy the files to the server and place them in relation to the dataset.
 
@@ -162,23 +167,23 @@ The Maximum acceptable file size up to now is: 1024 MB.
 
 ![Select File](./Images/select_file.png)
 
-## 2. Import Data
+### 3 Import Data
 
 The Import Data wizard enables you to import both a tabular data structure and data in a single workflow. Import a file follows the following steps.
 
-## 3. Select File
+#### 3.1 Select File
 
 In the first step an existing file containing both your data and the names of the variables needs to be selected. You can either select a file from your local computer or a file that has been uploaded to the server prior to starting the Upload Wizard. The second option is designed for files larger than 4 MB that may take several minutes to transfer. The wizard supports file formats of Microsoft Excel (*.xlsm, *.xlsx). Once a file has been successfully selected, click the Next button to proceed to the next step.
 
 ![Select File](./Images/Help_easy_upload_select_file.png)
 
-### 3.1. Metadata
+#### 3.2 Metadata
 
 This step allows you to select the metadata schema that you would like to use for the dataset. There is no need to enter any metadata yet - after the last step you will be redirected to a page that allows you to enter the metadata. You can, however, change the title of the dataset. If you don't wish to change it, it will default to the name of the file you are using. Once you have selected a schema, click the Next button to proceed to the next step.
 
 ![Metadata Schema](./Images/Help_easy_upload_metadata.png)
 
-### 3.2. Select Areas
+#### 3.3 Select Areas
 
 You will see a table that represents the file that you selected during the first step. Here you can select, which part of the file should be used as variables and which parts should be interpreted as data.
 
@@ -211,7 +216,7 @@ The following differences are known:
 
 *   Real numbers might be displayed with scientific notation.
 
-### 3.3. Verification
+#### 3.4 Verification
 
 With this step you can define which units and datatypes your variables are using. The first column of dropdown-menus provides suggestions for attributes that are being used in other datasets and are similar to your variables. If you select one of the suggestions, unit and datatype are automatically adjusted. If you don't wish to use the suggestions, feel free to choose unit and datatype yourself.
 
@@ -219,7 +224,7 @@ The "Validate" button allows you to check if the datatypes you selected are suit
 
 ![Verification](./Images/Help_easy_upload_verification.png)
 
-### 3.4. Summary
+#### 3.5 Summary
 
 The summary step provides an overview of the dataset that is about to be created. When you click the Finish button, datastructure and dataset will be created and the data will be added. This might take a while, depending of the size of your file.
 
@@ -227,13 +232,15 @@ The summary step provides an overview of the dataset that is about to be created
 
 As soon as this process is finished, you will be redirected to your new dataset and can add metadata, view primary data and datastructure, set permissions or publish the dataset.
 
-## 2. Push Big File
+## 4 Push Big File
 
 Each user has a personal folder on the server where files are stored temporary. On this page you can see the uploaded files. You can delete each file by clicking on the X, or use these files later, when you want to upload data to a dataset.
 
 ![Push Big File](./Images/push_big_file.png)
 
-## 3. Manage Metadata Structure
+## C: Manual for administrators
+
+### 1 Manage Metadata Structure
 
 Metadata structures (also called schemas or profiles) are typically created and imported by a data manager or administrator of the system. Thus this import function is available under the Setup > Import metadata Structure. The wizard will assist you in importing your metadata structure into the BEXIS2\. A metadata structure must be defined in a XSD schema file.
 
@@ -253,7 +260,7 @@ The current BEXIS2 system requires all referenced files to be locally available 
 
 Upload a Metadata Structure follows the following steps:
 
-### 3.1. Select File
+#### 1.1 Select File
 
 In the first step an existing file containing your data needs to be selected. You can either select a XSD file from your local computer or a file that has been uploaded to the server prior to starting the Wizard. You may use the "Push big data to server" function in the Collect menu to upload multiple related XSD files.
 
@@ -261,7 +268,7 @@ Note: Please upload a valid XSD structure. BEXIS2 does not check this kind of va
 
 ![Select XSD File](./Images/select_xsd.png) 
 
-### 3.2. Read Source
+#### 1.2 Read Source
 
 Please specify a name (i.e. display name) for the new metadata structure. You may also enter a root node if only a part of the XSD is to be used (optional).
 
@@ -273,13 +280,13 @@ To find the root node open the XSD Schema file and have a look on the element ta
 
 If no root node is selected then the wizard will automatically select the first element which is a complex type. But it is also possible to define the element "DataSet" as root node and the metadata structure starts from this element. The Name of a metadata structure must be unique and the root node must exist.
 
-### 3.3. Set Parameters
+#### 1.3 Set Parameters
 
 For the system to handle a dataset at least the title and a description is needed. In this step these two elements, which are typically available in all metadata structures, should be identified and made explicit to the system.
 
 ![Set XSD Parameters](./Images/set_xsd_parameters.png) 
 
-### 3.4. Summary
+#### 1.4 Summary
 
 The Summary page is an overview about the created metadata structure.
 
