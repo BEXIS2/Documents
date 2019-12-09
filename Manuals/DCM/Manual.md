@@ -48,7 +48,7 @@ This wizard will assist you in creating a new dataset in BEXIS2\. The Wizard is 
 
 The first step is to generate an empty or a copy of an existing dataset based on your selection of the two mandatory elements: Data Structure, and Metadata Structure.
 
-![Create Dataset](./Images/create_dataset.png) 
+![Create Dataset](./Images/Create_Dataset.png) 
 
 The next stage is determined by the selected metadata structure.
 
