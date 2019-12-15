@@ -2,7 +2,7 @@ Data Dissemination & Mapping (v.23)
 
 <!-- TOC -->
 
-- [A Overview](#a-overview)
+- [A: Overview](#a-overview)
 
 - [B: Manual for users](#b-manual-for-users)
 	- [1 Metadata Export](#1-metadata-export)
@@ -22,11 +22,11 @@ Data Dissemination & Mapping (v.23)
 ## A: Overview
 There are different ways to extract, publish or export data from the system. One option is to export the metadata of several datasets for further local analysis or processing. Datasets can also directly be published to other repositories. Therefore it is necessary to map elements between different schemas, party types or the system values. A mapping tool provides a graphical interface to create these relations.
 
-
+## B: Manual for users
 ### 1 Metadata Export
 "Export Metadata" (*Settings > Export Metadata*) provides a tool to export metadata to a standard compliant XML file. For every metadata structure in the system, there is one tab in the tab strip. The data grid in each tab shows all datasets belonging to the selected metadata structure. Select one or more checkboxes for datasets you would like to export. Clicking on the Export button creates the metadata XML files and provides in-line download links.
 
-![img1](./Images/Help_img1.png)
+![img1](./Images/help_img1.png)
 
 ### 2 Publishing a Dataset 
 Datasets can be published based on the current version of a dataset if the metadata is valid. Currently, there are two brokers and three data repositories available.
@@ -145,4 +145,4 @@ This example creates a connection between the FirstName and LastName by a name. 
 
 
 
-[Go to top](#a_overview)
+[Go to top](#a-overview)
