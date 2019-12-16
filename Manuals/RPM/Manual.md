@@ -59,9 +59,13 @@ In the case of Tabular, a data structure usually contains variables. Variables a
 
 ![Add Variables](./Images/add_variables.png) 
 
-After adding variables, you can rearrange the order of variables by dragging and dropping them. Please note, that the order cannot be changed anymore once a dataset is using this data structure. You may also delete variables from the list.
+After adding variables, you can rearrange the order of variables by dragging and dropping them. You may also delete variables from the list.
 
-You can define the requirement for each variable. In the Optional row, if the checkbox is ticked, means that during upload data to a dataset, this variable could be empty.
+*Please note, that the order cannot be changed anymore once a dataset is using this data structure.* 
+
+You can define the requirement for each variable. *Optional* means that this variable can have empty entries. You can also define the used placeholder for missing values. Their might be one by default, but you can adjust it and add more.
+
+![Define variables](./Images/missing_values.png) 
 
 #### 1.3 Create a copy of a Data Structure
 
@@ -120,5 +124,44 @@ It is possible to put constraints on Variable Templates, to add constraints clic
 *   Domain: takes the value as input and matches it against each and every domain item in the list. If the value matches one, it stops matching and returns true, which means the value satisfies the constraint. If no match is found it returns false. No duplicate domain item is allowed, although it does not affect the matching procedure described. Domain items can be characters, strings, Booleans or numbers. Their data type is enforced by the associated Variable Template. Using the domain constraint as a tool to model acronyms and similar topics provided that some extra information such as description of each item is available, is supported.
 *   Negation: The inversion of the chosen constraint will apply. In fact the result of the constraint is XORed with the negation field. For example, a negated Range Constraint of Min=1 and Max=100 will allow all values outside of this range.
 
+
+## C: Manual for administrators
+
+### 1 Default placeholder for missing values
+
+Under *Workspace/RPM/rpm.settings.xml* one or more default placeholder for missing values can be defined.
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+...
+  <missingValues>
+    <missingValue>
+      <placeholder>na</placeholder>
+      <description>not available</description>
+    </missingValue>
+  </missingValues>
+</settings>
+```
+### 2 Seed data definition
+
+Under *Workspace/RPM/* several text files can be located to create seed data for attributes, datatypes, dimensions and units. 
+
+*attributes.csv*
+```
+Name;ShortName;Description;IsMultipleValue;IsBuiltIn;Owner;ContainerType;MeasurementScale;EntitySelectionPredicate;Self;DataType;Unit;Methodology;Constraints;ExtendedProperties;GlobalizationInfos;AggregateFunctions;REMARK
+```
+*datatypes.csv*
+```
+Name;Description;System Type;Display Pattern
+```
+*dimensions.csv*
+```
+id;name;syntax;description
+```
+*units*
+```
+Name;Abbreviation;Description;DimensionName;Measurement System;Data Types;used by;conversion to SI;remark
+```
 
 [Go to top](#a-overview)
