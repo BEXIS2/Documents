@@ -15,6 +15,8 @@
 	- [4 Manage Variable Templates](#4-manage-variable-templates)
 
 - [C: Manual for administrators](#c-manual-for-administrators)
+	- [1 Default placeholder for missing values](#1-default-placeholder-for-missing-values)
+	- [2 Seed data definition](#2-seed-data-definition)
 
 
 <!-- /TOC -->
