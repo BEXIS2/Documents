@@ -25,6 +25,7 @@
 		- [1.2. Read Source](#12-read-source)
 		- [1.3. Set Parameters](#13-set-parameters)
 		- [1.4. Summary](#14-summary)
+	- [2 Configure dataset links](#2-configure-dataset-links)	
 
 <!-- /TOC -->
 
@@ -288,5 +289,30 @@ For the system to handle a dataset at least the title and a description is neede
 The Summary page is an overview about the created metadata structure.
 
 ![Summary](./Images/summary_xsd.png)
+
+### 2 Configure dataset links
+The reference types and descriptons can be configured under *Workspace/Modules/DCM/EntityReferenceConfig.Xml*. If the system contains also other entity types, which should be not allowed for linking, you can define a whitelist of shown datasets types.
+
+```XML
+<config>
+<referenceTypes>
+    <referenceType description="">collection</referenceType>
+    <referenceType description="">based on</referenceType>
+    <referenceType description="">child of</referenceType>
+    <referenceType description="">parent of</referenceType>
+    <referenceType description="">link</referenceType>
+</referenceTypes>
+<!--Whitelist for entity types. Please configure, if you need to hide entities from the list
+<entityTypes>
+    <entityType description="">Dataset</entityType>
+</entityTypes>-->
+</config>
+
+```
+
+
+
+
+
 
 [Go to top](#_overview)
