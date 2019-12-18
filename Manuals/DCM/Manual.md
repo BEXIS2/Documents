@@ -49,7 +49,7 @@ By choosing an existing Dataset instead of creating a new one, you are able to m
 
 You are able to use predefined content or change fields as you want.
 
-#### 1.2 Metadata
+#### 1.1 Metadata
 
 The content area is where you enter metadata describing your dataset. The forms provided here may look different and contain different attributes depending on the metadata schema (structure) you have chosen in the first step.
 
@@ -63,9 +63,9 @@ The content area is where you enter metadata describing your dataset. The forms 
 
 ![Expand](./Images/expand.png)![Collapse](./Images/collapse.png)      Expand / collapse
 
-![Help](./Images/help.png)!   	Show help information. The button on the right top hides / shows all help information. 
+![Help](./Images/help.png)   	Show help information. The button on the right top hides / shows all help information. 
 
-![Create Dataset Metadata](./Images/Create_Dataset Metadata.png) 
+![Create Dataset Metadata](./Images/Create%20Dataset%20Metadata.png) 
 
 On the bottom of the page, there is a button titled Validate to examine whether required attributes have been filled and values fit to the expected data format. 
 
@@ -73,7 +73,7 @@ You could edit a submitted dataset or make a copy of that by clicking on the Edi
 
 When an input is wrong or missing, the input field is highlighted in red. 
 
-#### 1.3 Dataset links
+#### 1.2 Dataset links
 It is possible to create relations between different datasets of one type or different types of datasets (e.g. dataset and publication). Links always refer to a specific version of a dataset. Dataset links are shown under *Links* and divided into *Links to* the dataset and *Links from* the dataset. This shows the direction of the link and clearly defines what is source and target, which might be relevant related to the type of the selected reference (e.g. parent, child ...). 
 
 There are two options to create relations / links between datasets:
@@ -154,7 +154,7 @@ If you go back and change something in the process of uploading, you need to val
 
 With this final step a summary of your uploaded data file is provided. Please check the information and click the Finish button to confirm and finalize the upload.
 
-#### 2.1 Upload File
+#### 2.2 Upload File
 
 An unstructured data could be either selected from your local computer or could be a file that has been uploaded to the server. In the case of unstructured data, we do not read the contents of the data. We copy the files to the server and place them in relation to the dataset.
 
