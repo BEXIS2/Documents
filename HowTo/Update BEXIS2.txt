@@ -1,0 +1,30 @@
+Update BEXIS 2 requires following steps.
+
+
+- Stop the Site
+
+- Backup db
+- Create new db
+- Restore db
+- Update db
+
+- Create a new folder in C:\inetpub\wwwroot
+- Copy new version of Site folder
+- Copy Site\web.config from the old version
+- Copy Data folder from the old version
+- Copy Workspace from the old version
+- Update Workspace (if it is needed)
+
+- Set security settings if it is needed (IIS access)
+
+- Create a new website on a test port
+- Connect website to the Workspace
+- Connect website to Data
+- Create database should be false
+
+- Run website
+- Test functions on the server
+- Change the port to the correct one
+- Test function on normal browser out of server
+
+- Finished!
