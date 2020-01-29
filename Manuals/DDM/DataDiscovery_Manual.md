@@ -24,6 +24,7 @@
 
 - [C: Manual for administrators](#c-manual-for-administrators)
 	- [1 Search Manager](#1-search-manager)
+	- [2 Dataset tabs display](#2-dataset-tabs-display)
 	
 
 <!-- /TOC -->
@@ -156,6 +157,20 @@ Analyzed: This specifies if the field should be analyzed or not. Only analyzed f
 **Selection Type:** Choose a selection type based how many choices should be allowed (single, multiple).
 
 **Direction:** Default sort direction for this item (ascending, descending).
+
+### 2 Dataset tabs display
+To hide tabs permanantly (show_xx = false) and to hide deactivated tabs (& and some button) change the settings in the *areas/DDM/Ddm.settings.xml* / *Workspace/Modules/DDM/Ddm.settings.xml*
+
+```XML
+<entry key="show_primary_data_tab" value="true" type="String"/>
+<entry key="show_data_structure_tab" value="true" type="String"/>  
+<entry key="show_link_tab" value="true" type="String"/>
+<entry key="show_permission_tab" value="true" type="String"/>
+<entry key="show_publish_tab" value="true" type="String"/>
+<entry key="show_attachments_tab" value="true" type="String"/>
+  
+<entry key="show_tabs_deactivated" value="true" type="String"/>
+```    
 
 
 
