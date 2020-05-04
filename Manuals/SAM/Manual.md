@@ -127,26 +127,25 @@ Selecting the checkbox in the first column (*IsPublic*) gives public access to t
 
 In general, BEXIS2 distinguishes different data permission types:
 
-* Read: allow/deny read & download access to primary data
-* Update: allow/deny manipulation (upload and update) of primary data
-* Delete: allow/deny deletion of the whole dataset
-* Grant: allow/deny to give permission to other users or groups
+* Read: allows to read & download to primary data and attachments
+* Update: enables changes (upload and update) of primary data and metadata
+* Delete: allows to delete the whole dataset
+* Grant: allows to give permission to other users or groups
 
-### 4 Manage Datasets
+### 4 Manage datasets
 
-Via menu in *Settings > Manage Datasets* you are able to see a list of Datasets.
+Display the list of datasets under *Settings > Manage Datasets*. In this list, you can see the status of each dataset and do some useful actions to maintain datasets.
 
-In this list, you can see the status of each dataset and some useful actions for the maintenance of a dataset.
+There are two ways to delete a dataset (1) *delete* and (2) *purge*. 
 
 ![maintenance](./Images/Help_img11.png) 
 
 There are two ways to delete a dataset:
 
-<ins>Delete</ins>: this function tags a dataset to exclude it from nearly all features of the system (e.g. search). But the dataset itself will stay inside the database. So later on, you are able to recover the dataset - if needed.
+*Delete* tags a data record to exclude it from nearly all features of BEXIS2 (e.g., search). But you are still able to restore the data record – if needed. 
 
-<ins>Purge</ins>: the dataset will be removed from the system at all (incl. removal of data permissions, metadata, and primary data). There is no way to rollback that action.
+*Purge* deletes a dataset completely. The data record **can not be restored**. 
 
-Note that if you purge a dataset, you cannot recover it at all.
 
 
 [Go to top](#a-overview)
