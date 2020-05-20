@@ -17,9 +17,9 @@
 		- [2.4 Dataset Permissions](#24-dataset-permissions)
 		- [2.5 Publish a Dataset Version](#25-publish-a-dataset-version)
 		- [2.6 Attachments](#26-attachments)	
-	- [3 Dashboard](#4-dashboard)
+	- [3 Dashboard](#3-dashboard)
 		- [3.1 My Datasets](#31-my-datasets)
-		- [3.2 Requests](#32-requests)
+		- [3.2 My Requests](#32-my-requests)
 		- [3.3 Decision](#33-decision)
 
 - [C: Manual for administrators](#c-manual-for-administrators)
@@ -101,8 +101,8 @@ On this page, users can see which datasets they are accessing and which rights t
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/dashboard.png)
 
 
-#### 3.2 Requests
-This page lists all your requests.
+#### 3.2 My Requests
+This page lists all your requests.If necessary you can withdraw/delete your request.
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/requests.png)
 
  
