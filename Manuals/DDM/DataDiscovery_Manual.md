@@ -103,7 +103,7 @@ On this page, users can see which datasets they are accessing and which rights t
 
 #### 3.2 My Requests
 This page lists all your requests.If necessary you can withdraw/delete your request.
-![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/requests.png)
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/Requests.png)
 
  
 #### 3.3 Decision
