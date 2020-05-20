@@ -96,18 +96,19 @@ On this tab the user with the upload rights is able to manage the attachments fo
 
 ### 3 Dashboard
 #### 3.1 My Datasets
-On this page, users can see which datasets they are accessing and which rights they have on the datasets.
+Overview on all datasets the currently logged in user has access. Datasets are groups by permission: Own (full permission including granting permission), Edit, and download.
+Datasets marked in red have incomplete metadata.
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/dashboard.png)
 
 
 #### 3.2 My Requests
-This page lists all your requests.If necessary you can withdraw/delete your request.
+List of all your pending and answered requests for data access permissions. Pending requests can be withdrawn/delete, if the request is not anymore valid.
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/Requests.png)
 
  
 #### 3.3 Decision
-The page lists open requests for your datasets. You can accept or decline the request by clicking the buttons on the right.
+List of all answered and pending requests related to your datasets. You can accept (hook) or reject (minus) pending requests. The requesting person will be informed via email about your decision. 
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/decision.png)
 
