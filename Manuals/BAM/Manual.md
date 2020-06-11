@@ -12,20 +12,20 @@
 	
 - [C: Manual for administrators](#c-manual-for-administrators) 
 
-	- [1 XML-Schema](#-a)
+	- [1 XML-Schema](#1-xml-schema)
 		- [1.1 PartyType attributes](#11-partytype-attributes)
 		- [1.2 Custom attributes](#12-custom-attributes)
 		- [1.3 PartyRelationshipType attributes](#13-partyrelationshiptype-attributes)
   		- [1.4 PartyTypePair attributes](#14-partytypepair-attributes)
- 	- [2 Manage parties](#-a)
- 		- [2.1 Create and Edit](#-a)
- 		- [2.1 Delete](#-a)
- 	- [3 Manage Relationships](#-a)
- 		- [3.1 Create](#-a)
- 		- [3.2 Edit and view a relationship](#-a)
- 		- [3.3 Delete a relationship](#-a)
- 	- [Account registration](#-a)
- - [Configuration](#-a)
+ 	- [2 Manage parties](#2-manage-parties)
+ 		- [2.1 Create and Edit](#21-create-and-edit)
+ 		- [2.1 Delete](#21-delete)
+ 	- [3 Manage Relationships](#3-manage-relationships)
+ 		- [3.1 Create](#31-create)
+ 		- [3.2 Edit and view a relationship](#32-edit-and-view-a-relationship)
+ 		- [3.3 Delete a relationship](#33-delete-a-relationship)
+ 	- [4 Account registration](#4-account-registration)
+ 	- [5 Configuration](#5-configutation)
  
 <!-- /TOC --> 
  
@@ -137,11 +137,11 @@ Clicking on delete icon (trash figure) on last column of each relationships, you
 
 
 
-## Account registration
+## 4 Account registration
 
 After creating an account, other information of user will save in party package . Before using this page we shoud set some configuration to clear the allowed party types which are related to the account and also the relationships which you want to ask user in registration page.
  
-### Configuration
+## 5 Configuration
 Party types related to the account should be defined in setting.xml, which you can find it in BAM workspace folder. A comma should separate party types and each of them could have zero or multi allowed relationship. If the relationship type has one ‘partytypepair’, the registration page will populate all the parties, which has the same party type as this type pair. If the relationship type has more than one 'partytypepair', it will populate the allowed target of the 'partytypepair' which has "partyrelationshiptypedefault==true" this attribute and if it doesn’t have this attribute it will use the first party type pair by default.
 
 ```
