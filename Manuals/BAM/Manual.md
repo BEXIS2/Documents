@@ -155,7 +155,7 @@ PartyType1:PartyRelationshipTypeTitle1-PartyRelationshipTypeTitle2, PartyType2
  
 ### 5.2 Link user email to party email
 
-To activate the linkage between between user email and a party email set *usePersonEmailAttributeName* true and define the party party attribute. If one of the email addresses is changed the other is changed as well.
+To activate the linkage between between user email and a party email set in the global *Web.config* *usePersonEmailAttributeName* true and define the party party attribute. If one of the email addresses is changed the other is changed as well.
 ```
 <add key="usePersonEmailAttributeName" value ="true"/>
 <add key="PersonEmailAttributeName" value ="Email"/>
