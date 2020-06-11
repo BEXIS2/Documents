@@ -26,6 +26,8 @@
  		- [3.3 Delete a relationship](#33-delete-a-relationship)
  	- [4 Account registration](#4-account-registration)
  	- [5 Configuration](#5-configutation)
+		- [5.1 PartyRelationships](#51-partyrelationships)
+		- [5.2 Link user email to party email](#52-link-user-email-to-party-email)
  
 <!-- /TOC --> 
  
@@ -142,6 +144,8 @@ Clicking on delete icon (trash figure) on last column of each relationships, you
 After creating an account, other information of user will save in party package . Before using this page we shoud set some configuration to clear the allowed party types which are related to the account and also the relationships which you want to ask user in registration page.
  
 ## 5 Configuration
+### 5.1 PartyRelationships
+		
 Party types related to the account should be defined in setting.xml, which you can find it in BAM workspace folder. A comma should separate party types and each of them could have zero or multi allowed relationship. If the relationship type has one ‘partytypepair’, the registration page will populate all the parties, which has the same party type as this type pair. If the relationship type has more than one 'partytypepair', it will populate the allowed target of the 'partytypepair' which has "partyrelationshiptypedefault==true" this attribute and if it doesn’t have this attribute it will use the first party type pair by default.
 
 ```
@@ -149,3 +153,11 @@ Example:
 PartyType1:PartyRelationshipTypeTitle1-PartyRelationshipTypeTitle2, PartyType2
 ```
  
+### 5.2 Link user email to party email
+
+To activate the linkage between between user email and a party email set *usePersonEmailAttributeName* true and define the party party attribute. If one of the email addresses is changed the other is changed as well.
+```
+<add key="usePersonEmailAttributeName" value ="true"/>
+<add key="PersonEmailAttributeName" value ="Email"/>
+```
+
