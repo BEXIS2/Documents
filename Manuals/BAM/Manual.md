@@ -98,7 +98,10 @@ An administrator can see, create, edit and delete parties. A normal user may hav
 
 On the overview page, you can see all the available entities and manage them. The red warning icon in the "action-required" column shows that this party needs some relationships to be valid.
 
-![Overview parties](./Images/view_parties.png)
+<figure class="image">
+  <img src="./Images/view_parties.png" alt="Overview parties">
+  <figcaption>Overview parties</figcaption>
+</figure>
  
 #### 2.1 Create and Edit
 A new party can be created under *Settings > Manage Parties > Create Party*. In the first step, you should select a party type and its date range, if applicable. Click on Next to continue. 
