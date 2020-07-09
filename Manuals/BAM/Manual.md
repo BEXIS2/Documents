@@ -100,7 +100,7 @@ On the overview page, you can see all the available entities and manage them. Th
 
 <figure class="image">
   <img src="./Images/view_parties.png" alt="Overview parties">
-  <figcaption>Overview parties</figcaption>
+  <figcaption style="display: block; text-align: center;">Overview parties</figcaption>
 </figure>
  
 #### 2.1 Create and Edit
