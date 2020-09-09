@@ -1,4 +1,4 @@
-# Search UI, Data Discovery Module (v2.13)
+# Search UI, Data Discovery Module
 
 <!-- TOC -->
 - [A: Overview](#a-overview)
