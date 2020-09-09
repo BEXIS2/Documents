@@ -1,4 +1,4 @@
-# User and Permission management (v2.13)
+# User and Permission management
 
 <!-- TOC -->
 - [A: Overview](#a-overview)
