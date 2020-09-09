@@ -1,4 +1,4 @@
-# Party Administration (v2.13)
+# Party Administration
 
 <!-- TOC --> 
 - [A: Overview](#a-overview)
