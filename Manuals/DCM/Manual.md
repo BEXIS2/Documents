@@ -1,4 +1,4 @@
-# Data Collection: Metadata and Data (v2.13)
+# Data Collection: Metadata and Data
 
 
 <!-- TOC -->
