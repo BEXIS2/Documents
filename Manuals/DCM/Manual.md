@@ -1,4 +1,4 @@
-# Data Collection (v2.13)
+# Data Collection: Metadata and Data
 
 
 <!-- TOC -->
@@ -8,24 +8,15 @@
 - [B: Manual for users](#b-manual-for-users)
 
 	- [1 Create Dataset](#1-create-dataset)
-		- [1.1 Copy an existing Dataset](#11-copy-an-existing-dataset)
-		- [1.2 Metadata](#12-content)
-		- [1.3 Messages](#13-messages)
+		- [1.1 Metadata](#11-metadata)
+		- [1.2 Dataset links](#12-dataset-links)
+	
 	- [2 Upload Data](#2-upload-data)
 		- [2.1 Upload Tabular Data](#21-upload-tabular-data)
-		- [2.2 Select File](#22-select-file)
-		- [2.3 Get File Information](#23-get-file-information)
-		- [2.4 Specify Dataset](#24-specify-dataset)
-		- [2.5 Choose Update Method](#25-choose-update-method)
-		- [2.6 Validation](#26-validation)
-		- [2.7 Summary](#27-summary)
-		- [2.8 Upload File](#28-upload-file)
+		- [2.2 Upload File](#22-upload-file)
+		
 	- [3 Import Data](#3-import-data)
-		- [3.1 Select File](#31-select-file)
-		- [3.2 Metadata](#32-metadata)
-		- [3.3 Select Areas](#33-select-areas)
-		- [3.4 Verification](#34-verification)
-		- [3.5 Summary](#35-summary)
+	
 	- [4 Push Big File](#4-push-big-file)
 
 - [C: Manual for administrators](#c-manual-for-administrators)
@@ -34,22 +25,18 @@
 		- [1.2. Read Source](#12-read-source)
 		- [1.3. Set Parameters](#13-set-parameters)
 		- [1.4. Summary](#14-summary)
+	- [2 Configure dataset links](#2-configure-dataset-links)	
 
 <!-- /TOC -->
 
 ## A: Overview
 
-The Data Collection Module provides tools to create new datasets, enter metadata, upload data to the system, and import metadata structures (i.e. schemas). There are some workflows available under the Collect tab and also in the Setup:
+The *Data Collection Module* provides tools to create new datasets consisting of metadata and data. The metadata is based on a schema defined by a metadata structure. The primary data can be tabular (structured) or files. They are described by a data structure which either describes the variables and units of tabular data or the type of files. The module provides functions and workflows to create new metadata and upload files or import tabular data. 
 
-*   Create Dataset
-*   Upload Data
-*   Import Data
-*   Push Big File
-*   Manage Metadata Structure
-
+## B: Manual for users
 ### 1 Create Dataset
 
-This wizard will assist you in creating a new dataset in BEXIS2\. The Wizard is very flexible and builds up differently depending on the selected Metadata structure. Therefore, we describe only the basic functions here.
+This wizard will assist you in creating a new dataset in BEXIS2. The Wizard is very flexible and builds up differently depending on the selected Metadata structure. Therefore, we describe only the basic functions here.
 
 The first step is to generate an empty or a copy of an existing dataset based on your selection of the two mandatory elements: Data Structure, and Metadata Structure.
 
@@ -57,13 +44,13 @@ The first step is to generate an empty or a copy of an existing dataset based on
 
 The next stage is determined by the selected metadata structure.
 
-#### 1.1 Copy an existing Dataset
+##### Copy an existing Dataset
 
 By choosing an existing Dataset instead of creating a new one, you are able to make a copy of that dataset. Related to the Dataset, you can choose a Data Structure, but there is only one related Metadata Structure for each dataset.
 
 You are able to use predefined content or change fields as you want.
 
-#### 1.2 Content
+#### 1.1 Metadata
 
 The content area is where you enter metadata describing your dataset. The forms provided here may look different and contain different attributes depending on the metadata schema (structure) you have chosen in the first step.
 
@@ -77,21 +64,32 @@ The content area is where you enter metadata describing your dataset. The forms 
 
 ![Expand](./Images/expand.png)![Collapse](./Images/collapse.png)      Expand / collapse
 
-On the bottom of the page, there is a button titled Validate to examine whether required attributes have been filled and whether the information complies with the business logic. The validation may also be triggered by clicking on the Submit button.
+![Help](./Images/help.png)   	Show help information. The button on the right top hides / shows all help information. 
+
+![Create Dataset Metadata](./Images/Create%20Dataset%20Metadata.png) 
+
+On the bottom of the page, there is a button titled Validate to examine whether required attributes have been filled and values fit to the expected data format. 
 
 You could edit a submitted dataset or make a copy of that by clicking on the Edit or Copy buttons.
 
-When an input is faulty, the input field is highlighted in red. If you go with the mouse over the box, you get information about what is wrong.
+When an input is wrong or missing, the input field is highlighted in red. 
 
-#### 1.3 Messages
+#### 1.2 Dataset links
+It is possible to create relations between different datasets of one type or different types of datasets (e.g. dataset and publication). Links always refer to a specific version of a dataset. Dataset links are shown under *Links* and divided into *Links to* the dataset and *Links from* the dataset. This shows the direction of the link and clearly defines what is source and target, which might be relevant related to the type of the selected reference (e.g. parent, child ...). 
 
-The content area is where you enter metadata describing your dataset. The forms provided here may look different and contain different attributes depending on the metadata schema (structure) you have chosen in the first step.
+There are two options to create relations / links between datasets:
 
-![messages](./Images/messages.png)
+##### Link via Metadata
+Fields in the metadata form can contain lists of datasets stored within the system. If one is selected also a link in both directions based on the most current versions is created.
 
-### 2 Upload Data
+##### Direct links
+Links can also be created directly under *Link > Create link*. Here you can also choose  which version you like to refer to and what kind of link it is. In addition, you can also give more details to it.
 
-To upload your data, please go to the Collect > Upload Data via main menu. This wizard will assist you in uploading data into the BEXIS2 repository. A dataset can be structured or unstructured (i.e tabular or file).
+![Create links](./Images/create_links.png) 
+
+### 2 Upload data
+
+To upload your data, please go to the *Collect > Upload Data* via main menu. This wizard will assist you in uploading data into the BEXIS2 repository. A dataset can be structured or unstructured (i.e tabular or file).
 
 ![Upload Data](./Images/upload_data.png) 
 
@@ -101,13 +99,13 @@ The term "Tabular data" is used for all datasets where there internal structure 
 
 Uploading a tabular data follows the following steps.
 
-#### 2.2 Select File
+##### Select File
 
 In the first step an existing file containing your data needs to be selected. You can either select a file from your local computer or a file that has been uploaded to the server prior to starting the Upload Wizard. The second option is designed for files larger than 4 MB that may take several minutes to transfer. The wizard supports file formats of Microsoft Excel or ASCII. Microsoft Excel files are required to use a template created while creating a Data Structure (refer to [Data Planning User Guide](~/rpm/Help/index#_overview) for more details). Once a file has been successfully selected, click the Next button and proceed to the next step.
 
 ![Upload_Tabular](./Images/upload_tabular.jpg) 
 
-#### 2.3 Get File Information
+##### Get File Information
 
 For all Microsoft Excel files using a BEXIS2 template the file information and data structure is automatically extracted and this step is omitted. Please refer to the [Data Planning User Guide](~/rpm/Help/index#_overview) for more details on how to create such a template.
 
@@ -131,11 +129,11 @@ Further, your data file may contain a header defining variable names, types etc.
 
 Finally, the row/column where the actual data values start needs to be specified.
 
-#### 2.4 Specify Dataset
+##### Specify Dataset
 
 In BEXIS2 your data is stored and managed as part of a dataset. A dataset may contain one or more of your data files. But all data files within one dataset must be of the same data structure, i.e. the number of variables and their properties must be identical in each file. To upload your data to the system, please select one existing dataset from the dropdown list.
 
-#### 2.5 Choose Update Method
+##### Choose Update Method
 
 While adding data to an existing dataset you need to specify how you want to update.
 
@@ -145,7 +143,7 @@ By Update the user need to specify a unique identifier (e.g. primary key) for ea
 
 By Append, the lines are uploaded directly to the data without checking for duplication.
 
-#### 2.6 Validation
+##### Validation
 
 With this step, the selected data file is validated against the selected data structure. Both, the structure of the data (e.g. variable properties) and whether the data values fit to the specified structure (e.g. data type, value range) is evaluated.
 
@@ -153,11 +151,11 @@ Click on Validate button to validate the data file.
 
 If you go back and change something in the process of uploading, you need to validate the file again.
 
-#### 2.7 Summary
+##### Summary
 
 With this final step a summary of your uploaded data file is provided. Please check the information and click the Finish button to confirm and finalize the upload.
 
-#### 2.8 Upload File
+#### 2.2 Upload File
 
 An unstructured data could be either selected from your local computer or could be a file that has been uploaded to the server. In the case of unstructured data, we do not read the contents of the data. We copy the files to the server and place them in relation to the dataset.
 
@@ -291,5 +289,30 @@ For the system to handle a dataset at least the title and a description is neede
 The Summary page is an overview about the created metadata structure.
 
 ![Summary](./Images/summary_xsd.png)
+
+### 2 Configure dataset links
+The reference types and descriptons can be configured under *Workspace/Modules/DCM/EntityReferenceConfig.Xml*. If the system contains also other entity types, which should be not allowed for linking, you can define a whitelist of shown datasets types.
+
+```XML
+<config>
+<referenceTypes>
+    <referenceType description="">collection</referenceType>
+    <referenceType description="">based on</referenceType>
+    <referenceType description="">child of</referenceType>
+    <referenceType description="">parent of</referenceType>
+    <referenceType description="">link</referenceType>
+</referenceTypes>
+<!--Whitelist for entity types. Please configure, if you need to hide entities from the list
+<entityTypes>
+    <entityType description="">Dataset</entityType>
+</entityTypes>-->
+</config>
+
+```
+
+
+
+
+
 
 [Go to top](#_overview)

@@ -1,4 +1,4 @@
-# User and Permission management (v2.13)
+# User and Permission management
 
 <!-- TOC -->
 - [A: Overview](#a-overview)
@@ -7,41 +7,39 @@
 
 	- [1 Registration](#1-registration)
 	- [2 Login](#2-login)
-	- [3 Dataset permissions](#....)
+	- [3 Dataset permissions](#3-dataset-permissions)
 	- [4 API Token](#4-api-token)
 	
 - [C: Manual for administrators](#c-manual-for-administrators)
-	- [1 User](#1-user)
+	- [1 Manage User](#1-manage-user)
 		- [1.1 Create a user](#11-create-a-user)
-		- [1.2 Edit a user](#12-edit-a-user)
-	- [2 Group](#2-group)
+		- [1.2 Edit or Delete a user](#12-edit-or-delete-a-user)
+	- [2 Manage groups](#2-manage-groups)
 		- [2.1. Create a group](#21-create-a-group)
-		- [2.2. Edit a group](#22-edit-a-group)
+		- [2.2. Edit or Delelte a group](#22-edit-or-delete-a-group)
 	- [3 Permission](#3-permission)
-		- [3.1. Feature Permission](#31-feature-permission)
-		- [3.2. Entity Permission](#32-entity-permission)
-	- [4 Manage Datasets](#4-manage-datasets)
+		- [3.1. Feature permission](#31-feature-permission)
+		- [3.2. Entity permission](#32-entity-permission)
+	- [4 Manage datasets](#4-manage-datasets)
 	
 
 <!-- /TOC -->
 
 ## A: Overview
 
-All features and entities (datasets) are secured and managed via a user and permission management. Depending on the instance configuration some features (e.g. search) can be accessible for non-registered users, while others only for authorized users. 
-Users can register and the system administrator can assign the appropriate permissions individually or by assigning the user to a permission group. In general, it is possible to add, remove, or modify existing permissions on features and entities (datasets). Each user can also grant permissions on his datasets to others. In addition, it is possible to generate a personal token for authentication to access the application via API calls. 
+All features (e.g., search)  and all types of datasets are secured and managed via a user and permission management. Depending on the BEXIS2 configuration, some features (e.g., search) are also accessible for non-registered users, while others only for authorized users. After registration in BEXIS2, the system administrator assigns the appropriate permissions individually or by assigning the user to a permission group. In general, it is possible to add, remove, or modify existing permissions on features and all types of datasets. Each user can also grant permission for their datasets to others. Also, it is possible to generate a personal token for authentication to access BEXIS2 via API.
 
 ## B: Manual for users
 
 ### 1 Registration
 
-The registration form is accessible through the menu bar. All fields are mandatory and it is also required to agree on the Terms and Conditions and Privacy Policy. To complete the registration process, the email address needs to be confirmed by the user. In most cases, the user will be also asked to provide further account details (e.g. full name, related project, ...).
+The registration form is accessible via the Register button on the right side. All fields of the form are mandatory and it is required to agree on the *Terms and Conditions* and *Privacy Policy*. Then you are asked to confirm your email address. As the last step, you have to provide some information (e.g.,  name, affiliation to the project, organization). Based on the provided details, the project Team grants permissions within three days.
 
 ![registration](./Images/register.png)
 
 ### 2 Login
 
-First, press Login button. The system redirects you to the login form and you have to enter your account credentials (user name and password). If the login is successful, you will see Dashboard. Otherwise, the system will notify you about the status and reason why the logon was not successful.
-
+Press the *Login* button on the right side. BEXIS2 redirects you to the login form, where you have to enter your account credentials (email or user name and password). If the login is successful, the start page (e.g., *Dashboard* or *Search*) is loaded. Otherwise, you will see information about the status and reason for the failed login.
 
 <a href="url" title="login"><img src="./Images/login.png" align="center" height="300" ></a>
 
@@ -50,108 +48,104 @@ First, press Login button. The system redirects you to the login form and you ha
 
 ### 4 API Token
 
-In general, the APIs of BEXIS2 are protected by both mechanisms, authentication and authorization. In contrast to the login where usual credential are used, the APIs are using a personalized token for authentication. Within the user menu, each user has the possibility to show her/his own token. Afterwards, that token can be used for the APIs.
+In general, two mechanisms, authentication, and authorization protect the APIs of BEXIS2. Unlike logon, which uses the usual credentials, the APIs use a personalized token for authentication. The token can be found in the user menu. 
 
 ![token](./Images/token.png) 
 
 ## C: Manual for administrators
-### 1 User
+### 1 Manage User
 
-Caution! This part of the system is secured. You may not have access to it.
-
-BEXIS2 provides different features for managing users. These are typically available to system administrators only. Each of them is described in more detail in one of the following subsections.
+User accounts are used to assign permissions and track actions like the creation of a dataset. Accounts can be linked to the party module and the real user name is shown instead of the account name. 
 
 ![users](./Images/users.png)
 
 #### 1.1. Create a user
 
-In addition to the self-registration procedure, user accounts may also be created by an administrator. This feature is available from Setup > Manage Users. Please press the Create button. A modal window will pop up that contains the user creation form. Similar to the self-registration, the system supports you with validation on all information entered.
+In addition to the self-registration procedure, the administrator can also create accounts. This feature is available here: *Settings > Manage Users > Create User*. The system supports you with validation on all entered information.
 
 ![create_user](./Images/create_user.png)
 
-#### 1.2. Edit a user
+#### 1.2. Edit or Delete a user
 
-Within BEXIS2 you are able to display and modify user information. For security and usability reasons, the system allows modification only for certain parts of the user information. Please go to Setup > Manage Users and press the Edit button of the respective user. You are now able to alter the user information. Changes are committed to the system when you press the Save button.
+Under *Settings > Manage Users* it is possible to view, modify, and delete user information using the following options:
 
-For any given user memberships to certain groups need to be specified via the tab Membership.
-
-You can change the status easily by (un)select the corresponding checkbox.
+| Button | Description 
+|-|-
+| Edit | for security and usability reasons, not all fields can be modified (e.g., user name).  
+| Group | show the membership in a group <br/> status can be changed by (un)selecting the corresponding checkbox 
+| Delete | delete a user account (exception: user accounts already used)
 
 ![edit_user](./Images/edit_user.png)
 
-## 2 Group
+## 2 Manage groups
 
-Caution! This part of the system is secured. You may not have access to it.
-
-BEXIS2 provides different features for the managing groups. They are typically available to system administrators only. Each of them is described in more detail in the following subsections.
+Groups combine a set of permissions for its members. Users can be assigned to different groups.
 
 ![groups](./Images/groups.png) 
 
 #### 2.1. Create a group
 
-This feature is available from Setup > Manage Groups. Please press the Create button. A modal window will pop up that contains the group creation form. The system supports you with validation on all information entered.
+This feature is available under *Settings > Manage Groups > Create Group*. A new group can be defined.
 
 ![create_group](./Images/create_group.png) 
 
-#### 2.2. Edit a group
+#### 2.2. Edit or Delete a group
 
-Within BEXIS2 you are able to display and modify group information. Please go to Setup > Manage Groups and press the Edit button of the respective group. You are now able to alter the group information. Changes are committed to the system once you pressed the Save button.
+Under *Settings > Mange Groups* it is possible to view and modify group information. 
 
-For any given user memberships to certain group need to be specified via the tab Membership.
-
-You can change the status easily by (un)select the corresponding checkbox.
+| Button | Description 
+|-|-
+| Edit | change group name or description 
+| Group | members of a group can be (un)selected
+| Delete | delete a group (exception: Groups already used)
 
 ![edit_group](./Images/edit_group.png) 
 
 ### 3 Permission
 
-Caution! This part of the system is secured. You may not have access to it.
+Permissions contain specific security regulations. The security system of BEXIS2 distinguishes between two types of permissions. The *feature permission* allows or prohibits access to a well-defined and delimited area of the application, so-called Features. The *data permission* provides the option to protect all types of datasets.
 
-Permission is a rule that contains certain security regulations. In general, it is possible to set a rule on both, users and groups.
+#### 3.1 Feature permission
 
-The security system of BEXIS2 distinguishes between two types of permissions. On the one hand, there are feature permissions, which allow or prohibit the access to well-defined and delimited areas of the application. This type of permissions is working on functional objects (e.g. actions that should be performed) - so called Features. On the other hand, data permissions provide the ability to protect real data (e.g. datasets, research plans and so on).
+Under *Settings > Manage Feature Permissions* you can customize features permissions. 
 
-#### 3.1 Feature Permission
+Selecting a checkbox in the navigation tree (e.g., *Search*) will make that feature accessible without authentication (*public access*). **Please use it with care!**
 
-To be able to modify features, Please go to Setup > Manage Feature Permissions. This will bring up a page with a tree on the left side.
-
-Selecting a checkbox in the navigation tree (e.g. Search) will make that feature accessible without authentication (public access). Please use with care!
-
-By clicking a feature name (a node in the tree), the system will show a table on the right side (see below). This table contains all subjects (users and groups) and their feature permission status. You may grant or deny permissions for individual users or groups using the radio buttons. If a permission is not explicitly set (i.e None) permissions are inherited from up level features. Inherited permissions are shown in the first column as effective permissions.
+Clicking on a feature name opens a table on the right side. This table contains all subjects (users and groups) and their feature permission status. You may grant or deny permissions for individual users or groups using the radio buttons. If permission is not explicitly set (*none*), it can be inherited from up-level features. Inherited permissions are shown in the first column as *effective* permissions.
 
 ![features](./Images/features.png) 
 
 #### 3.2 Entity Permission
 
-The security system of BEXIS2 is working on both, functional (features) and non-functional (entities) items. Please go to Setup > Manage Entity Permissions if you like to manage access to entities (datasets).
+To manage access to entities (datasets and publications) go to *Settings > Manage Entity Permissions*.
 
-By selecting a dataset (i.e. a row in the table), the system will show a second table underneath the first one, which contains all subjects (users and groups) and their different data permission statuses regarding the selected dataset. On this page, you are also able to alter the different kinds of data permissions for a selected dataset.
+By selecting a dataset (by clicking on the row of the dataset), a new table displays all subjects (users and groups) and their different data permission statuses regarding the selected dataset. Here you can also change permissions for the selected dataset.
 
-Selecting the checkbox in the first column (i.e. IsPublic) will allow public access to that dataset without any authentication.
+Selecting the checkbox in the first column (*IsPublic*) gives public access to that dataset without any authentication.
 
 ![datasets](./Images/Help_img10.png) 
 
-In general, the system works on six different data permission types:
+In general, BEXIS2 distinguishes different data permission types:
 
-*   Read: allow/deny read & download access to primary data*   Update: allow/deny manipulation (upload and update) of primary data*   Delete: allow/deny deletion of the whole dataset*   Grant: allow/deny to give permission to other users or groups
+* Read: allows to read & download to primary data and attachments
+* Update: enables changes (upload and update) of primary data and metadata
+* Delete: allows to delete the whole dataset
+* Grant: allows to give permission to other users or groups
 
-### 4 Manage Datasets
+### 4 Manage datasets
 
-Via menu in Setup > Manage Datasets you are able to see a list of Datasets.
+Display the list of datasets under *Settings > Manage Datasets*. In this list, you can see the status of each dataset and do some useful actions to maintain datasets.
 
-In this list you can see the status of each dataset and some useful actions for the maintenance of a dataset.
+There are two ways to delete a dataset (1) *delete* and (2) *purge*. 
 
 ![maintenance](./Images/Help_img11.png) 
 
 There are two ways to delete a dataset:
 
-Delete: this function tags a dataset to exclude it from nearly all features of the system (e.g. search). But the dataset itself will stay inside the database. So later on you are able to recover the dataset - if needed.
+*Delete* tags a data record to exclude it from nearly all features of BEXIS2 (e.g., search). But you are still able to restore the data record – if needed. 
 
-Purge: the dataset will be removed from the system at all (incl. removal of data permissions, metadata and primary data). There is no way to rollback that action.
-
-Note that if you purge a dataset, you cannot recover it at all.
+*Purge* deletes a dataset completely. The data record **can not be restored**. 
 
 
 
-
-[Go to top](#_overview)
+[Go to top](#a-overview)
