@@ -17,7 +17,7 @@
 		- [2.4 Links](#24-links)
 		- [2.5 Dataset Permissions](#25-dataset-permissions)
 		- [2.6 Publish a Dataset Version](#26-publish-a-dataset-version)
-		- [2.7 Attachments](#27	-attachments)	
+		- [2.7 Attachments](#27-attachments)	
 	- [3 Dashboard](#3-dashboard)
 		- [3.1 My Datasets](#31-my-datasets)
 		- [3.2 My Requests](#32-my-requests)
