@@ -10,13 +10,14 @@
 		- [1.3 Free text search with Autocomplete](#13-free-text-search-with-autocomplete)
 		- [1.4 Selected Filter](#14-selected-filter)
 		- [1.5 Results](#15-results)
-	- [2 Data Details](#2-data-details)
-		- [2.1 Meta Data](#21-meta-data)
+	- [2 Dataset Components](#2-data-components)
+		- [2.1 Metadata](#21-metadata)
 		- [2.2 Primary Data](#22-primary-data)
 		- [2.3 Data Structure](#23-data-structure)
-		- [2.4 Dataset Permissions](#24-dataset-permissions)
-		- [2.5 Publish a Dataset Version](#25-publish-a-dataset-version)
-		- [2.6 Attachments](#26-attachments)	
+		- [2.4 Links](#24-links)
+		- [2.5 Dataset Permissions](#25-dataset-permissions)
+		- [2.6 Publish a Dataset Version](#26-publish-a-dataset-version)
+		- [2.7 Attachments](#27-attachments)	
 	- [3 Dashboard](#3-dashboard)
 		- [3.1 My Datasets](#31-my-datasets)
 		- [3.2 My Requests](#32-my-requests)
@@ -56,39 +57,43 @@ The details button opens the detailed view of the selected dataset.
 
 ---
 
-### 2 Data Details
-About each dataset created in the BEXIS 2, you can find a detail contains Meta Data, Primary Data, Data Structure, Dataset Permissions, Publish and Attachments explain later.
+### 2 Dataset Components
+Datasets in BEXIS consist of the following components: Metadata, Primary data, Data structure, Links, and Attachments. Depending on access rights for a dataset (e.g., guest, member, owner), you are authorized to view some or all components of a data record. If you have no access rights to a component, the tab of this element is grey or not visible.
 
-#### 2.1 Meta Data
-On this tab you have access to the Meta data of the selected datasets. You are able edit this dataset or make a copy of that.
-
+#### 2.1 Metadata
+The metadata contains all necessary information about a dataset (e.g., title, owner, contact, methods, or keywords). The metadata can be downloaded as HTML or XML.
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/metadata.png)
 
 #### 2.2 Primary Data
-On this tab you have access to the primary data of the selected dataset. A User can download selected data in an Excel file, comma separated in a CSV file, or tab separated in a TXT or TSV file. Also a user can filter and sort the data before and download only a subset of the dataset. For filtering  use the funnel button next to the variable.
+Tabular data is displayed as a table in the *primary data* tab. It is possible to sort the data by clicking on the variable name and filter the data using the funnel button next to the variable. It is possible to download the complete data or a subset in different formats (excel, comma-separated as a csv file, or tab-separated as txt or tsv file).
+
+For non-tabular data such as GIS-files, images, or documents, the content of the primary data tab is shown as a list of all files.
+
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/primarydata.png)
 
 #### 2.3 Data Structure
-On this tab you have access to the data structure of the selected datasets.
+The data structure provides information about primary data. For non-tabular data, it shows the file type. For tabular data, the data structure (or data dictionary) describes the variables (e.g., name, description, unit).
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/structure.png)
 
+#### 2.4 Links
+The links section gives an overview of related datasets and their relationship to each other.
 
-#### 2.4 Dataset Permissions
-On this tab you have access to the Dataset Permissions Manager.
+#### 2.5 Dataset Permissions
+The dataset permission secion allows to view and assign edit and downloadload permissions for a dataset.
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/datapermissions.png)
 
-#### 2.5 Publish a Dataset Version
+#### 2.6 Publish a Dataset Version
 On this tab you are able to publish the latest version of your dataset. In this Version a Zip file will be generated and prepared for download for a specific defined datacenter. More information can be found in the data dissemination manual.
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/publish.png)
 
 
-#### 2.6 Attachments
-On this tab the user with the upload rights is able to manage the attachments for the dataset.  Other users can only see or download the attachments.
+#### 2.7 Attachments
+Under this tab, all attachments of the dataset are listed and can be downloaded.
 
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/attachments.png)
