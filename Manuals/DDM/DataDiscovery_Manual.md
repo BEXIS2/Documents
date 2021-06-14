@@ -82,7 +82,7 @@ The data structure provides information about primary data. For non-tabular data
 The links section gives an overview of related datasets and their relationship to each other.
 
 #### 2.5 Dataset Permissions
-The dataset permission secion allows to view and assign edit and downloadload permissions for a dataset.
+The dataset permission section allows to view and assign edit and download permissions for a dataset.
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/datapermissions.png)
 
