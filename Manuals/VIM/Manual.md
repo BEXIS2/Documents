@@ -1,4 +1,4 @@
-# Visualization (v2.13)
+# Visualization
 
 <!-- TOC -->
 
