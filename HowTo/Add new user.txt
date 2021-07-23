@@ -1,0 +1,14 @@
+1. Create a party person
+2. Create a user (NNavabpour)
+
+Inside the database
+3. table parties: find party id
+4. table users: find user id
+5. table partyusers: add a line to link ids
+
+Update information in table users
+6. update email
+7. ismailedconfirmed => Y
+8. displayname
+
+9. Add person to the group SPP 2089, otherwise user cannot login.

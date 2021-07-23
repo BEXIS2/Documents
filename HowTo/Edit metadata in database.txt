@@ -1,0 +1,6 @@
+How to edit metadata through database
+______________________________________
+
+Find dataset id in table "datasets."
+Find dataset id in table "datasetVersions" in column "datasetRef."
+Change metadata content in column "metadata."

@@ -1,0 +1,2 @@
+When you try to upload numbers to string data type, BEXIS2 transforms numbers to @.
+Before uploading an Excel file or an Excel template, you have to change cell formats to number.

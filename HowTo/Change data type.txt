@@ -1,0 +1,10 @@
+How to change data type of a data attribute used in a data structure design?
+
+1. Find data type id from data structure view.
+2. Find data type id in the table Variables. 
+3. Find related dataAttributeRef id in the same table.
+4. In the table datacontainers find data attribute ref id in the id column.
+5. Change data type in the dataTypeRef column.
+
+
+In the table datatypes you can find the system type id.
