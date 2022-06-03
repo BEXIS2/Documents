@@ -1,35 +1,30 @@
 # Party Administration
 
-<!-- TOC --> 
-- [A: Overview](#a-overview)
+<!-- TOC -->
 
-- [B: Manual for users](#b-manual-for-users)
-
-	- [1 Registration](#1-registration)
-	- [2 Login](#2-login)
-	- [3 Dataset permissions](#3-dataset-permissions)
-	- [4 API Token](#4-api-token)
-	
-- [C: Manual for administrators](#c-manual-for-administrators) 
-
-	- [1 XML-Schema](#1-xml-schema)
-		- [1.1 PartyType attributes](#11-partytype-attributes)
-		- [1.2 Custom attributes](#12-custom-attributes)
-		- [1.3 PartyRelationshipType attributes](#13-partyrelationshiptype-attributes)
-  		- [1.4 PartyTypePair attributes](#14-partytypepair-attributes)
- 	- [2 Manage parties](#2-manage-parties)
- 		- [2.1 Create and Edit](#21-create-and-edit)
- 		- [2.1 Delete](#21-delete)
- 	- [3 Manage Relationships](#3-manage-relationships)
- 		- [3.1 Create](#31-create)
- 		- [3.2 Edit and view a relationship](#32-edit-and-view-a-relationship)
- 		- [3.3 Delete a relationship](#33-delete-a-relationship)
- 	- [4 Account registration](#4-account-registration)
- 	- [5 Configuration](#5-configutation)
+- [Party Administration](#party-administration)
+	- [A: Overview](#a-overview)
+	- [B: Manual for users](#b-manual-for-users)
+		- [1 Manage profile data](#1-manage-profile-data)
+	- [C: Manual for administrators](#c-manual-for-administrators)
+		- [1 XML-Schema](#1-xml-schema)
+			- [1.1 PartyType attributes](#11-partytype-attributes)
+			- [1.2 Custom attributes](#12-custom-attributes)
+			- [1.3 PartyRelationshipType attributes](#13-partyrelationshiptype-attributes)
+			- [1.4 PartyTypePair attributes](#14-partytypepair-attributes)
+		- [2 Manage parties](#2-manage-parties)
+			- [2.1 Create and Edit](#21-create-and-edit)
+			- [2.1 Delete](#21-delete)
+		- [3 Manage Relationships](#3-manage-relationships)
+			- [3.1 Create](#31-create)
+			- [3.2 Edit and view a relationship](#32-edit-and-view-a-relationship)
+			- [3.3 Delete a relationship](#33-delete-a-relationship)
+	- [4 Account registration](#4-account-registration)
+	- [5 Configuration](#5-configuration)
 		- [5.1 PartyRelationships](#51-partyrelationships)
 		- [5.2 Link user email to party email](#52-link-user-email-to-party-email)
- 
-<!-- /TOC --> 
+
+<!-- /TOC -->
  
 ## A: Overview
 
@@ -99,7 +94,7 @@ An administrator can see, create, edit and delete parties. A normal user may hav
 On the overview page, you can see all the available entities and manage them. The red warning icon in the "action-required" column shows that this party needs some relationships to be valid.
 
 <figure class="image">
-  <img src="./Images/view_parties.png" alt="Overview parties">
+  <img src="https://github.com/BEXIS2/Documents/raw/master/Manuals/BAM/Images/view_parties.png" alt="Overview parties">
   <figcaption style="display: block; text-align: center;">Overview parties</figcaption>
 </figure>
  
@@ -112,7 +107,7 @@ Some party types, you have to create relationships with other party types (e.g. 
  
 To edit a party click on "Edit" in the party overview. You can change all the fields except for the party type.
 
-![Create party](./Images/create_party.png)
+![Create party](https://github.com/BEXIS2/Documents/raw/master/Manuals/BAM/Images/create_party.png)
 
 #### 2.1 Delete
 Only parties not in use or linked can be deleted under *Settings > Manage Parties*.
