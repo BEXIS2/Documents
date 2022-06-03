@@ -86,8 +86,6 @@ Each party type can have custom attributes.
 | **AllowedTarget** | Target party type is obligatory and should be exactly the same name as we defined for partytype.
 | **[Description]** | It shows some info about this type to user in a tooltip.
 
-
-
 ### 2 Manage parties
 An administrator can see, create, edit and delete parties. A normal user may have limited permissions.
 
