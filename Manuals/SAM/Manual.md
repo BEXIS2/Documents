@@ -35,13 +35,13 @@ All features (e.g., search)  and all types of datasets are secured and managed v
 
 The registration form is accessible via the Register button on the right side. All fields of the form are mandatory and it is required to agree on the *Terms and Conditions* and *Privacy Policy*. Then you are asked to confirm your email address. As the last step, you have to provide some information (e.g.,  name, affiliation to the project, organization). Based on the provided details, the project Team grants permissions within three days.
 
-![registration](./Images/register.png)
+![registration](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/register.png)
 
 ### 2 Login
 
 Press the *Login* button on the right side. BEXIS2 redirects you to the login form, where you have to enter your account credentials (email or user name and password). If the login is successful, the start page (e.g., *Dashboard* or *Search*) is loaded. Otherwise, you will see information about the status and reason for the failed login.
 
-<a href="url" title="login"><img src="./Images/login.png" align="center" height="300" ></a>
+<a href="url" title="login"><img src="https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/login.png" align="center" height="300" ></a>
 
 
 ### 3 Dataset permissions
@@ -50,20 +50,20 @@ Press the *Login* button on the right side. BEXIS2 redirects you to the login fo
 
 In general, two mechanisms, authentication, and authorization protect the APIs of BEXIS2. Unlike logon, which uses the usual credentials, the APIs use a personalized token for authentication. The token can be found in the user menu. 
 
-![token](./Images/token.png) 
+![token](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/token.png) 
 
 ## C: Manual for administrators
 ### 1 Manage User
 
 User accounts are used to assign permissions and track actions like the creation of a dataset. Accounts can be linked to the party module and the real user name is shown instead of the account name. 
 
-![users](./Images/users.png)
+![users](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/users.png)
 
 #### 1.1. Create a user
 
 In addition to the self-registration procedure, the administrator can also create accounts. This feature is available here: *Settings > Manage Users > Create User*. The system supports you with validation on all entered information.
 
-![create_user](./Images/create_user.png)
+![create_user](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/create_user.png)
 
 #### 1.2. Edit or Delete a user
 
@@ -75,19 +75,19 @@ Under *Settings > Manage Users* it is possible to view, modify, and delete user 
 | Group | show the membership in a group <br/> status can be changed by (un)selecting the corresponding checkbox 
 | Delete | delete a user account (exception: user accounts already used)
 
-![edit_user](./Images/edit_user.png)
+![edit_user](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/edit_user.png)
 
 ## 2 Manage groups
 
 Groups combine a set of permissions for its members. Users can be assigned to different groups.
 
-![groups](./Images/groups.png) 
+![groups](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/groups.png) 
 
 #### 2.1. Create a group
 
 This feature is available under *Settings > Manage Groups > Create Group*. A new group can be defined.
 
-![create_group](./Images/create_group.png) 
+![create_group](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/create_group.png) 
 
 #### 2.2. Edit or Delete a group
 
@@ -99,7 +99,7 @@ Under *Settings > Mange Groups* it is possible to view and modify group informat
 | Group | members of a group can be (un)selected
 | Delete | delete a group (exception: Groups already used)
 
-![edit_group](./Images/edit_group.png) 
+![edit_group](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/edit_group.png) 
 
 ### 3 Permission
 
@@ -113,7 +113,7 @@ Selecting a checkbox in the navigation tree (e.g., *Search*) will make that feat
 
 Clicking on a feature name opens a table on the right side. This table contains all subjects (users and groups) and their feature permission status. You may grant or deny permissions for individual users or groups using the radio buttons. If permission is not explicitly set (*none*), it can be inherited from up-level features. Inherited permissions are shown in the first column as *effective* permissions.
 
-![features](./Images/features.png) 
+![features](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/features.png) 
 
 #### 3.2 Entity Permission
 
@@ -123,7 +123,7 @@ By selecting a dataset (by clicking on the row of the dataset), a new table disp
 
 Selecting the checkbox in the first column (*IsPublic*) gives public access to that dataset without any authentication.
 
-![datasets](./Images/Help_img10.png) 
+![datasets](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/Help_img10.png) 
 
 In general, BEXIS2 distinguishes different data permission types:
 
@@ -138,7 +138,7 @@ Display the list of datasets under *Settings > Manage Datasets*. In this list, y
 
 There are two ways to delete a dataset (1) *delete* and (2) *purge*. 
 
-![maintenance](./Images/Help_img11.png) 
+![maintenance](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/Help_img11.png) 
 
 There are two ways to delete a dataset:
 

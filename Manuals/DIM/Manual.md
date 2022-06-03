@@ -26,7 +26,7 @@ There are different ways to extract, publish or export data from the system. One
 ### 1 Metadata Export
 "Export Metadata" (*Settings > Export Metadata*) provides a tool to export metadata to a standard compliant XML file. For every metadata structure in the system, there is one tab in the tab strip. The data grid in each tab shows all datasets belonging to the selected metadata structure. Select one or more checkboxes for datasets you would like to export. Clicking on the Export button creates the metadata XML files and provides in-line download links.
 
-![img1](./Images/help_img1.png)
+![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/help_img1.png)
 
 ### 2 Publishing a Dataset 
 Datasets can be published based on the current version of a dataset if the metadata is valid. Currently, there are two brokers and three data repositories available.
@@ -49,7 +49,7 @@ All available data centers are listed in a dropdown. After selecting a data cent
 Possible failures:
 -  The system is not able to convert the data. Please contact your system administrator. 
 
-![img3](./Images/publish.png)
+![img3](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/publish.png)
 
 
 ### 2.2 GFBIO
@@ -90,7 +90,7 @@ Mapping a metadata structure hast two main advantages:
 
     In the metadata form, according to the mapping, appropriate results are suggested. If a user encapsulates a person in the metadata form, all matching persons are made available for selection. This simplifies the input of metadata. The following image shows autocomplete for the fild of project title.
 
-![img1](./Images/mapping_tool2.png)
+![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/mapping_tool2.png)
 
 
 #### 1.1 Mapping Overview
@@ -99,7 +99,7 @@ The "Mapping tool" is accessible through the *Settings -> Manage Metadata Struct
 
 The page of Metadata Structure Mapping is divided into 3 sections. The source is displayed on the left and the target on the right side. All created mappings are displayed in the middle.
 
-![img1](./Images/mapping.png)
+![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/mapping.png)
 
 Source and target on the left and right side include two parts: simple and complex blocks. First name, last name or full name of a person are examples of simple elements. A complex element could be a person. A search box is provided for each side (source or target) separately.
 
@@ -115,19 +115,19 @@ Here are some examples of a one to one, one to many and many to one mapping.
 
 This example creates a connection between two titles. All words are separated by a RegEx and then arranged differently via the mask.
 
-![img1](./Images/one_to_one.png)
+![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/one_to_one.png)
 
 **EXAMPLE: One to Many**
 
 This example creates a connection between a name on one side and the FirstName and the LastName on the other side. In the transformation rule, the first and last names are separated from each other by a RegEx and then positioned in the mask via the variable.
 
-![img1](./Images/one_to_many.png)
+![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/one_to_many.png)
 
 **EXAMPLE: Many to One**
 
 This example creates a connection between the FirstName and LastName by a name. Here is no RegEx needed, but the mask ordered from both variables.
 
-![img1](./Images/many_to_one.png)
+![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/many_to_one.png)
 
 #### 1.3 Create a mapping
 
@@ -141,7 +141,7 @@ This example creates a connection between the FirstName and LastName by a name. 
 
 #### 1.4 Key overview
 
-![key_overview](./Images/key_overview.PNG)
+![key_overview](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/key_overview.PNG)
 
 
 

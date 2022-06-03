@@ -29,7 +29,7 @@ The module was formerly called "Data Planning" since it is good practice to spec
 
 A Data Structure contains one or more Variables. Each Variable is defined by its Data Type, a Unit, and a unique name and optional identifier for missing values. So defining Data Types and Units would be the first step, if they are not available yet.
 
-![Main Menu](./Images/main_menu.png) 
+![Main Menu](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/main_menu.png) 
 
 The system encourages reuse of Variables, as well as Data Types and Units. For example, there should be only one Variable (i.e. Variable Template) for temperature values with a Data type of "float" and measured in degree Celsius (i.e. unit). All datasets containing such temperature measurements should use this Variable Template in their data structure. The advantage of such reuse is not only to avoid redundancy (e.g. different names for the same thing) but is foremost to enable the integration of identical variables across different datasets for large synthesis tasks later on.
 
@@ -45,7 +45,7 @@ It is possible to create Data Structures for Tabular (structured) data such as E
 
 Click on Create Data Structure from *Plan > Manage Data Structures*, and then select the Tabular or File option. Fill the fields and click on the Save button. A name for a data structure is required.
 
-![Create Datastructure](./Images/create_data_structure.png) 
+![Create Datastructure](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_data_structure.png) 
 
 If a data structure is not already in use by a dataset, by clicking on the edit button you can edit it. In addition to editing the name and description, in the case of Tabular, you can edit also variables.
 
@@ -59,7 +59,7 @@ There is also possible to make a copy from a data structure by clicking on the c
 
 In the case of Tabular, a data structure usually contains variables. Variables are defined before as Variable Templates. If a data structure is in use, you are not able to add or remove variables.
 
-![Add Variables](./Images/add_variables.png) 
+![Add Variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/add_variables.png) 
 
 After adding variables, you can rearrange the order of variables by dragging and dropping them. You may also delete variables from the list.
 
@@ -67,13 +67,13 @@ After adding variables, you can rearrange the order of variables by dragging and
 
 You can define the requirement for each variable. *Optional* means that this variable can have empty entries. You can also define the used placeholder for missing values. Their might be one by default, but you can adjust it and add more.
 
-![Define variables](./Images/missing_values.png) 
+![Define variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/missing_values.png) 
 
 #### 1.3 Create a copy of a Data Structure
 
 You can create a copy of a data structure, either it is Tabular or File (formerly structured vs. unstructured), by clicking on the _Save as_ button. In that window, the Name is filled with the original one and you need to fill it with a new one.
 
-![Copy Data Structure](./Images/copy_data_structure.png) 
+![Copy Data Structure](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/copy_data_structure.png) 
 
 #### 1.4 Download an Excel template
 
@@ -83,7 +83,7 @@ As you open this template, you have to enable macros for it. Macros automate fre
 
 Normally, when you open a template file, you have a security warning, that says macros have been disabled. You can click on the Options button and enable this content.
 
-![Enable Macro](./Images/Help_img6.png) 
+![Enable Macro](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/Help_img6.png) 
 
 ### 2 Manage Data Type
 
@@ -91,11 +91,11 @@ With the Data Type Manager you are able to create, modify and delete Data Types.
 
 To create a Data Type, click on the Create Data Type button. Fill the fields, select a system type and click on the Save button. The Data Type is stored if all information are correct and it is not a duplicate.
 
-Use ![img8](./Images/edit_button.png) for edit and ![img9](./Images/delete_button.png) for delete a data type.
+Use ![img8](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) for edit and ![img9](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) for delete a data type.
 
 In a typical project scenario, the responsible data(base) manager would have created the most common Data Types and Units.
 
-![Create Data Type](./Images/create_data_type.png) 
+![Create Data Type](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_data_type.png) 
 
 ### 3 Manage Units
 
@@ -105,9 +105,9 @@ To create a Unit, click on the Create Unit button. Fill the fields, select a Mea
 
 For a Unit, you could define one or more data types associated with it. By clicking on the Save button, the Unit is stored if all information is correct and it is not a duplicate.
 
-Use ![img12](./Images/edit_button.png) for edit and ![img13](./Images/delete_button.png) for delete a Unit.
+Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) for edit and ![img13](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) for delete a Unit.
 
-![Create Unit](./Images/create_unit.png) 
+![Create Unit](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_unit.png) 
 
 ### 4 Manage Variable Templates
 
@@ -115,9 +115,9 @@ With the Variable Template Manager you are able to create, modify and delete Var
 
 To create a Variable Template, click on the Create Variable Template button. Fill the fields. Select an associated Unit and Data Type and click on the Save button. The Variable Template is stored if all information are correct and it is not a duplicate.
 
-Use ![Edit button](./Images/edit_button.png) for edit and ![Delete Button](./Images/delete_button.png) for delete a Variable Template.
+Use ![Edit button](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) for edit and ![Delete Button](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) for delete a Variable Template.
 
-![Create Variable templates](./Images/create_variable.png) 
+![Create Variable templates](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_variable.png) 
 
 It is possible to put constraints on Variable Templates, to add constraints click on the link Constrains. You can add a Range, a Pattern and a Domain Constraint to each Variable Template.
 

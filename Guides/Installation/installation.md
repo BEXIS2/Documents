@@ -19,7 +19,7 @@
   - [2. Preparation <a name="preparation"></a>](#2-preparation-)
     - [2.1 BEXIS2 Package <a name="preparation_bexis2package"></a>](#21-bexis2-package-)
     - [2.2. PostgreSQL <a name="preparation_postgresql"></a>](#22-postgresql-)
-    - [2.3. IIS  <a name="preparation_iis"></a>](#23-iis-)
+    - [2.3. IIS  <a name="preparation_iis"></a>](#23-iis--)
       - [2.3.1. Activate IIS7](#231-activate-iis7)
     - [2.3.2. Register .Net Framework 4.0 in IIS](#232-register-net-framework-40-in-iis)
   - [3. Deploy BEXIS 2 Web Application](#3-deploy-bexis-2-web-application)
@@ -89,7 +89,7 @@ Because we are using PostgreSQL 10 by far the most, we recommend it to you as we
 -	First download the application package from: [BEXIS 2.14.2](https://github.com/BEXIS2/Core/releases/download/2.14.2/BPP2142-Full.zip) 
 -	Unzip BPP2142-Full.zip. 
 
-![Bexis2 Folder Srtucture](./Images/bexis2_folder_structure.png) 
+![Bexis2 Folder Srtucture](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/bexis2_folder_structure.PNG) 
 
 ### 2.2. PostgreSQL <a name="preparation_postgresql"></a>
 BEXIS 2 needs database management system to be available 
@@ -110,9 +110,9 @@ When the installation is finished, run PgAdmin and add if not exist a connection
 - right click on **Server**
 - create Server 
 
-![Bexis2CreateServer1](./Images/pgadmin_create_server0.PNG) 
+![Bexis2CreateServer1](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/pgadmin_create_server0.PNG) 
  
-![Bexis2CreateServer2](./Images/pgadmin_create_server.PNG) 
+![Bexis2CreateServer2](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/pgadmin_create_server.PNG) 
 
 
 ### 2.3. IIS  <a name="preparation_iis"></a>
@@ -161,7 +161,7 @@ Perhaps some of the following configuration settings are already in place. But p
 -	Confirm your selections by pressing the ok button
 -	Stop your website (Click it and choose “stop” on the right side)
 
-![IIS_AddWebsite](./Images/iis_addwebsite.PNG)  
+![IIS_AddWebsite](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/iis_addwebsite.PNG)  
 
 ### 3.1.2.	Configure IIS
 - Configure application pool: 
@@ -177,18 +177,18 @@ Open pgAdmin. Double click on the **PostgreSQL…**. A popup window will open wh
 
 Then in the Object browser section, Right click on “Databases” node and create a new database. Enter *BEXIS* as a database name.
 
-![Create Database](./Images/createdatabase.png)  
+![Create Database](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/createdatabase.png)  
 
 
 ### 3.1.4.	Configure postgres
 BEXIS2 works with a DateTime format **mdy**. So Postgres need to setup with the same format.
 -	Open postgres config file
 
-![postgres config Database](./Images/postgres_config.PNG)  
+![postgres config Database](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/postgres_config.PNG)  
 
 -	Search for datestyle
 
-![search in config ](./Images/search_in_config.PNG)  
+![search in config ](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/search_in_config.PNG)  
 
 
 -	Change it to “mdy”
