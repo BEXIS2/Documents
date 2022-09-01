@@ -20,7 +20,7 @@ General Application features are available in the entire application and across 
 | API to read and write data ([#250](https://github.com/BEXIS2/Core/issues/250)) and metadata ([#262](https://github.com/BEXIS2/Core/issues/262)) and a new API for Datasets [#260](https://github.com/BEXIS2/Core/issues/260) and Attachments [#261](https://github.com/BEXIS2/Core/issues/261). (version 2.13)
 |Admin view to manage requests; Withdraw requests; Changed: Email notification (e.g. send also CC to Sysadmin); ([#532](https://github.com/BEXIS2/Core/issues/532)), ([#582](https://github.com/BEXIS2/Core/issues/582))) (version 2.14)
 
-
+<br>
 
 |Known Issues| 
 |:--|
@@ -49,14 +49,14 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 | Dataset view: Allow to hide tabs via settings (hide and hide on missing permission) ([#455](https://github.com/BEXIS2/Core/issues/455))
 | Versioning: visibility and accessibility on public and internal datasets([#853](https://github.com/BEXIS2/Core/issues/853)) (_beta_) (2.14.6)
 
-
+<br>
 |Known Issues|
 |:--|
 
 ## Data Collection Module
 >The purpose of the data collection module is to allow users to submit data alongside with metadata. The module processes the data in accordance with its data/metadata structure rules to find any inconsistencies and communicates with the user to overcome the issues. The module may also notify or trigger other internal services such as the search indexing engine to make the dataset ready for discovery. Based on the settings of the associated research context/ plan, datasets get versioned.
 
-|Existing Features
+|Existing Features | 
 |:--|
 |Uploading an Excel file (version 2.1.0)
 |Uploading a delimited file (CSV, TSV), (version 2.2.0)
@@ -77,7 +77,7 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 | Allow deleting unstructured primary data ([#381](https://github.com/BEXIS2/Core/issues/381)) (version 2.13)
 | Allow to link datasets or other entities (e.g. publications) via metadata entry or external link ([#193](https://github.com/BEXIS2/Core/issues/193)). Entity white list ([#374](https://github.com/BEXIS2/Core/issues/374)) to exclude entities + Description for link types ([#372](https://github.com/BEXIS2/Core/issues/372)) (version 2.13)
 | Asynchronous data upload  ([#510](https://github.com/BEXIS2/Core/issues/510))
-
+<br>
 |Known Issues |
 |:--|
 | Empty rows within or at the end of Excel or CSV files lead to validation errors and should be removed (by the user) before adding (i.e. uploading) data to a dataset.
@@ -113,11 +113,11 @@ A conceptual model showing the connection and relationship between the different
 | appending rows to an existing tabular dataset available as an alternative path to the “update” approach.
 | Uploading is now possible with XLSX, CSV, TSV files (previously XLSM and TXT only)
 | Allow the definition of missing values ([#35](https://github.com/BEXIS2/Core/issues/35)) (version 2.13)
-
+<br>
 |Changed/ Enhanced Features|
 |:--|
 | NA
-
+<br>
 |Known Issues|
 |:--|
 - If macros are disabled in Excel, the downloaded Excel template is not being validated in Excel. This also leads to the issue that only the first row is being imported when submitting a dataset to BEXIS using such a template.
@@ -125,7 +125,7 @@ A conceptual model showing the connection and relationship between the different
 ## Data Dissemination Module
 > The main purpose of this module is to provide users with access to primary data and metadata managed by the system. In the future this module shall also provide support for publishing, orchestrating and harvesting data of the system by external resources.
 
-|Existing Features
+|Existing Features|
 |:--|
 |Primary data download as Microsoft Excel file (version 2.2.0)
 |Primary data download as comma or tab separated file (CSV) (version 2.4.0)
@@ -137,7 +137,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 |In the Primary data view filtering, sorting, and selecting is no available again allowing users to download custom subsets of a dataset (i.e.selected rows/columns).
 | Allow to map system data (e.g. version, last modification date) in metadata form (automatically filled; not editable for user) ([#192](https://github.com/BEXIS2/Core/issues/192)) (version 2.13)
 | Send and manage DOI requests to DataCite ([#888](https://github.com/BEXIS2/Core/issues/888))([#905](https://github.com/BEXIS2/Core/issues/905))(_beta_)(2.14.6)
-
+<br>
 |Known Issues|
 |:--|
 | Open a downloaded Excel file in Libre Office does not display values correctly
@@ -145,7 +145,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 ## System Administration Module (former name: Security Module)
 > The System Administration Module (SAM) provides functions for dataset maintenance, system configuration and authentication and authorization management. It is typically only accessible to system administrators or data managers.
 
-|Existing Features
+|Existing Features | 
 |:--|
 |User self-registration (version 2.1.0)
 |Users and roles management for an administrator (version 2.1.0)
@@ -180,6 +180,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 |  Allow email address in addition to account name for login ([#402](https://github.com/BEXIS2/Core/issues/402)) (version 2.13)
 | Integration of Former Member Module ([#897](https://github.com/BEXIS2/Core/issues/897)) (_beta_) (2.14.6)
 
+<br>
 |Known Issues|
 |:--|
 
@@ -192,7 +193,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 | Import an XML file at instantiation time containing party types and relation types (version 2.11.0)
 | Create/Edit/delete instances of parties and relations through the UI (version 2.11.0)
 Dataset owner concept implemented . Issue #29, issue #40
-
+<br>
 |Known Issues|
 |:--|
 
@@ -204,6 +205,6 @@ Dataset owner concept implemented . Issue #29, issue #40
 |:--|
 | Category selector, time selectors and time slider (version 2.12.0)
 | Histograms to visualize system activities and created/deleted datasets over time (version 2.12.0)
-
+<br>
 |Known Issues|
 |:--|
