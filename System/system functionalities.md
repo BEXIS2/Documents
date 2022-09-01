@@ -120,11 +120,12 @@ A conceptual model showing the connection and relationship between the different
 |Changed/ Enhanced Features|
 |:--|
 | NA |
+
 <br>
 
 |Known Issues|
 |:--|
-- If macros are disabled in Excel, the downloaded Excel template is not being validated in Excel. This also leads to the issue that only the first row is being imported when submitting a dataset to BEXIS using such a template.
+| If macros are disabled in Excel, the downloaded Excel template is not being validated in Excel. This also leads to the issue that only the first row is being imported when submitting a dataset to BEXIS using such a template. |
 
 ## Data Dissemination Module
 > The main purpose of this module is to provide users with access to primary data and metadata managed by the system. In the future this module shall also provide support for publishing, orchestrating and harvesting data of the system by external resources.
@@ -141,11 +142,12 @@ extended Zip download available incl. separate files for metadata, primary data,
 |In the Primary data view filtering, sorting, and selecting is no available again allowing users to download custom subsets of a dataset (i.e.selected rows/columns).
 | Allow to map system data (e.g. version, last modification date) in metadata form (automatically filled; not editable for user) ([#192](https://github.com/BEXIS2/Core/issues/192)) (version 2.13)
 | Send and manage DOI requests to DataCite ([#888](https://github.com/BEXIS2/Core/issues/888))([#905](https://github.com/BEXIS2/Core/issues/905))(_beta_)(2.14.6)
+
 <br>
 
 |Known Issues|
 |:--|
-| Open a downloaded Excel file in Libre Office does not display values correctly
+| Open a downloaded Excel file in Libre Office does not display values correctly |
 
 ## System Administration Module (former name: Security Module)
 > The System Administration Module (SAM) provides functions for dataset maintenance, system configuration and authentication and authorization management. It is typically only accessible to system administrators or data managers.
@@ -186,6 +188,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 | Integration of Former Member Module ([#897](https://github.com/BEXIS2/Core/issues/897)) (_beta_) (2.14.6)
 
 <br>
+
 |Known Issues|
 |:--|
 ||
@@ -199,6 +202,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 | Import an XML file at instantiation time containing party types and relation types (version 2.11.0)
 | Create/Edit/delete instances of parties and relations through the UI (version 2.11.0)
 Dataset owner concept implemented . Issue #29, issue #40
+
 <br>
 
 |Known Issues|
@@ -211,8 +215,9 @@ Dataset owner concept implemented . Issue #29, issue #40
  
 |Existing Features |
 |:--|
-| Category selector, time selectors and time slider (version 2.12.0)
-| Histograms to visualize system activities and created/deleted datasets over time (version 2.12.0)
+| Category selector, time selectors and time slider (version 2.12.0)|
+| Histograms to visualize system activities and created/deleted datasets over time (version 2.12.0)|
+
 <br>
 
 |Known Issues|
