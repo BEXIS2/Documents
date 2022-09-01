@@ -7,7 +7,7 @@
 General Application features are available in the entire application and across all modules.
 
 | Existing Features |
-|--|
+|:--|
 | Online Help for each module available within the application (version 2.7.0)
 | Upon registration users need to agree to terms and conditions (placeholder) (version 2.9.0)
 | Notification framework by email (version 2.11.0)
@@ -22,16 +22,16 @@ General Application features are available in the entire application and across 
 
 
 
-|Known Issues
-|--|
-|Some functions of the application do not work properly in Internet Explorer (e.g. download data structure). We recommend using Google Chrome or Mozilla Firefox.
+|Known Issues| 
+|:--|
+|Some functions of the application do not work properly in Internet Explorer (e.g. download data structure). We recommend using Google Chrome or Mozilla Firefox.|
 
 ## Data Discovery Module
 
 >The main purpose of this module is to enable users to search for data available within the system. The module executes user defined queries against the metadata and primary data and provides advanced features such as facets, keywords, categories, filters, grouping, and sorting. Depending on individual user permissions the system provides access to full metadata records, the underlying data structure and the primary data.
 
 |Existing Features|
-|--|
+|:--|
 |Discover data using metadata dimensions (aspects, facets) and attributes (version 2.0.0)
 |Configure search module through a user interface (version 2.1.0)
 |Primary data search (version 2.4.0)
@@ -50,14 +50,14 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 | Versioning: visibility and accessibility on public and internal datasets([#853](https://github.com/BEXIS2/Core/issues/853)) (_beta_) (2.14.6)
 
 
-|Known Issues
-|--|
+|Known Issues|
+|:--|
 
 ## Data Collection Module
 >The purpose of the data collection module is to allow users to submit data alongside with metadata. The module processes the data in accordance with its data/metadata structure rules to find any inconsistencies and communicates with the user to overcome the issues. The module may also notify or trigger other internal services such as the search indexing engine to make the dataset ready for discovery. Based on the settings of the associated research context/ plan, datasets get versioned.
 
 |Existing Features
-|--|
+|:--|
 |Uploading an Excel file (version 2.1.0)
 |Uploading a delimited file (CSV, TSV), (version 2.2.0)
 |Adding data to an existing dataset (version 2.2.0)
@@ -78,8 +78,8 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 | Allow to link datasets or other entities (e.g. publications) via metadata entry or external link ([#193](https://github.com/BEXIS2/Core/issues/193)). Entity white list ([#374](https://github.com/BEXIS2/Core/issues/374)) to exclude entities + Description for link types ([#372](https://github.com/BEXIS2/Core/issues/372)) (version 2.13)
 | Asynchronous data upload  ([#510](https://github.com/BEXIS2/Core/issues/510))
 
-|Known Issues
-|--|
+|Known Issues |
+|:--|
 | Empty rows within or at the end of Excel or CSV files lead to validation errors and should be removed (by the user) before adding (i.e. uploading) data to a dataset.
 | Boolean Values in Excel, should be true or false, 0 1, TRUE FALSE. 
 | Excel Files, generated from libre office, currently not supported
@@ -91,8 +91,8 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 A conceptual model showing the connection and relationship between the different terms and entities is available at: http://fusion.cs.uni-jena.de/bppCM/index.htm
 
 
-|Existing Features
-|--|
+|Existing Features|
+|:--|
 | Data structure manager (version 2.1.0)
 | Data attribute manager (version 2.1.0)
 | Data type manager (version 2.1.0)
@@ -114,19 +114,19 @@ A conceptual model showing the connection and relationship between the different
 | Uploading is now possible with XLSX, CSV, TSV files (previously XLSM and TXT only)
 | Allow the definition of missing values ([#35](https://github.com/BEXIS2/Core/issues/35)) (version 2.13)
 
-|Changed/ Enhanced Features
-|--|
+|Changed/ Enhanced Features|
+|:--|
 | NA
 
-|Known Issues
-|--|
+|Known Issues|
+|:--|
 - If macros are disabled in Excel, the downloaded Excel template is not being validated in Excel. This also leads to the issue that only the first row is being imported when submitting a dataset to BEXIS using such a template.
 
 ## Data Dissemination Module
 > The main purpose of this module is to provide users with access to primary data and metadata managed by the system. In the future this module shall also provide support for publishing, orchestrating and harvesting data of the system by external resources.
 
 |Existing Features
-|--|
+|:--|
 |Primary data download as Microsoft Excel file (version 2.2.0)
 |Primary data download as comma or tab separated file (CSV) (version 2.4.0)
 |Download of unstructured data (single file, multiple files in ZIP) (version 2.4.0)
@@ -138,15 +138,15 @@ extended Zip download available incl. separate files for metadata, primary data,
 | Allow to map system data (e.g. version, last modification date) in metadata form (automatically filled; not editable for user) ([#192](https://github.com/BEXIS2/Core/issues/192)) (version 2.13)
 | Send and manage DOI requests to DataCite ([#888](https://github.com/BEXIS2/Core/issues/888))([#905](https://github.com/BEXIS2/Core/issues/905))(_beta_)(2.14.6)
 
-|Known Issues
-|--|
+|Known Issues|
+|:--|
 | Open a downloaded Excel file in Libre Office does not display values correctly
 
 ## System Administration Module (former name: Security Module)
 > The System Administration Module (SAM) provides functions for dataset maintenance, system configuration and authentication and authorization management. It is typically only accessible to system administrators or data managers.
 
 |Existing Features
-|--|
+|:--|
 |User self-registration (version 2.1.0)
 |Users and roles management for an administrator (version 2.1.0)
 |Feature security (version 2.2.0)
@@ -180,30 +180,30 @@ extended Zip download available incl. separate files for metadata, primary data,
 |  Allow email address in addition to account name for login ([#402](https://github.com/BEXIS2/Core/issues/402)) (version 2.13)
 | Integration of Former Member Module ([#897](https://github.com/BEXIS2/Core/issues/897)) (_beta_) (2.14.6)
 
-|Known Issues
-|--|
+|Known Issues|
+|:--|
 
 ## Business Administration Module (Party Package) 
  
 > This module is to manage (Create, Update, and Delete) Information about organizations, projects, people, etc. and their relationships in central place and make it available for re-use throughout the system. 
  
 |Existing Features 
-|--|
+|:--|
 | Import an XML file at instantiation time containing party types and relation types (version 2.11.0)
 | Create/Edit/delete instances of parties and relations through the UI (version 2.11.0)
 Dataset owner concept implemented . Issue #29, issue #40
 
-Known Issues
-|--|
+|Known Issues|
+|:--|
 
 ## Visualization Module 
  
 > This module provides visualization for the BEXIS2. Histograms represent data such as system activity or creating a dataset over time to make data more comprehensible for a user/administrator.
  
-|Existing Features 
-|--|
+|Existing Features |
+|:--|
 | Category selector, time selectors and time slider (version 2.12.0)
 | Histograms to visualize system activities and created/deleted datasets over time (version 2.12.0)
 
-Known Issues
-|--|
+|Known Issues|
+|:--|
