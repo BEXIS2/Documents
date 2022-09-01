@@ -80,6 +80,7 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 | Allow to link datasets or other entities (e.g. publications) via metadata entry or external link ([#193](https://github.com/BEXIS2/Core/issues/193)). Entity white list ([#374](https://github.com/BEXIS2/Core/issues/374)) to exclude entities + Description for link types ([#372](https://github.com/BEXIS2/Core/issues/372)) (version 2.13)
 | Asynchronous data upload  ([#510](https://github.com/BEXIS2/Core/issues/510))
 <br>
+
 |Known Issues |
 |:--|
 | Empty rows within or at the end of Excel or CSV files lead to validation errors and should be removed (by the user) before adding (i.e. uploading) data to a dataset.
@@ -91,7 +92,6 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 > The purpose of the data planning module is to manage (create, edit, delete) data and metadata structures, data attributes (variables), units, data types and their relations. The aim is to foster reuse and data integration while retaining flexibility.
 
 A conceptual model showing the connection and relationship between the different terms and entities is available at: http://fusion.cs.uni-jena.de/bppCM/index.htm
-
 
 |Existing Features|
 |:--|
