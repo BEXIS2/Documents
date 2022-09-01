@@ -50,8 +50,10 @@ Metadata view was not available for non-authenticated users (public datasets)  (
 | Versioning: visibility and accessibility on public and internal datasets([#853](https://github.com/BEXIS2/Core/issues/853)) (_beta_) (2.14.6)
 
 <br>
+
 |Known Issues|
 |:--|
+||
 
 ## Data Collection Module
 >The purpose of the data collection module is to allow users to submit data alongside with metadata. The module processes the data in accordance with its data/metadata structure rules to find any inconsistencies and communicates with the user to overcome the issues. The module may also notify or trigger other internal services such as the search indexing engine to make the dataset ready for discovery. Based on the settings of the associated research context/ plan, datasets get versioned.
@@ -114,10 +116,12 @@ A conceptual model showing the connection and relationship between the different
 | Uploading is now possible with XLSX, CSV, TSV files (previously XLSM and TXT only)
 | Allow the definition of missing values ([#35](https://github.com/BEXIS2/Core/issues/35)) (version 2.13)
 <br>
+
 |Changed/ Enhanced Features|
 |:--|
-| NA
+| NA |
 <br>
+
 |Known Issues|
 |:--|
 - If macros are disabled in Excel, the downloaded Excel template is not being validated in Excel. This also leads to the issue that only the first row is being imported when submitting a dataset to BEXIS using such a template.
@@ -138,6 +142,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 | Allow to map system data (e.g. version, last modification date) in metadata form (automatically filled; not editable for user) ([#192](https://github.com/BEXIS2/Core/issues/192)) (version 2.13)
 | Send and manage DOI requests to DataCite ([#888](https://github.com/BEXIS2/Core/issues/888))([#905](https://github.com/BEXIS2/Core/issues/905))(_beta_)(2.14.6)
 <br>
+
 |Known Issues|
 |:--|
 | Open a downloaded Excel file in Libre Office does not display values correctly
@@ -183,6 +188,7 @@ extended Zip download available incl. separate files for metadata, primary data,
 <br>
 |Known Issues|
 |:--|
+||
 
 ## Business Administration Module (Party Package) 
  
@@ -194,8 +200,10 @@ extended Zip download available incl. separate files for metadata, primary data,
 | Create/Edit/delete instances of parties and relations through the UI (version 2.11.0)
 Dataset owner concept implemented . Issue #29, issue #40
 <br>
+
 |Known Issues|
 |:--|
+||
 
 ## Visualization Module 
  
@@ -206,5 +214,7 @@ Dataset owner concept implemented . Issue #29, issue #40
 | Category selector, time selectors and time slider (version 2.12.0)
 | Histograms to visualize system activities and created/deleted datasets over time (version 2.12.0)
 <br>
+
 |Known Issues|
 |:--|
+||
