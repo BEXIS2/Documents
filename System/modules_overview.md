@@ -1,6 +1,9 @@
 # Modules Overview
 
-On this page, modules are listed which are available in the community for all BEXIS2 instances.
+This page contains modules which have been developed by the BEXIS2 community. Currently, they are provided "as is" without any warranty or liability. Please use at you own risk.
+
+Most of the modules are constantly under development and are not (yet) provided as releases that match the official BEXIS2 releases. We hope to get there in the future. For the time being, if you are interested in using a module please contact the individual provider and to learn about the current status and how to use the module.
+
 
 | Name | Description | Contributor | Status | Contact |
 | :-- | :-- | :-- | :-- | :-- |
@@ -9,7 +12,7 @@ On this page, modules are listed which are available in the community for all BE
 | Data Summarization (DSM) |   | [AquaDiva](https://www.aquadiva.uni-jena.de/) | Intern | [Data Management Team](https://www.aquadiva.uni-jena.de/projects/d01) |
 | Event Management (EMM) | Simple to customize tool to manage participants registration for events (e.g. workshops, meetings, ...). Based on a fully flexible registration form. No user account needed for registration. Update your registration before the deadline.  | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) | [Public](https://github.com/bexis/Module_EventManagement)| [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
 | File Management (FMT) |   | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) | [Public](https://github.com/bexis/Module_FileManagement) | [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
-| Former Member Management (ALM) |   | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) |  Integrated in BEXIS2 Core (SAM) | [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
+| Former Member Management (ALM) |   | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) |  Integrated in BEXIS2 Core (SAM) | |
 | Land-use Intensity (LUI) |  A tool to calculate the index of land-use intensity (LUI) according to Blüthgen et al. (2012), based on information from the land owners on mowing, grazing and fertilization (Vogt et al. 2019) and your selections via a user-friendly interface. (https://doi.org/10.5281/zenodo.3865578 https://doi.org/10.1016/j.baae.2012.04.001, https://doi.org/10.3897/BDJ.7.e36387) | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) | [Public](https://github.com/bexis/Module_LUI) | [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
 | Multimedia Management (MMM) |   | [iDiv](https://www.idiv.de/en) | Integrated in BEXIS2 Core | |
 | Omic Archives (OA) |   | [AquaDiva](https://www.aquadiva.uni-jena.de/) | Intern | [Data Management Team](https://www.aquadiva.uni-jena.de/projects/d01) |
