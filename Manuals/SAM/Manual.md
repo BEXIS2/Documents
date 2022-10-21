@@ -112,12 +112,19 @@ Former member management gives you the possibility to change rights in BEXIS for
 
 This feature is available under *Settings > Manage Former Members. 
 
-Former member management uses end date of a user party to find e.g. users who have not been project members for a certain period of time. By using the end date filter, time-related queries can be made to users. To set a user as former member the checkbox must be set. To set a user as former member the checkbox in the is former member column must be set. The system admin and the user will then receive a confirmation email.
+Former member management uses end date of a user party to find e.g. users who have not been project members for a certain period of time. By using the end date filter, time-related queries can be made to users. To set a user as former member the checkbox in the *is former member column* must be set. The system admin and the user will then receive a confirmation email. With the activation of the former member status, all feature and role rights are removed from the user. And the user is added to the former member role.
 
-To customize the confirmation email the text blocks of the email can be changed in the SAM Settings file
+![formerMembers](https://github.com/BEXIS2/Documents/blob/master/Manuals/SAM/Images/set_former_member.png)
+
+
+To customize the confirmation email the text blocks of the email can be changed in the SAM settings file. The file is located at "...\Workspace\Modules\SAM". 
+
+![formerMembersSettings](https://github.com/BEXIS2/Documents/blob/master/Manuals/SAM/Images/sam_settings.png)
 
 
 #### 3.2 Revoke user as former member
+
+To undo the former member status the checkbox must be deactivated. This means that the former member role will be removed from the user and his previous rights will be activated again.
 
 ### 4 Permission
 
