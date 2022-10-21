@@ -17,13 +17,13 @@
 	- [2 Manage groups](#2-manage-groups)
 		- [2.1. Create a group](#21-create-a-group)
 		- [2.2. Edit or Delelte a group](#22-edit-or-delete-a-group)
-	- [3 Manage former members](#2-manage-former-members)
-		- [3.1. Set user to former member](#21-set-user-to-former-member)
-		- [3.2. Revoke user as former member](#21-Revoke-user-as-former-member)
-	- [4 Permission](#3-permission)
-		- [3.1. Feature permission](#31-feature-permission)
-		- [3.2. Entity permission](#32-entity-permission)
-	- [5 Manage datasets](#4-manage-datasets)
+	- [3 Manage former members](#3-manage-former-members)
+		- [3.1. Set user to former member](#31-set-user-to-former-member)
+		- [3.2. Revoke user as former member](#32-Revoke-user-as-former-member)
+	- [4 Permission](#4-permission)
+		- [3.1. Feature permission](#41-feature-permission)
+		- [3.2. Entity permission](#42-entity-permission)
+	- [5 Manage datasets](#5-manage-datasets)
 	
 
 <!-- /TOC -->
@@ -104,9 +104,16 @@ Under *Settings > Mange Groups* it is possible to view and modify group informat
 
 ![edit_group](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/edit_group.png) 
 
-### 3 Former members
+### 3 Manage Former members
+
+Former member management gives you the possibility to change rights in BEXIS for users who are no longer active in your project. The feature also allows you to undo the changes. The precondition for the use of this feature is a special role to which you then assign all the rights that former members should have.
+
+#### 3.1 Set user to former member
+
+This feature is available under *Settings > Manage Former Members. 
 
 
+#### 3.2 Revoke user as former member
 
 ### 4 Permission
 
