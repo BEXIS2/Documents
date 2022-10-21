@@ -17,10 +17,13 @@
 	- [2 Manage groups](#2-manage-groups)
 		- [2.1. Create a group](#21-create-a-group)
 		- [2.2. Edit or Delelte a group](#22-edit-or-delete-a-group)
-	- [3 Permission](#3-permission)
+	- [3 Manage former members](#2-manage-former-members)
+		- [3.1. Set user to former member](#21-set-user-to-former-member)
+		- [3.2. Revoke user as former member](#21-Revoke-user-as-former-member)
+	- [4 Permission](#3-permission)
 		- [3.1. Feature permission](#31-feature-permission)
 		- [3.2. Entity permission](#32-entity-permission)
-	- [4 Manage datasets](#4-manage-datasets)
+	- [5 Manage datasets](#4-manage-datasets)
 	
 
 <!-- /TOC -->
@@ -101,11 +104,15 @@ Under *Settings > Mange Groups* it is possible to view and modify group informat
 
 ![edit_group](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/edit_group.png) 
 
-### 3 Permission
+### 3 Former members
+
+
+
+### 4 Permission
 
 Permissions contain specific security regulations. The security system of BEXIS2 distinguishes between two types of permissions. The *feature permission* allows or prohibits access to a well-defined and delimited area of the application, so-called Features. The *data permission* provides the option to protect all types of datasets.
 
-#### 3.1 Feature permission
+#### 4.1 Feature permission
 
 Under *Settings > Manage Feature Permissions* you can customize features permissions. 
 
@@ -115,7 +122,7 @@ Clicking on a feature name opens a table on the right side. This table contains 
 
 ![features](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/features.png) 
 
-#### 3.2 Entity Permission
+#### 4.2 Entity Permission
 
 To manage access to entities (datasets and publications) go to *Settings > Manage Entity Permissions*.
 
@@ -132,7 +139,7 @@ In general, BEXIS2 distinguishes different data permission types:
 * Delete: allows to delete the whole dataset
 * Grant: allows to give permission to other users or groups
 
-### 4 Manage datasets
+### 5 Manage datasets
 
 Display the list of datasets under *Settings > Manage Datasets*. In this list, you can see the status of each dataset and do some useful actions to maintain datasets.
 
