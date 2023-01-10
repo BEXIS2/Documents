@@ -117,14 +117,14 @@ Former member management uses end date of a user party to find e.g. users who ha
 ![formerMembers](https://github.com/BEXIS2/Documents/blob/master/Manuals/SAM/Images/set_former_member.png)
 
 
-To customize the confirmation email the text blocks of the email can be changed in the SAM settings file. The file is located at "...\Workspace\Modules\SAM". 
+To customize the confirmation email the text blocks of the email can be changed in the SAM settings file. The file is located at "...\Workspace\Modules\SAM". If the subject remains empty, the default subject of BEXIS is used.
 
 ![formerMembersSettings](https://github.com/BEXIS2/Documents/blob/master/Manuals/SAM/Images/sam_settings.png)
 
 
 #### 3.2 Revoke user as former member
 
-To undo the former member status the checkbox must be deactivated. This means that the former member role will be removed from the user and his previous rights will be activated again.
+To undo the former member status the checkbox must be deactivated. This means that the former member role will be removed from the user and his previous rights will be activated again. A confirmation email will be sent when the change is made.
 
 ### 4 Permission
 
