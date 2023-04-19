@@ -2,20 +2,24 @@
 
 <!-- TOC -->
 
-- [A: Overview](#a-overview)
-
-- [B: Manual for users](#b-manual-for-users)
-	- [1 Metadata Export](#1-metadata-export)
-	- [2. Publishing a Dataset](#2-publishing-a-dataset)
-		- [2.1 Publish](#21-publish)
+- [Data Dissemination \& Mapping](#data-dissemination--mapping)
+	- [A: Overview](#a-overview)
+	- [B: Manual for users](#b-manual-for-users)
+		- [1 Metadata Export](#1-metadata-export)
+		- [2 Publishing a Dataset](#2-publishing-a-dataset)
+			- [2.1 Publish](#21-publish)
 		- [2.2 GFBIO](#22-gfbio)
-- [C: Manual for administrators](#c-manual-for-administrators)
-
-- [1 Mapping tool](#1-mapping-tool)
-	- [1.1 Mapping Overview](#11-mapping-overview)
-	- [1.2 Mapping Examples](#12-mapping-examples)
-	- [1.3 Create a mapping](#13-create-a-mapping)
-	- [1.4 Key overview](#14-key-overview)
+		- [2.3 GBIF - Global Biodiversity Information Facility](#23-gbif---global-biodiversity-information-facility)
+	- [C: Manual for administrators](#c-manual-for-administrators)
+		- [1 Mapping tool](#1-mapping-tool)
+			- [1.1 Mapping Overview](#11-mapping-overview)
+			- [1.2 Mapping Examples](#12-mapping-examples)
+			- [1.3 Create a mapping](#13-create-a-mapping)
+			- [1.4 Key overview](#14-key-overview)
+		- [2. Mapping Concepts](#2-mapping-concepts)
+		- [3. GBIF](#3-gbif)
+			- [3.1 Mapping Concept](#31-mapping-concept)
+			- [3.2 Darwin Core Terms mapping](#32-darwin-core-terms-mapping)
 
 <!-- /TOC -->
 
@@ -71,6 +75,18 @@ The data for the collections are stored in a zip file and includes:
 5.  Metadata - Metadata information’s about the dataset
 
 For the Pangea, the metadata and primary data are stored in a text file.
+
+### 2.3 GBIF - Global Biodiversity Information Facility
+
+> https://www.gbif.org/
+
+If you want to prepare your data for GBIF, you can convert your dataset into a Darwin Core Archive here.
+
+There are several requirements that must be met for the export to work. 
+As a user, you must make sure that your metadata is filled in and that the primary data is available.
+
+If this is not enough you have to make settings in the admin area.
+
 
 ## C: Manual for administrators
 
@@ -142,6 +158,80 @@ This example creates a connection between the FirstName and LastName by a name. 
 #### 1.4 Key overview
 
 ![key_overview](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/key_overview.PNG)
+
+### 2. Mapping Concepts
+
+>Besides the system mapping there are also other mapping possibilities which we call concepts. 
+Concepts are a list of mapping keys that are needed to provide features with the appropriate information.
+
+![gbif-conceptexample](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/gbif-conceptexample.PNG)
+
+- Additionally, the keys contain the information that must be mapped.
+- the required keys are marked with a red star
+- before the functions are enabled, all required mappings must exist. for this, a flag is displayed at the top showing how many mappings are still missing.
+- click on the key name for further information, in the best case an external url is provided
+
+### 3. GBIF
+
+>There are several requirements that must be met for the export to work. 
+
+
+**Dataset**
+- Completed metadata
+- primary data must be present.
+- datastructure must be structured
+
+**Setup**
+- concept mapping to gbif must be complete
+- structure mapping file to Darwin Core Terms for data structure must exist
+
+#### 3.1 Mapping Concept
+
+![gbif-conceptexample](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/gbif-conceptexample.PNG)
+
+| Term |	Status |
+|---|---|
+| Alternate identifier |	Required |
+| Title |	Required | 
+| Pub Date	| Required
+| Language |	Required
+| Abstract | 	Required
+| Keyword |	Optional
+| Intellectual Rights | Required
+| Creator | 	Required
+| Contact | 	Required
+| Metadata provider |	Required
+| Geographic coverage | Optional
+| Taxonomic coverage | Optional
+
+#### 3.2 Darwin Core Terms mapping
+
+- In the current version of BEXIS2, one file per data structure is used for mapping variables to darwin core archive terms.
+
+- This file must be stored in the data folder on the server.
+ e.g. **[DATAFOLDER]\DataStructures\2**
+
+The data structure must be either an Occurrence or a Sampling event.
+
+For each type there is an example file in the workspace in the Folder: **[WORKSPACE]\Modules\DIM\structures**
+
+![templates_dws_terms](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/templates_dws_terms.PNG)
+
+> In this templates the required terms are allready included but of cources there are more!
+
+**Sampling Event**
+> https://www.gbif.org/data-quality-requirements-occurrences
+![dw_sample_json](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/dw_sample_json.PNG)
+
+**Occurrence**
+> https://www.gbif.org/data-quality-requirements-sampling-events
+![dw_occurrence_json](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/dw_occurrence_json.PNG)
+
+Use one of the templates to assign the Darwin core terms to the variables, with the index pointing to the location of the variable in the structure.
+
+- The file must be adapted and extended if necessary.
+- Then rename the file to **dw_terms.json**.
+- Afterwards it must be stored in **[DATAFOLDER]\DataStructures\\{ID}\dw_terms.json**.
 
 
 
