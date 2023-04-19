@@ -221,11 +221,13 @@ For each type there is an example file in the workspace in the Folder: **[WORKSP
 
 **Sampling Event**
 > https://www.gbif.org/data-quality-requirements-occurrences
+
 ![dw_sample_json](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/dw_sample_json.PNG)
 
 **Occurrence**
 > https://www.gbif.org/data-quality-requirements-sampling-events
-![dw_occurrence_json](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/dw_occurrence_json.PNG)
+
+![dw_occurrence_json](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/dw_occurrence.PNG)
 
 Use one of the templates to assign the Darwin core terms to the variables, with the index pointing to the location of the variable in the structure.
 
