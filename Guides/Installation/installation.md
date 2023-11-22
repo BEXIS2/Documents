@@ -36,11 +36,9 @@
   
 
 ## 0. Requirements <a name="requirements"></a>
-Currently, BEXIS2 is limited to run on a Windows based operating system with support for IIS (Internet Information Service). At least Windows 7 is required. The following operting systems were tested and are supported:
-- Windows Server 2012R2
-- Windows Server 2016 Datacenter
-- Windows 7 Home
-- Windows 10 Education
+Currently, BEXIS2 is limited to run on a Windows based operating system with support for IIS (Internet Information Service). At least Windows 10 is required. The following operting systems were tested and are supported:
+- Windows Server 2016 - 2022
+- Windows 10/11
 
 Unfortunately, neither Linux nor MacOS are supported yet.
 
