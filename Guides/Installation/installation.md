@@ -69,13 +69,12 @@ Unfortunately, having simply the IIS installed and running is not enough. Probab
 - Select "Internet Information Service" and press "OK".
 > NOTE: You can also go to Microsoft DotNet and download the Runtime directly.
 
-### 1.4. Releated Database <a name="prerequisites_postgresql"></a>
+### 1.4. Database <a name="prerequisites_postgresql"></a>
 - PostgreSQL 9.x -> 13
 
-Because we are using PostgreSQL 13 by far the most, we recommend it to you as well. Therefore, this step and all others (that are related to the DBMS) will focus on PostgreSQL.
+Because we are using PostgreSQL 13 by far the most, we recommend it to you as well. 
 
 ## 2. Preparation <a name="preparation"></a>
-
 
 ### 2.1 BEXIS2 Package <a name="preparation_bexis2package"></a>
 -	First download the application package from: [BEXIS 2](https://github.com/BEXIS2/Core/releases) 
