@@ -85,7 +85,7 @@ BEXIS 2 needs database management system to be available
 on your server. BEXIS2 developer team tested the PostgreSQL and we recommend it. If it not available already please follow the installation instructions below. 
 From the following link http://www.enterprisedb.com/downloads/postgres-postgresql-downloads  select either the 32-bit or 64-bit version of PostgreSQL depending on your hardware and your installed operating system and install it. 
 
-> NOTE: The Postgres version 10 is recommended. 
+> NOTE: The Postgres version 13 is recommended. 
 
 The installation of PostgreSQL is easy. It is enough to run the Installer and follow the steps. During installation, when asked, please
 -	As user enter **postgres**
