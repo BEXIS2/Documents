@@ -1,8 +1,8 @@
 <!--
     Author: Sven Thiel, David Schoene
-    E-Mail: sven.thiel@uni-jena.de, david.schoene@uni-jena.de
-    Date: 2019/05/14
-    Version: 2.14.2
+    E-Mail: bexis Support <bexis-support@uni-jena.de>
+    Date: 2023/11/22
+    Version: 2.18.2
 -->
 
 # BEXIS2 Installation
@@ -70,24 +70,16 @@ Unfortunately, having simply the IIS installed and running is not enough. Probab
 > NOTE: You can also go to Microsoft DotNet and download the Runtime directly.
 
 ### 1.4. Releated Database <a name="prerequisites_postgresql"></a>
-BEXIS2 is able to work with several DMBS. At least we tested:
-- IBM DB2 9/10
-- PostgreSQL 9.x / 10
-- MS SQL Server
-- Oracle
+- PostgreSQL 9.x -> 13
 
-Because we are using PostgreSQL 10 by far the most, we recommend it to you as well. Therefore, this step and all others (that are related to the DBMS) will focus on PostgreSQL.
-
-> NOTE: If you are going to use PostgreSQL, please stick to version 10 or less. Otherwise, some features of BEXIS2 won't work properly. 
-
-
+Because we are using PostgreSQL 13 by far the most, we recommend it to you as well. Therefore, this step and all others (that are related to the DBMS) will focus on PostgreSQL.
 
 ## 2. Preparation <a name="preparation"></a>
 
 
 ### 2.1 BEXIS2 Package <a name="preparation_bexis2package"></a>
--	First download the application package from: [BEXIS 2.14.2](https://github.com/BEXIS2/Core/releases/download/2.14.2/BPP2142-Full.zip) 
--	Unzip BPP2142-Full.zip. 
+-	First download the application package from: [BEXIS 2](https://github.com/BEXIS2/Core/releases) 
+-	Unzip BEXIS2-v*.zip. 
 
 ![Bexis2 Folder Srtucture](https://raw.githubusercontent.com/BEXIS2/Documents/master/Guides/Installation/Images/bexis2_folder_structure.PNG) 
 
