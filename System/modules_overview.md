@@ -1,4 +1,4 @@
-# Modules Overview
+# Modules (full + client only) & Tool Overview
 
 This page contains modules which have been developed by the BEXIS2 community. Currently, they are provided "as is" without any warranty or liability. Please use at you own risk.
 
@@ -31,3 +31,4 @@ Most of the modules are constantly under development and are not (yet) provided 
 | Support for Special Data Types (SDT) |   | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) | Planned | [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
 | Synthesis Proposal Module (SPM) |   | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) | Planned | [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
 | User Feedback Management (UFM) |   | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) | Planned | [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
+| [Tool] Curation Support Tool | Curation support tool to compare metadata versions and check primary data quality | [Biodiversity Exploratories](https://www.biodiversity-exploratories.de/en/) |  [Public](https://github.com/bexis/compare.github.io)| [Data Management Team](https://www.biodiversity-exploratories.de/en/about-us/infrastructure/central-data-management/) |
