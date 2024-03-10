@@ -1,4 +1,4 @@
-# Modules (full + client only) & Tool Overview
+# Modules & Tools Overview
 
 This page contains modules that the BEXIS2 community has developed. They are provided "as is" without any warranty or liability. Please use at your own risk.
 
