@@ -33,9 +33,11 @@ The *Data Collection Module* provides tools to create new datasets consisting of
 
 To create a new dataset, use the “Create” button on the main menu on top.
 
-In the next step, the general type of your dataset needs to be selected. Check the description and allowed file types to choose the type that fits most. If you need clarification, contact your data curator/manager. Different metadata schemas or allowed file types are associated with each type and the (de)activation of specific features.
+In the next step, the general type of your dataset needs to be selected. Check the description and allowed file types to choose the type that fits most. If you need clarification, contact your data curator/manager. Different metadata schemas or allowed file types are associated with each type and the (de)activation of specific features. More information on can be found here: [Entity Templates](https://github.com/BEXIS2/Documents/blob/master/Docu/Entity%20Templates.pdf)
 
 ![Select Entity Type](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Select_Entity_Type.png) 
+
+
 
 After selecting a type, you will be asked for a few main metadata entries, e.g., the title of your dataset. You can improve it later, but please avoid dummy entries like “test” or “my data” here.
 
