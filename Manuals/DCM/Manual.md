@@ -107,7 +107,7 @@ After adding your data (drag or select your file(s)), specify the related data s
 
 Once a data structure is attached/created, it will be used for validation against the uploaded file(s). Expand the items to see more details. With every change (data or data structure), validation is repeated to show the new result (see example in Fig. ..).
 
-__Select an existing data structure__
+__Create a new data structure based on your uploaded file__
 
 Create a new data structure based on your uploaded file
 If no data structure exists for your data, this is the recommended way to create a new one.
@@ -119,6 +119,9 @@ At least select the rows with your variable name, and the first line of your dat
 Please note only the first ten rows are shown.
 
 Once all mandatory information is provided, the save button (floppy disc icon) will be enabled, and in the next step, the data structure can be completed.
+
+From BEXIS2 version 3.0 on some terms and concepts related to the data structure have been changed. The following document gives an overview of the most important terms and concepts:
+[Terms Variable Concept in BEXIS2 – From version 3.0](https://github.com/BEXIS2/Documents/blob/master/Docu/Terms%20Variable%20Concept.pdf)
 
 Data types are detected automatically (based on a subset). Please check and adjust if it does not fit. You will be also asked in case of date fields for the used display pattern.
 
