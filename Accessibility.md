@@ -9,7 +9,7 @@ sowie der Barrierefreien-Informationstechnik-Verordnung (BITV 2.0) zur Umsetzung
 
 Die Anforderungen der Barrierefreiheit ergeben sich aus §§ 3 Absätze 1 bis 4 und 4 der BITV 2.0, die auf der Grundlage von § 12d BGG erlassen wurde.
 
-Die Website ist mit den zuvor genannten Anforderungen derzeit nicht vollständig vereinbar. Die Website wird aktuell hinsichtlich der Barrierefreiheit geprüft. Wir bemühen uns, alle festgestellten Probleme der Zugänglichkeit zu beheben.
+DieSoftware ist mit den zuvor genannten Anforderungen derzeit nicht vollständig vereinbar. Die Software wird aktuell hinsichtlich der Barrierefreiheit geprüft. Wir bemühen uns, alle festgestellten Probleme der Zugänglichkeit zu beheben.
 
 ### Begründung
 
