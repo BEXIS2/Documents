@@ -9,11 +9,7 @@ sowie der Barrierefreien-Informationstechnik-Verordnung (BITV 2.0) zur Umsetzung
 
 Die Anforderungen der Barrierefreiheit ergeben sich aus §§ 3 Absätze 1 bis 4 und 4 der BITV 2.0, die auf der Grundlage von § 12d BGG erlassen wurde.
 
-DieSoftware ist mit den zuvor genannten Anforderungen derzeit nicht vollständig vereinbar. Die Software wird aktuell hinsichtlich der Barrierefreiheit geprüft. Wir bemühen uns, alle festgestellten Probleme der Zugänglichkeit zu beheben.
-
-### Begründung
-
-Die Software BEXIS2 ist mehr als 12 Jahre alt und wird ständig entsprechend den verfügbaren Ressourcen weiterentwickelt. Die Prüfung und die Behebung entsprechender Probleme in Bezug der Barrierefreiheit erfolgt im Rahmen der Weiterentwicklung nur bei neuen Funktionen und Änderungen, die im neuen Layout umgesetzt werden.
+Die Software ist mit den zuvor genannten Anforderungen derzeit nicht vollständig vereinbar. Die Software wird aktuell hinsichtlich der Barrierefreiheit geprüft. Wir bemühen uns, alle festgestellten Probleme der Zugänglichkeit zu beheben.
 
 ### Datum der Erstellung bzw. der letzten Aktualisierung der Erklärung
 
