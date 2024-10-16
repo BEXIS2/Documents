@@ -17,7 +17,7 @@ Diese Erklärung wurde am 10.09.2024 erstellt.
 
 ### Barrieren melden: Kontakt zu den Feedback Ansprechpartnern
 
-bexis-support[at]uni-jena.de
+bexis2-support[at]uni-jena.de
 
 ### Schlichtungsverfahren
 
