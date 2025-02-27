@@ -1,7 +1,19 @@
 # Configuration
 
 ## General
->__Application Name__ (_Settings -> Application Settings -> General_) (_default: BEXIS2_)
+>[!SETTING]
+>__Application Name__ (_default: BEXIS2_)
+>
+>(_Settings -> Application Settings -> General_)
+
+>[!BUTTON]
+>_Settings -> Application Settings -> General_
+
+>[!ROLE]
+>__Role:__ Administrator
+
+>[!DESCRIPTION]
+>__Landing Page__ (_Settings -> Application Settings -> General_) (_default: ddm, publisearch, index_)
 
 (Short) name of the BEXIS2 instance. The name is e.g., used in the breadcrumb or as prefix in emails sent via the system. Avoid special characters or to long names.
 
@@ -59,7 +71,10 @@ SMTP server configuration for sending emails. This is required, to run a BEXIS2 
 
  ???
 
->__Use Multimedia Module?__ (_Settings -> Application Settings -> General_) (_default: false_)
+>__Use Multimedia Module?__
+>(_default: false_)
+>
+>(_Settings -> Application Settings -> General_)
 
 If set to true, the multimedia module is activated. This allows the visualization of multimedia files like images, videos, etc.
 
