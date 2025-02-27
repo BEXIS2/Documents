@@ -1,7 +1,7 @@
 ---
 title: "Configuration"
 description: "Configuration of the BEXIS2 system"
-position: 1
+position: 2
 tags: ["javascript", "markdown", "metadata"]
 ---
 

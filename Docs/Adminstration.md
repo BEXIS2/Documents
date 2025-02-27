@@ -1,8 +1,9 @@
 ---
 title: "Administration"
-position: 2
+position: 1
 tags: ["javascript", "markdown", "metadata"]
 ---
+
 # Administration
 
 ## Manage Parties
