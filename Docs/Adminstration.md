@@ -1,3 +1,10 @@
+---
+title: "Administration"
+position: 2
+tags: ["javascript", "markdown", "metadata"]
+---
+# Administration
+
 ## Manage Parties
 ## A: Overview
 

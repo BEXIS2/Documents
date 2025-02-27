@@ -1,3 +1,11 @@
+---
+title: "Configuration"
+description: "Configuration of the BEXIS2 system"
+position: 1
+tags: ["javascript", "markdown", "metadata"]
+---
+
+
 # Configuration
 
 ## General
