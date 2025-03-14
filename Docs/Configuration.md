@@ -201,26 +201,7 @@ If set to true, it is required the variable is linked to a templates.
 If set to true, it is required the variable is linked to a meaning.
 
 
-## Seed data definition
 
-Under *Workspace/RPM/* several text files can be located to create seed data for attributes, datatypes, dimensions and units.
-
-*attributes.csv*
-```
-Name;ShortName;Description;IsMultipleValue;IsBuiltIn;Owner;ContainerType;MeasurementScale;EntitySelectionPredicate;Self;DataType;Unit;Methodology;Constraints;ExtendedProperties;GlobalizationInfos;AggregateFunctions;REMARK
-```
-*datatypes.csv*
-```
-Name;Description;System Type;Display Pattern
-```
-*dimensions.csv*
-```
-id;name;syntax;description
-```
-*units*
-```
-Name;Abbreviation;Description;DimensionName;Measurement System;Data Types;used by;conversion to SI;remark
-```
 
 ## Search
 > _Settings -> Manage Search_
@@ -292,7 +273,7 @@ Mapping a metadata structure hast two main advantages:
 ![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/mapping_tool2.png)
 
 
-#### Mapping Overview
+### Mapping Overview
 
 The "Mapping tool" is accessible through the *Settings -> Manage Metadata Structure* view by clicking on the arrow buttons. Mapping could be defined to or from the system.
 
@@ -306,7 +287,7 @@ Mappings are connections between the source and the target. There are different 
 
 With the help of a transformation rule, it is possible to cover a wide range of different cases. A transformation rule consists of a [RegEx](https://msdn.microsoft.com/de-de/library/az24scfc(v=vs.110).aspx) and a mask. With an example, you can check the values and the expected result.
 
-#### Mapping Examples
+### Mapping Examples
 
 Here are some examples of a one to one, one to many and many to one mapping.
 
@@ -328,7 +309,7 @@ This example creates a connection between the FirstName and LastName by a name. 
 
 ![img1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/many_to_one.png)
 
-#### Create a mapping
+### Create a mapping
 
 1.  Choose a simple or complex element from the source.
 2.  Add an element to the middle section by clicking the orange arrow next to the element.
@@ -338,7 +319,7 @@ This example creates a connection between the FirstName and LastName by a name. 
 6.  If needed, add RegEx and mask to the transformation rule.
 7.  Press on the save button after entering values in the blocks.
 
-#### Key overview
+### Key overview
 
 ![key_overview](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/key_overview.PNG)
 
@@ -421,7 +402,7 @@ Use one of the templates to assign the Darwin core terms to the variables, with 
 
 
 
-# Server Configuration
+# Configuration Server
 
 ## Datasets
 ### Dataset Links
@@ -441,3 +422,27 @@ The reference types and descriptions can be configured under *Workspace/Modules/
     <entityType description="">Dataset</entityType>
 </entityTypes>-->
 </config>
+
+# Configuration Initial Setup
+
+## Datasets
+### Seed data definition
+
+Under *Workspace/RPM/* several text files can be located to create seed data for attributes, datatypes, dimensions and units.
+
+*attributes.csv*
+```
+Name;ShortName;Description;IsMultipleValue;IsBuiltIn;Owner;ContainerType;MeasurementScale;EntitySelectionPredicate;Self;DataType;Unit;Methodology;Constraints;ExtendedProperties;GlobalizationInfos;AggregateFunctions;REMARK
+```
+*datatypes.csv*
+```
+Name;Description;System Type;Display Pattern
+```
+*dimensions.csv*
+```
+id;name;syntax;description
+```
+*units*
+```
+Name;Abbreviation;Description;DimensionName;Measurement System;Data Types;used by;conversion to SI;remark
+```
