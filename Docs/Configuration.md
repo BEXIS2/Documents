@@ -7,21 +7,12 @@ tags: ["javascript", "markdown", "metadata"]
 
 
 # Configuration
+>[!ROLE]
+>__Role:__ [Administrator]("General/#roles")
 
 ## General
 >[!SETTING]
->__Application Name__ (_default: BEXIS2_)
->
->(_Settings -> Application Settings -> General_)
-
->[!BUTTON]
->_Settings -> Application Settings -> General_
-
->[!ROLE]
->__Role:__ Administrator
-
->[!DESCRIPTION]
->__Landing Page__ (_Settings -> Application Settings -> General_) (_default: ddm, publisearch, index_)
+>__Application Name__ (_default: BEXIS2_) (_Settings -> Application Settings -> General_)
 
 (Short) name of the BEXIS2 instance. The name is e.g., used in the breadcrumb or as prefix in emails sent via the system. Avoid special characters or to long names.
 
@@ -29,35 +20,39 @@ tags: ["javascript", "markdown", "metadata"]
 The landing page is the first page a user sees when opening the base URL of the BEXIS2 instance. There are three types of landing pages, which can be configured:
 
 - **User is not logged in**:
+>[!SETTING]
 >__Landing Page__ (_Settings -> Application Settings -> General_) (_default: ddm, publisearch, index_)
 
 By default, the public search is shown. If nothing is specified, the `landingpage.htm` is loaded from the `tenant/content/landingpage.htm`. In this case, you can also hide the menu, header, and footer.
 
 - **User logged in with permission to see the page**:
+>[!SETTING]
 >__Landing Page for Users__ (_Settings -> Application Settings -> General_) (_default: ddm, Home, index_)
 
 This page is shown if the user has permission to see this (internal) page. It must point to a module, not to the shell.
 
 
 - **User logged in without permission to see the page**:
-
+>[!SETTING]
 >__Landing Page for Users with no Permission__ (_Settings -> Application Settings -> General_) (_default: ddm, Home, nopermission_)
 
 ### Authentication
-
+>[!SETTING]
 >__LDAP Configurations__ (_Settings -> Application Settings -> General_) (_default: not set and active_)
 
 BEXIS2 can connect to multiple LDAP server. Details need to be filled according to the given items.
-
+>[!SETTING]
 >__JWT__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
 ???
 
 ### Mail
+>[!SETTING]
 >__System E-Mail Address__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
 Email address all system emails are sent to. This is required, to run a BEXIS2 instance.
 
+>[!SETTING]
 >__SMTP__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
 SMTP server configuration for sending emails. This is required, to run a BEXIS2 instance.
@@ -75,17 +70,18 @@ SMTP server configuration for sending emails. This is required, to run a BEXIS2 
   "fromAddress": "
 }
 ```
+>[!SETTING]
 >__Send Exceptions?__ (_Settings -> Application Settings -> General_) (_default: false_)
 
  ???
-
+>[!SETTING]
 >__Use Multimedia Module?__
 >(_default: false_)
 >
 >(_Settings -> Application Settings -> General_)
 
 If set to true, the multimedia module is activated. This allows the visualization of multimedia files like images, videos, etc.
-
+>[!SETTING]
 >__FAQ__ (_Settings -> Application Settings -> General_) (_default: [false](https://github.com/BEXIS2/Core/wiki/FAQ)_)
 
 ??
@@ -95,15 +91,16 @@ If set to true, the multimedia module is activated. This allows the visualizatio
 ## Users & Parties
 
 ### Link user email to party email
-
+>[!SETTING]
 >__Use Person E-Mail Attribute Name__ (_Settings -> Application Settings -> General_) (_default: false_)
 
+>[!SETTING]
 >__Person E-Mail Attribute Name__ (_Settings -> Application Settings -> General_) (_default: Email_)
 
 To activate the linkage between between user email and a party email set _Use Person E-Mail Attribute Name_ to true and define the party party attribute. If one of the email addresses is changed the other is changed as well.
 
 ### Owner of a dataset
-
+>[!SETTING]
 >__Party Relationship Type for Owner__ (_Settings -> Application Settings -> Administration_) (_default: Owner_)
 
 Define the party relationship type for the owner of a dataset. If this type is mapped to a metadata field, the selected user is automatically set as the owner of the dataset. Owner will also receive notifications about the dataset and requests.
