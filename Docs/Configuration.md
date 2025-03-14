@@ -8,11 +8,11 @@ tags: ["javascript", "markdown", "metadata"]
 
 # Configuration
 >[!ROLE]
->__Role:__ [Administrator]("General/#roles")
+>__Role:__ [Administrator](../General/#roles)
 
 ## General
 >[!SETTING]
->__Application Name__ (_default: BEXIS2_) (_Settings -> Application Settings -> General_)
+>__Application Name__ (_Settings -> Application Settings -> General_)(_default: BEXIS2_)
 
 (Short) name of the BEXIS2 instance. The name is e.g., used in the breadcrumb or as prefix in emails sent via the system. Avoid special characters or to long names.
 
