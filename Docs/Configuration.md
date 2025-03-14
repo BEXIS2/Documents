@@ -1,7 +1,7 @@
 ---
 title: "Configuration"
 description: "Configuration of the BEXIS2 system"
-position: 2
+position: 7
 tags: ["javascript", "markdown", "metadata"]
 ---
 
@@ -14,7 +14,7 @@ tags: ["javascript", "markdown", "metadata"]
 >[!SETTING]
 >__Application Name__ (_Settings -> Application Settings -> General_)(_default: BEXIS2_)
 
-(Short) name of the BEXIS2 instance. The name is e.g., used in the breadcrumb or as prefix in emails sent via the system. Avoid special characters or to long names.
+(Short) name of the BEXIS2 instance. The name is e.g., used in the breadcrumb or as prefix in emails sent via the system. Avoid special characters or too long names.
 
 ### Landing Page
 The landing page is the first page a user sees when opening the base URL of the BEXIS2 instance. There are three types of landing pages, which can be configured:
@@ -23,7 +23,7 @@ The landing page is the first page a user sees when opening the base URL of the 
 >[!SETTING]
 >__Landing Page__ (_Settings -> Application Settings -> General_) (_default: ddm, publisearch, index_)
 
-By default, the public search is shown. If nothing is specified, the `landingpage.htm` is loaded from the `tenant/content/landingpage.htm`. In this case, you can also hide the menu, header, and footer.
+Per default, the public search is shown. If nothing is specified, the `landingpage.htm` is loaded from the `tenant/content/landingpage.htm`. In this case, you can also hide the menu, header, and footer.
 
 - **User logged in with permission to see the page**:
 >[!SETTING]
@@ -40,7 +40,7 @@ This page is shown if the user has permission to see this (internal) page. It mu
 >[!SETTING]
 >__LDAP Configurations__ (_Settings -> Application Settings -> General_) (_default: not set and active_)
 
-BEXIS2 can connect to multiple LDAP server. Details need to be filled according to the given items.
+BEXIS2 can connect to multiple LDAP servers. Details need to be filled in according to the given items.
 >[!SETTING]
 >__JWT__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
@@ -50,12 +50,12 @@ BEXIS2 can connect to multiple LDAP server. Details need to be filled according 
 >[!SETTING]
 >__System E-Mail Address__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
-Email address all system emails are sent to. This is required, to run a BEXIS2 instance.
+Email address to which all system emails are sent. This is required, to run a BEXIS2 instance.
 
 >[!SETTING]
 >__SMTP__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
-SMTP server configuration for sending emails. This is required, to run a BEXIS2 instance.
+SMTP server configuration for sending emails. This is required to run a BEXIS2 instance.
 
 ```JSON
 {
@@ -80,7 +80,8 @@ SMTP server configuration for sending emails. This is required, to run a BEXIS2 
 >
 >(_Settings -> Application Settings -> General_)
 
-If set to true, the multimedia module is activated. This allows the visualization of multimedia files like images, videos, etc.
+If set to true, the multimedia module is activated. This allows the visualization of multimedia files such as images, videos, etc. in the system.
+
 >[!SETTING]
 >__FAQ__ (_Settings -> Application Settings -> General_) (_default: [false](https://github.com/BEXIS2/Core/wiki/FAQ)_)
 
@@ -97,20 +98,20 @@ If set to true, the multimedia module is activated. This allows the visualizatio
 >[!SETTING]
 >__Person E-Mail Attribute Name__ (_Settings -> Application Settings -> General_) (_default: Email_)
 
-To activate the linkage between between user email and a party email set _Use Person E-Mail Attribute Name_ to true and define the party party attribute. If one of the email addresses is changed the other is changed as well.
+To activate the linkage between a user email and a party email, set _Use Person E-Mail Attribute Name_ to true and define the party attribute. If one of the email addresses is changed, the other is changed as well.
 
 ### Owner of a dataset
 >[!SETTING]
 >__Party Relationship Type for Owner__ (_Settings -> Application Settings -> Administration_) (_default: Owner_)
 
-Define the party relationship type for the owner of a dataset. If this type is mapped to a metadata field, the selected user is automatically set as the owner of the dataset. Owner will also receive notifications about the dataset and requests.
+Define the party relationship type for the owner of a dataset. If this type is mapped to a metadata field, the selected user is automatically set as the owner of the dataset. The owner will also receive notifications about the dataset and requests.
 
 
 ### Party Relationships
 
 >__Party Relationship Types for Account__ (_Settings -> Application Settings -> Administration_)
 
-The party relationship types are used to define the relationship between the user account and the party. Set defined types will be used in the registration form.
+The party relationship types are used to define the relationship between the user account and the party. The defined types will be used in the registration form.
 
 Example:
 
@@ -149,7 +150,7 @@ Example:
 
 ### File Analyze
 
-The more rows are analyzed, the more accurate the data type detection is. However, the analysis process will take longer. Rows are randomly selected from the file.
+The more rows that are analyzed, the more accurate the data type detection is. However, the analysis process will take longer. Rows are randomly selected from the file.
 
 > __Minimum row number__ (_Settings -> Application Settings -> Data Structure_) (default: 100)
 
@@ -165,7 +166,7 @@ The percentage of rows used to analyze the file.
 
 > __Similarity Threshold (0-100%)__ (_Settings -> Application Settings -> Data Structure_) (default: 60)
 
-During the analysis of a file to create a data structure, templates and units are checked against the input using algorithms. The threshold specifies the minimum value that must be reached for the objects to be marked as suggestion. Set 0-100% to define the similarity threshold. The higher the value, the more similar the objects must be to be marked as suggestions.
+During the analysis of a file to create a data structure, templates and units are checked against the input using algorithms. The threshold specifies the minimum value that must be reached for the objects to be marked as suggestion.Set a value between 0-100% to define the similarity threshold. The higher the value, the more similar the objects must be to be marked as suggestions.
 
 ## Data Structure
 > __Enforce Primary Key__ (_Settings -> Application Settings -> Data Structure_) (default: true)
@@ -422,8 +423,63 @@ The reference types and descriptions can be configured under *Workspace/Modules/
     <entityType description="">Dataset</entityType>
 </entityTypes>-->
 </config>
+```
 
 # Configuration Initial Setup
+
+## Manage Parties
+### Overview
+
+Party package is managing all kinds of entities such as people, organizations, projects and etc. it is also managing the relationship between them. For example, one person is a part of a project for a certain duration. Furthermore, it is able to connect to the other modules which now it is connected to the security module and also it is able to import the definitions such as “partytypes”, “customattributes” and “relationshiptype” from an XML file.
+
+### XML-Schema
+
+The schema is defined in the file *PartyTypes.xml* which is located in the workspace under *…\Workspace\Modules\BAM*.
+Here you can define the *party types* and their *custom attributes* together with *relationship types*.
+
+**[ ]** optional attributes
+
+#### PartyType attributes
+
+|         |           |
+| ------- |:--------|
+| **Name:** | Party type name should be unique among the other party types. Spaces and special characters should be avoided.
+| **[DisplayName]** | Name shown in the UI. If not set, the **Name** is used, which might be not very user-friendly.
+
+#### Custom attributes
+Each party type can have custom attributes.
+
+|         |           |
+| ------- |:--------|
+| **Name:** | Name of the custom attribute.
+| **[DisplayName]** | *default*: **Name**. Name shown in the UI. If not set, the **Name** is used, which might be not very user-friendly.
+| **[Type]** | *default*: "string". Option: "bool" (two radio buttons with true/false).
+| **[IsMain]** | *default*: "false". Every party should have a general name, which comes from its custom attributes. If there is more than one “IsMain” attribute it will be merged by a space.
+| **[ValidValues]** | List of values shown as dropdownlist. Values should be separated by “,”.
+| **[IsUnique]** | *default*: "false". "true" means that this attribute of this party should be unique among the other parties which have the same party type.
+| **[IsValueOptional]** |  *default*: "true".  "false" means the user has to fill this field.
+| **[Description]** | Shows some extra information as a tooltip to user.
+
+
+#### PartyRelationshipType attributes
+
+|         |         |
+| ------- |:--------|
+| **Name** | PartyrelationshipType name should be unique among the others. Spaces and special characters should be avoided.
+| **[DisplayName]** | Name shown in the UI. If not set, the **Name** is used, which might be not very user-friendly.
+| **[Description]** | Shows some extra information as a tooltip to user.
+| **[IndicatesHierarchy]** | *default*: "false". "true" means that there is a hierarchy relationship between all the pairs as the source is root and target is the child of it.
+| **[MaxCardinality]** | *default*: unlimited. If it is set to a number it forces the user to not have more than this number relationships.
+| **[MinCardinality]** | *default*: unlimited. If it is set to a number it forces the user to have at least this number of relationships.
+
+#### PartyTypePair attributes
+
+|         |         |
+| ------- |:--------|
+| **Title**  | The title of this pair.
+| **AllowedSource** | source party type is obligatory and should be exactly the same name as we defined for partytype.
+| **AllowedTarget** | Target party type is obligatory and should be exactly the same name as we defined for partytype.
+| **[Description]** | It shows some info about this type to user in a tooltip.
 
 ## Datasets
 ### Seed data definition
