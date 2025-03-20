@@ -8,7 +8,7 @@ tags: ["javascript", "markdown", "metadata"]
 
 # Configuration
 >[!ROLE]
->__Role:__ [Administrator](../General/#roles)
+>__Role:__ [Administrator](../General#roles)
 
 ## General
 >[!SETTING]
