@@ -1,7 +1,7 @@
 ---
 title: "General"
-description: ""
-tags: []
+description: "This section provides an overview of the BEXIS2 system, including its terms, roles, and general information about datasets and data management."
+tags: ["javascript", "markdown", "metadata"]
 position: 0
 
 ---

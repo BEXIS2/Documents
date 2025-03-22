@@ -8,7 +8,7 @@ position: 1
 
 # Account
 >[!ROLE]
->__Role:__ [User](../General/#roles)
+>__Role:__ [User](../docs/General/#roles)
 
 ## Registration
 
@@ -22,8 +22,6 @@ Press the *Login* button on the right side. BEXIS2 redirects you to the login fo
 
 <a href="url" title="login"><img src="https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/login.png" align="center" height="300" ></a>
 
-
-## Dataset permissions
 
 ## API Token
 

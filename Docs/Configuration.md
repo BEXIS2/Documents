@@ -6,9 +6,9 @@ tags: ["javascript", "markdown", "metadata"]
 ---
 
 
-# Configuration
+# Configuration UI
 >[!ROLE]
->__Role:__ [Administrator](../General#roles)
+>__Role:__ [Administrator](../docs/General#roles)
 
 ## General
 >[!SETTING]
@@ -405,7 +405,9 @@ Use one of the templates to assign the Darwin core terms to the variables, with 
 
 # Configuration Server
 
-## Datasets
+## Changeable Settings
+### Header & Footer
+
 ### Dataset Links
 The reference types and descriptions can be configured under *Workspace/Modules/DCM/EntityReferenceConfig.Xml*. If the system also contains other entity types, which should not be allowed for linking, you can define a whitelist of shown dataset types.
 
@@ -425,14 +427,13 @@ The reference types and descriptions can be configured under *Workspace/Modules/
 </config>
 ```
 
-# Configuration Initial Setup
+## Initial Configuration
 
-## Manage Parties
-### Overview
+### Manage Parties
 
 A party package manages all kinds of entities such as people, organizations, projects, etc. It also manages the relationship between them. For example, one person is a part of a project for a certain duration. Furthermore, it is able to connect to the other modules, which now it is connected to the security module, and it is also able to import the definitions such as “partytypes”, “customattributes,” and “relationshiptype” from an XML file.
 
-### XML-Schema
+#### XML-Schema
 
 The schema is defined in the file *PartyTypes.xml* which is located in the workspace under *…\Workspace\Modules\BAM*.
 Here you can define the *party types* and their *custom attributes* together with *relationship types*.
@@ -481,8 +482,8 @@ Each party type can have custom attributes.
 | **AllowedTarget** | Target party type is obligatory and should be exactly the same name as we defined for partytype.
 | **[Description]** | It shows some info about this type to the user in a tooltip.
 
-## Datasets
-### Seed data definition
+
+### Datasets Seed Data
 
 Under *Workspace/RPM/*, several text files can be located to create seed data for attributes, datatypes, dimensions, and units.
 

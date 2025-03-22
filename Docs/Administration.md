@@ -4,6 +4,8 @@ position: 6
 ---
 
 # Administration
+>[!ROLE]
+>__Role:__ [Administrator](../docs/General/#roles)
 
 ## Manage User
 
@@ -226,3 +228,7 @@ For the system to handle a dataset, at least the title and a description are nee
 The Summary page is an overview of the created metadata structure.
 
 ![Summary](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/summary_xsd.png)
+
+## Manage Requests
+
+Requests are used to ask for permission to access a dataset. The request is sent to the dataset owner and in copy to the administrator. The request can be accepted or rejected.
