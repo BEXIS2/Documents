@@ -7,12 +7,12 @@ tags: ["javascript", "markdown", "metadata"]
 
 
 # Configuration UI
->
+
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General#roles)
 
 ## General
->
+
 >[!SETTING]
 >__Application Name__ (_Settings -> Application Settings -> General_)(_default: BEXIS2_)
 
@@ -42,18 +42,19 @@ This page is shown if the user has permission to see this (internal) page. It mu
 >__Landing Page for Users with no Permission__ (_Settings -> Application Settings -> General_) (_default: ddm, Home, nopermission_)
 
 ### Authentication
->
+
 >[!SETTING]
 >__LDAP Configurations__ (_Settings -> Application Settings -> General_) (_default: not set and active_)
 
 BEXIS2 can connect to multiple LDAP servers. Details need to be filled out according to the items given.
+
 >[!SETTING]
 >__JWT__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
 ???
 
 ### Mail
->
+
 >[!SETTING]
 >__System E-Mail Address__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
@@ -100,10 +101,7 @@ The following section is the configuration of a smtp server so that the system i
 
  ???
 >[!SETTING]
->__Use Multimedia Module?__
->(_default: false_)
->
->(_Settings -> Application Settings -> General_)
+>__Use Multimedia Module?__(_Settings -> Application Settings -> General_)(_default: false_)
 
 If set to true, the multimedia module is activated. This allows the visualization of multimedia files, such as images, videos, etc., in the system.
 
@@ -112,10 +110,82 @@ If set to true, the multimedia module is activated. This allows the visualizatio
 
 ??
 
+## Visibility & Versions (Dataset Discovery)
+
+>[!SETTING]
+>__Check Public Metadata__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: true_)
+
+Set true to enable to show metadata for not-logged in users, if the dataset is not public.
+
+>[!SETTING]
+>__Reduce Versions Select for Logged-in Users__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: true_)
+
+Set true to reduce the versions select for logged in users.
+
+>[!SETTING]
+>__Restrict to Latest Version for Logged-in Users__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: true_)
+
+Set true to restrict the version select to the latest version for logged in users.
+
+>[!SETTING]
+>__Activate Tags to Summarize Versions__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: false_)
+
+Enable to possibility for Users to define a combination of versions to a tag.
+
+>[!SETTING]
+>__Use Minor Tags__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: false_)
+
+
+Activate minor tags in order to be able to show the changes more granularly.
+
+
+## Dataset Creation
+
+>[!SETTING]
+>__Number of cells for direct upload instead of async__ (_Settings -> Application Settings -> Dataset Creation_) (_default: 2000_)
+
+This number of cells determines whether an upload of structured data should be executed directly or async.
+
+>[!SETTING]
+>__fileuploadDescription__ (_Settings -> Application Settings -> Dataset Creation_) (_default: required_)
+
+If "active", adding a description per file is possible.
+If "required", adding a descriptor per file is mandatory.
+If "none", adding a description per file is not possible.
+
+
+>[!SETTING]
+>__Multiple file upload__ (_Settings -> Application Settings -> Dataset Creation_) (_default: true_)
+
+Allow multiple files to be uploaded at the same time.
+
+>[!SETTING]
+>__attachmentDescription__ (_Settings -> Application Settings -> Dataset Creation_) (_default: active_)
+
+If "active", adding a description per file is possible.
+If "required", adding a descriptor per file is mandatory.
+If "none", adding a description per file is not possible.
+
+>[!SETTING]
+>__Multiple attachment upload__ (_Settings -> Application Settings -> Dataset Creation_) (_default: false_)
+
+Allow multiple files to be uploaded at the same time.
+
+>[!SETTING]
+>__Use external metadata form__ (_Settings -> Application Settings -> Dataset Creation_) (_default: false_)
+
+Enables the loading of an external metadata form when editing entities. This is useful for external metadata forms that are not part of the BEXIS2 system. The external metadata form must be loaded from a URL. The URL must be accessible from the BEXIS2 instance.
+
+>[!SETTING]
+>__External metadata form destination URL__ (_Settings -> Application Settings -> Dataset Creation_) (_default: ""_)
+
+Define the origin from where the external metadata form should be loaded.
+
+
 ## Users & Parties
 
 ### Link user email to party email
->
+
 >[!SETTING]
 >__Use Person E-Mail Attribute Name__ (_Settings -> Application Settings -> General_) (_default: false_)
 
@@ -125,14 +195,14 @@ If set to true, the multimedia module is activated. This allows the visualizatio
 To activate the linkage between a user email and a party email, set _Use Person E-Mail Attribute Name_ to true and define the party attribute. If one of the email addresses is changed, the other is also changed.
 
 ### Owner of a dataset
->
+
 >[!SETTING]
 >__Party Relationship Type for Owner__ (_Settings -> Application Settings -> Administration_) (_default: Owner_)
 
 Define the party relationship type for the owner of a dataset. If this type is mapped to a metadata field, the selected user is automatically set as the dataset's owner. The owner will also receive notifications about the dataset and requests.
 
 ### Party Relationships
-
+>[!SETTING]
 >__Party Relationship Types for Account__ (_Settings -> Application Settings -> Administration_)
 
 The party relationship types define the relationship between the user account and the party. The defined types will be used in the registration form.
@@ -153,19 +223,27 @@ Example:
 ```
 
 ### Former Member
-
+>[!SETTING]
 > __Help URL__ (_key: help_) (_default: help_)
 
+>[!SETTING]
 > __Former Member Role/Group__ (_key: formerMemberRole_) (_default: alumni_)
 
+>[!SETTING]
 > __Former Member Mail: Title__ (_key: mailTextTitle_) (_default: Dear_)
 
+>[!SETTING]
 > __Former Member Mail: Subject__ (_key: mailTextSubject_) (_default: mailTextSubject_)
 
+Alternative subject for mails. If empty per default the instance short name as for all system mails as well.
+
+>[!SETTING]
 > __Former Member Mail: Main Text (applied)__ (_key: mailTextMainApplied_) (_default: This implies that your access to some features in BExIS will be restricted. You have full access to your datasets and publications._)
 
+>[!SETTING]
 > __Former Member Mail: Main Text (revoked)__ (_key: mailTextMainRevoked_) (_default: This implies that your previous access rights to features and datasets in BEXIS have been re-applied._)
 
+>[!SETTING]
 > __Former Member Mail: Closing__ (_key: mailTextClosing_) (_default: Sincerely yours, System Team_)
 
 ## Data Upload
@@ -174,61 +252,134 @@ Example:
 
 The more analyzed rows, the more accurate the data type detection is. However, the analysis process will take longer. Rows are randomly selected from the file.
 
+>[!SETTING]
 > __Minimum row number__ (_Settings -> Application Settings -> Data Structure_) (default: 100)
 
 The minimum number of rows that are used to analyze the file.
 
+>[!SETTING]
 > __Maximum row number__ (_Settings -> Application Settings -> Data Structure_) (default: 10000)
 
 The maximum number of rows that are used to analyze the file.
 
+>[!SETTING]
 > __Percentage of rows__ (_Settings -> Application Settings -> Data Structure_) (default: 50)
 
 The percentage of rows used to analyze the file.
 
+>[!SETTING]
 > __Similarity Threshold (0-100%)__ (_Settings -> Application Settings -> Data Structure_) (default: 60)
 
 While analyzing a file to create a data structure, templates, and units are checked against the input using algorithms. The threshold specifies the minimum value that must be reached for the objects to be marked as suggestions. Set a value between 0-100% to define the similarity threshold. The higher the value, the more similar the objects must be to be marked as suggestions.
 
 ## Data Structure
->
+>[!SETTING]
 > __Enforce Primary Key__ (_Settings -> Application Settings -> Data Structure_) (default: true)
 
 If set to true, it is required that a primary key is defined for the data structure.
 
+>[!SETTING]
 > __Primary Key changeable?__ (_Settings -> Application Settings -> Data Structure_) (default: false)
 
 If set to true, the primary key can be changed after creating the data structure.
+
+>[!SETTING]
 > __Set optional as default__ (_Settings -> Application Settings -> Data Structure_) (default: false)
 
 If set to true, variables are set to optional default when the data structure is created. Setting false to enforce NULL values are not allowed.
 
+>[!SETTING]
 > __Missing values__ (_Settings -> Application Settings -> Data Structure_) (default: na (not available))
->
+
 Multiple key-value pairs for missing values can be defined. The key is the placeholder, and the value is the description.
 
+>[!SETTING]
 > __Template Support__ (_Settings -> Application Settings -> Data Structure_) (default: true)
 
 If the template support is activated, then empty unit & data type fields with information from the template are set when the data structure is created.
 
+>[!SETTING]
 > __Show -Create Variable Template- on data structure edit__ (_Settings -> Application Settings -> Data Structure_) (default: false)
 
-????
+Show -Create Variable Template- on data structure edit form. This allows the user to create a variable template from the data structure.
+(deprecated)
 
+>[!SETTING]
 > __Link variables to templates__ (_Settings -> Application Settings -> Data Structure_) (default: false)
 
 If set to true, the variable must be linked to a template.
 
+>[!SETTING]
 > __Link variables to meanings__ (_Settings -> Application Settings -> Data Structure_) (default: false)
 
 If set to true, the variable must be linked to a meaning.
 
+>[!SETTING]
+> __Update Variable Description by Template selection__ (_Settings -> Application Settings -> Data Structure_) (default: true)
+
+If the template support is activated, then empty unit & datatype fields with information from the template are set when the data structure is created.
+
+## Data Dissemination
+>[!SETTING]
+>__DataCite DOI Placeholders__ (_Settings -> Application Settings -> Data Dissemination_) (default: "")
+
+DataCite DOI placeholders are used to create a DOI for a dataset.
+
+```JSON
+[
+  {
+  "{DatasetId}": "{DatasetId}",
+  "{VersionId}": "{VersionId}",
+  "{VersionNumber}": "{VersionNumber}",
+  "{VersionName}": "{VersionName}",
+  "{Tag}": "{Tag}"
+  }
+]
+```
+
+>[!SETTING]
+>__DataCite DOI Mappings__ (_Settings -> Application Settings -> Data Dissemination_) (default: "")
+
+
+
+```JSON
+[
+  {
+  "URL": "{DatasetId}?version={VersionNumber}",
+  "Version": "{VersionName}"
+  }
+]
+```
+
+>[!SETTING]
+>__gbifCollectionArea__ (_Settings -> Application Settings -> Data Dissemination_) (default: "export/gbif")
+
+All created Darwin Core archive dataset exports are saved in this specified directory. It starts from the predefined data folder as default. It is also possible to specify a sequential folder path. default: {Data}/export/gbif".
+
+>[!SETTING]
+>__GBIF API Credentials__ (_Settings -> Application Settings -> Data Dissemination_) (default: "export/gbif")
+
+GBIF API credentials are used to connect to the GBIF API. The credentials are used to authenticate the user and to authorize access to the GBIF API.
+
+```JSON
+[
+  {
+  "organisationKey": "",
+  "installationKey": "",
+  "username": "",
+  "password": "",
+  "server": "http://api.gbif-uat.org/v1"
+}
+]
+```
+
 ## Search
->
+>[!SETTING]
 > _Settings -> Manage Search_
 
  The search manager allows adding, editing, and deleting search components. The search manager is divided into two sections: the search components and the search attributes. The search components are the search fields displayed in the search UI as a facet or in the search result table as a column. The search attributes are the fields that are indexed in the search engine. The search attributes are mapped to metadata elements in the metadata schema.
 
+>[!SETTING]
 > __Refresh Search__ (_Settings -> Manage Search -> Refresh Search_)
 
 Click on the _Refresh Search_ , to reindex the search components based on the current configuration.
