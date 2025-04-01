@@ -27,16 +27,13 @@ List of all answered and pending requests related to your datasets. You can acce
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/decision.png)
 
+## Permissions & Visibility
+### Permissions
+### Visibility
 
+## Dataset Versioning
 
-## Versioning
-## Manage Requests
-## xxxx (nur weiterführende Links)
+## Export Data & Publishing
 ### DOI Requests
-### Manage Permission/Entity Permission (?)
-### Set Dataset Public (?) (oder Permissions? - würde das “set” public (anfragen) dann mit einbeziehen)
-
-# Export (oder alles mit zu “MY data” ..also alles was neben Dataset anlegen und editieren ein user machen könnte)
-## Overview
-## Darwin Core
-## Other Concepts
+### Darwin Core / GBIF
+### Other formats

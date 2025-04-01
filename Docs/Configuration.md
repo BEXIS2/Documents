@@ -223,14 +223,16 @@ Example:
 ```
 
 ### Former Member
->[!SETTING]
-> __Help URL__ (_key: help_) (_default: help_)
 
 >[!SETTING]
 > __Former Member Role/Group__ (_key: formerMemberRole_) (_default: alumni_)
 
+The role/group that is assigned to a user when he/she is no longer a member of the project.
+
 >[!SETTING]
 > __Former Member Mail: Title__ (_key: mailTextTitle_) (_default: Dear_)
+
+Title for mails.
 
 >[!SETTING]
 > __Former Member Mail: Subject__ (_key: mailTextSubject_) (_default: mailTextSubject_)
@@ -240,11 +242,17 @@ Alternative subject for mails. If empty per default the instance short name as f
 >[!SETTING]
 > __Former Member Mail: Main Text (applied)__ (_key: mailTextMainApplied_) (_default: This implies that your access to some features in BExIS will be restricted. You have full access to your datasets and publications._)
 
+Main text for former members mails (applied).
+
 >[!SETTING]
 > __Former Member Mail: Main Text (revoked)__ (_key: mailTextMainRevoked_) (_default: This implies that your previous access rights to features and datasets in BEXIS have been re-applied._)
 
+Main text for former members mails (revoked).
+
 >[!SETTING]
 > __Former Member Mail: Closing__ (_key: mailTextClosing_) (_default: Sincerely yours, System Team_)
+
+Closing for former members mails.
 
 ## Data Upload
 
@@ -268,7 +276,7 @@ The maximum number of rows that are used to analyze the file.
 The percentage of rows used to analyze the file.
 
 >[!SETTING]
-> __Similarity Threshold (0-100%)__ (_Settings -> Application Settings -> Data Structure_) (default: 60)
+>__Similarity Threshold (0-100%)__ (_Settings -> Application Settings -> Data Structure_) (default: 60)
 
 While analyzing a file to create a data structure, templates, and units are checked against the input using algorithms. The threshold specifies the minimum value that must be reached for the objects to be marked as suggestions. Set a value between 0-100% to define the similarity threshold. The higher the value, the more similar the objects must be to be marked as suggestions.
 
@@ -374,8 +382,8 @@ GBIF API credentials are used to connect to the GBIF API. The credentials are us
 ```
 
 ## Search
->[!SETTING]
-> _Settings -> Manage Search_
+
+_Settings -> Manage Search_
 
  The search manager allows adding, editing, and deleting search components. The search manager is divided into two sections: the search components and the search attributes. The search components are the search fields displayed in the search UI as a facet or in the search result table as a column. The search attributes are the fields that are indexed in the search engine. The search attributes are mapped to metadata elements in the metadata schema.
 
