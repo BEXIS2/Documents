@@ -99,7 +99,8 @@ The following section is the configuration of a smtp server so that the system i
 >[!SETTING]
 >__Send Exceptions?__ (_Settings -> Application Settings -> General_) (_default: false_)
 
- ???
+This value determines whether information about exceptions are sent to the system e-mail address or not. If set to false, exceptions are thrown silently. The user may see an error message on the screen (within the browser or another client), but the system won't send an e-mail with stack information about the issue to the deposited e-mail address separately. If the value is set to true, this is of course the case.
+
 >[!SETTING]
 >__Use Multimedia Module?__(_Settings -> Application Settings -> General_)(_default: false_)
 
