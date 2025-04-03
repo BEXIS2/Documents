@@ -52,17 +52,17 @@ BEXIS2 can connect to multiple LDAP servers. Details need to be filled out accor
 
 ???
 
-### Mail
+### E-Mail
 >
 >[!SETTING]
 >__System E-Mail Address__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
-An email address used by the system to send all system notifications. This information is required to run a BEXIS2 instance. Otherwise the system will not work at all.
+An e-mail address used by the system to send all system notifications. This information is required to run a BEXIS2 instance. Otherwise the system will not work at all.
 
 >[!SETTING]
 >__SMTP__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
-The following section is the configuration of a smtp server so that the system is able to send out mails. This information is required to run a BEXIS2 instance. Otherwise the system will not work at all. Please ensure that the settings do not contain any "//" comments. Otherwise the system will not be able to read this section correctly. The comments in the following section are only included for better understanding and documentation.
+The following section is the configuration of a smtp server so that the system is able to send out e-mails. This information is required to run a BEXIS2 instance. Otherwise the system will not work at all. Please ensure that the settings do not contain any "//" comments. Otherwise the system will not be able to read this section correctly. The comments in the following section are only included for better understanding and documentation.
 
 ```JSON
 {
@@ -72,7 +72,7 @@ The following section is the configuration of a smtp server so that the system i
   // The port under which the SMTP service runs on the above-mentioned host.
   "hostPort": 587,
 
-  // If the SMTP service supports the sending of mails without authentication, set the value to “true”. Otherwise, leave it at “false” and enter the corresponding user information at "accountName" and "accountPassword".
+  // If the SMTP service supports the sending of e-mails without authentication, set the value to “true”. Otherwise, leave it at “false” and enter the corresponding user information at "accountName" and "accountPassword".
   "hostAnonymous": false,
 
   // Provides a way of specifying the SSL and/or TLS encryption that should be used for a connection. [0] No SSL or TLS encryption should be used. [1] Allow the IMailService to decide which SSL or TLS options to use (default). If the server does not support SSL or TLS, then the connection will continue without any encryption. [2] The connection should use SSL or TLS encryption immediately. [3] Elevates the connection to use TLS encryption immediately after reading the greeting and capabilities of the server. If the server does not support the STARTTLS extension, then the connection will fail and a NotSupportedException will be thrown. [4] Elevates the connection to use TLS encryption immediately after reading the greeting and capabilities of the server, but only if the server supports the STARTTLS extension.
@@ -81,16 +81,16 @@ The following section is the configuration of a smtp server so that the system i
   // Set whether connecting via SSL/TLS should check certificate revocation. Normally, the value of this property should be set to true (the default) for security reasons, but there are times when it may be necessary to set it to false. For example, most Certificate Authorities are probably pretty good at keeping their CRL and/or OCSP servers up 24/7, but occasionally they do go down or are otherwise unreachable due to other network problems between the client and the Certificate Authority. When this happens, it becomes impossible to check the revocation status of one or more of the certificates in the chain resulting in an SslHandshakeException being thrown in the Connect method. If this becomes a problem, it may become desirable to set CheckCertificateRevocation to false.
   "hostCertificateRevocation": false,
 
-  // In case of '"hostAnonymous": false', please enter the username of the mail account you want to use.
+  // In case of '"hostAnonymous": false', please enter the username of the e-mail account you want to use.
   "accountName": "username",
 
   // Similar to the field above '"accountName"'. But instead, enter the password.
   "accountPassword": "password",
 
-  // Please provide a meaningful name, that will appear as "sender" information within the mails.
+  // Please provide a meaningful name, that will appear as "sender" information within the e-mails.
   "fromName": "BEXIS2 Instance",
 
-  // Similar to the field above '"fromName"'. But instead of the name, enter the mail address that should appear.
+  // Similar to the field above '"fromName"'. But instead of the name, enter the e-mail address that should appear.
   "fromAddress": "bexis2-your-instance@provider.com"
 }
 ```
@@ -351,6 +351,61 @@ Concepts are a list of mapping keys needed to provide features with the appropri
 - before the functions are enabled, all required mappings must exist. A flag is displayed at the top, showing how many mappings are still missing.
 - click on the key name for further information, in the best case an external URL is provided
 
+### DOI (DataCite)
+
+>
+>[!SETTING]
+>__DataCite DOI Placeholders__ (_Settings -> Application Settings -> Data Dissemination_) (_default: default values_)
+
+The placeholders are necessary to adopt dataset-specific values into the data model, which is sent to DataCite. As the system cannot assume that these values exist in the metadata, they must be extracted directly from the data record.
+
+```JSON
+{
+  // 
+  "{DatasetId}": "{DatasetId}",
+  "{VersionId}": "{VersionId}",
+  "{VersionNumber}": "{VersionNumber}",
+  "{VersionName}": "{VersionName}",
+  "{Tag}": "{Tag}"
+}
+```
+
+>[!SETTING]
+>__SMTP__ (_Settings -> Application Settings -> General_) (_default: default values_)
+
+The following section is the configuration of a smtp server so that the system is able to send out e-mails. This information is required to run a BEXIS2 instance. Otherwise the system will not work at all. Please ensure that the settings do not contain any "//" comments. Otherwise the system will not be able to read this section correctly. The comments in the following section are only included for better understanding and documentation.
+
+```JSON
+{
+  // The name/address of the SMTP server.
+  "hostName": "smtp.uni-jena.de",
+
+  // The port under which the SMTP service runs on the above-mentioned host.
+  "hostPort": 587,
+
+  // If the SMTP service supports the sending of e-mails without authentication, set the value to “true”. Otherwise, leave it at “false” and enter the corresponding user information at "accountName" and "accountPassword".
+  "hostAnonymous": false,
+
+  // Provides a way of specifying the SSL and/or TLS encryption that should be used for a connection. [0] No SSL or TLS encryption should be used. [1] Allow the IMailService to decide which SSL or TLS options to use (default). If the server does not support SSL or TLS, then the connection will continue without any encryption. [2] The connection should use SSL or TLS encryption immediately. [3] Elevates the connection to use TLS encryption immediately after reading the greeting and capabilities of the server. If the server does not support the STARTTLS extension, then the connection will fail and a NotSupportedException will be thrown. [4] Elevates the connection to use TLS encryption immediately after reading the greeting and capabilities of the server, but only if the server supports the STARTTLS extension.
+  "hostSecureSocketOptions": 1,
+
+  // Set whether connecting via SSL/TLS should check certificate revocation. Normally, the value of this property should be set to true (the default) for security reasons, but there are times when it may be necessary to set it to false. For example, most Certificate Authorities are probably pretty good at keeping their CRL and/or OCSP servers up 24/7, but occasionally they do go down or are otherwise unreachable due to other network problems between the client and the Certificate Authority. When this happens, it becomes impossible to check the revocation status of one or more of the certificates in the chain resulting in an SslHandshakeException being thrown in the Connect method. If this becomes a problem, it may become desirable to set CheckCertificateRevocation to false.
+  "hostCertificateRevocation": false,
+
+  // In case of '"hostAnonymous": false', please enter the username of the e-mail account you want to use.
+  "accountName": "username",
+
+  // Similar to the field above '"accountName"'. But instead, enter the password.
+  "accountPassword": "password",
+
+  // Please provide a meaningful name, that will appear as "sender" information within the e-mails.
+  "fromName": "BEXIS2 Instance",
+
+  // Similar to the field above '"fromName"'. But instead of the name, enter the e-mail address that should appear.
+  "fromAddress": "bexis2-your-instance@provider.com"
+}
+```
+
 ### GBIF
 
 > Several requirements must be met for the export to work.
@@ -370,20 +425,20 @@ __Setup__
 
 ![gbif-conceptexample](https://github.com/BEXIS2/Documents/raw/master/Manuals/DIM/Images/gbif-conceptexample.PNG)
 
-| Term | Status |
-|---|---|
+| Term                 | Status   |
+| -------------------- | -------- |
 | Alternate identifier | Required |
-| Title | Required |
-| Pub Date | Required
-| Language | Required
-| Abstract |  Required
-| Keyword | Optional
-| Intellectual Rights | Required
-| Creator |  Required
-| Contact |  Required
-| Metadata provider | Required
-| Geographic coverage | Optional
-| Taxonomic coverage | Optional
+| Title                | Required |
+| Pub Date             | Required |
+| Language             | Required |
+| Abstract             | Required |
+| Keyword              | Optional |
+| Intellectual Rights  | Required |
+| Creator              | Required |
+| Contact              | Required |
+| Metadata provider    | Required |
+| Geographic coverage  | Optional |
+| Taxonomic coverage   | Optional |
 
 #### Darwin Core Terms mapping
 
@@ -457,45 +512,45 @@ __[ ]__ optional attributes
 
 #### PartyType attributes
 
-|         |           |
-| ------- |:--------|
-| __Name:__ | Party type name should be unique among the other party types. Spaces and special characters should be avoided.
-| __[DisplayName]__ | Name shown in the UI. If not set, the __Name__ is used, which might be not very user-friendly.
+|                   |                                                                                                                |
+| ----------------- | :------------------------------------------------------------------------------------------------------------- |
+| __Name:__         | Party type name should be unique among the other party types. Spaces and special characters should be avoided. |
+| __[DisplayName]__ | Name shown in the UI. If not set, the __Name__ is used, which might be not very user-friendly.                 |
 
 #### Custom attributes
 
 Each party type can have custom attributes.
 
-|         |           |
-| ------- |:--------|
-| __Name:__ | Name of the custom attribute.
-| __[DisplayName]__ | _default_: __Name__. The name is shown in the UI. If not set, the __Name__ is used, which might be not very user-friendly.
-| __[Type]__ | _default_: "string". Option: "bool" (two radio buttons with true/false).
-| __[IsMain]__ | _default_: "false". Every party should have a general name, which comes from its custom attributes. If there is more than one “IsMain” attribute it will be merged by a space.
-| __[ValidValues]__ | List of values shown as a dropdown list. Values should be separated by “,”.
-| __[IsUnique]__ | _default_: "false". "true" means that this attribute of this party should be unique among the other parties which have the same party type.
-| __[IsValueOptional]__ |  _default_: "true".  "false" means the user has to fill in this field.
-| __[Description]__ | Shows some extra information as a tooltip to the user.
+|                       |                                                                                                                                                                                |
+| --------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Name:__             | Name of the custom attribute.                                                                                                                                                  |
+| __[DisplayName]__     | _default_: __Name__. The name is shown in the UI. If not set, the __Name__ is used, which might be not very user-friendly.                                                     |
+| __[Type]__            | _default_: "string". Option: "bool" (two radio buttons with true/false).                                                                                                       |
+| __[IsMain]__          | _default_: "false". Every party should have a general name, which comes from its custom attributes. If there is more than one “IsMain” attribute it will be merged by a space. |
+| __[ValidValues]__     | List of values shown as a dropdown list. Values should be separated by “,”.                                                                                                    |
+| __[IsUnique]__        | _default_: "false". "true" means that this attribute of this party should be unique among the other parties which have the same party type.                                    |
+| __[IsValueOptional]__ | _default_: "true".  "false" means the user has to fill in this field.                                                                                                          |
+| __[Description]__     | Shows some extra information as a tooltip to the user.                                                                                                                         |
 
 #### PartyRelationshipType attributes
 
-|         |         |
-| ------- |:--------|
-| __Name__ | PartyrelationshipType name should be unique among the others. Spaces and special characters should be avoided.
-| __[DisplayName]__ | Name shown in the UI. If not set, the __Name__ is used, which might be not very user-friendly.
-| __[Description]__ | Shows some extra information as a tooltip to the user.
-| __[IndicatesHierarchy]__ | _default_: "false". "true" means that there is a hierarchy relationship between all the pairs as the source is the root and the target is the child of it.
-| __[MaxCardinality]__ | _default_: unlimited. If it is set to a number it forces the user to not have more than this number relationships.
-| __[MinCardinality]__ | _default_: unlimited. If it is set to a number it forces the user to have at least this number of relationships.
+|                          |                                                                                                                                                            |
+| ------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Name__                 | PartyrelationshipType name should be unique among the others. Spaces and special characters should be avoided.                                             |
+| __[DisplayName]__        | Name shown in the UI. If not set, the __Name__ is used, which might be not very user-friendly.                                                             |
+| __[Description]__        | Shows some extra information as a tooltip to the user.                                                                                                     |
+| __[IndicatesHierarchy]__ | _default_: "false". "true" means that there is a hierarchy relationship between all the pairs as the source is the root and the target is the child of it. |
+| __[MaxCardinality]__     | _default_: unlimited. If it is set to a number it forces the user to not have more than this number relationships.                                         |
+| __[MinCardinality]__     | _default_: unlimited. If it is set to a number it forces the user to have at least this number of relationships.                                           |
 
 #### PartyTypePair attributes
 
-|         |         |
-| ------- |:--------|
-| __Title__  | The title of this pair.
-| __AllowedSource__ | source party type is obligatory and should be exactly the same name as we defined for partytype.
-| __AllowedTarget__ | Target party type is obligatory and should be exactly the same name as we defined for partytype.
-| __[Description]__ | It shows some info about this type to the user in a tooltip.
+|                   |                                                                                                  |
+| ----------------- | :----------------------------------------------------------------------------------------------- |
+| __Title__         | The title of this pair.                                                                          |
+| __AllowedSource__ | source party type is obligatory and should be exactly the same name as we defined for partytype. |
+| __AllowedTarget__ | Target party type is obligatory and should be exactly the same name as we defined for partytype. |
+| __[Description]__ | It shows some info about this type to the user in a tooltip.                                     |
 
 ### Datasets Seed Data
 
