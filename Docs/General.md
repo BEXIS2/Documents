@@ -28,3 +28,20 @@ __User__: A registered person allowed to create and upload datasets.
 __Advanced user__: A user with rights defined by the instance, potentially including features available to data curators and admins.
 
 __Admin__: Administrators and data curators with advanced rights to manage entities, users, permissions, and configure BEXIS2.
+
+
+## Main menu overview
+
+The main menu provides three primary options for navigating the repository: My Data, Create, and Search (Fig. 1). This manual focuses on Create (upload of datasets) and My Data (editing and versioning of dataset).
+
+
+![alt_text](images/image1.png "image_tooltip")
+
+
+__Figure 1__. Main menu.
+
+__My Data (1):__ This section serves as your personal workspace. Here, you can view, manage, and edit all the datasets you have created or have access to.
+
+__Create (2):__ This section empowers you to contribute to the repository and share your findings with others by uploading new datasets and publications.
+
+__Search (3):__ This section is your gateway to exploring the available data. Find datasets and publications that others have uploaded.
