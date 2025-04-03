@@ -15,7 +15,7 @@ tags: ["javascript", "markdown", "metadata"]
 This section is under construction. Please be patient with us as we work on it.
 
 ## Entity Templates
-## Data Structure
+## Data Structures
 ## Variable Templates
 ## Data Types
 ## Units
@@ -23,4 +23,4 @@ This section is under construction. Please be patient with us as we work on it.
 ## Dimensions
 ## Meanings
 ## External Links
-## Prefix Category
+## Prefix Categories

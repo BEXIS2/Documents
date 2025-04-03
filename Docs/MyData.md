@@ -33,7 +33,7 @@ List of all answered and pending requests related to your datasets. You can acce
 
 ## Dataset Versioning
 
-## Export Data & Publishing
-### DOI Requests
-### Darwin Core / GBIF
-### Other formats
+## Publishing Data
+### DOI
+### GBIF
+### Other
