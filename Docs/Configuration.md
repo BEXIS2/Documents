@@ -51,7 +51,32 @@ BEXIS2 can connect to multiple LDAP servers. Details need to be filled out accor
 >[!SETTING]
 >__JWT__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
-???
+The following section is the configuration of the JWT (**J**son **W**eb **T**oken) which is another kind auth authentication mechanism - beside _basic authentication_ by username and password. The comments in the following section are only included for better understanding and documentation.
+
+```JSON
+{
+  // Validate the system/application for whom the token was generated for (the audience).
+  "validateAudience": false,
+
+  // Validate the system/issuer, that generated the token(s).
+  "validateIssuer": false,
+
+  // The URL/address of the system/application the tokens are issued for. In case of "validateAudience" is set to false, you can neglet this value.
+  "validAudience": "http://localhost:3000",
+
+  // The URL/address of the system/application that is generating the tokens. In case of "validateIssuer" is set to false, you can neglet this value.
+  "validIssuer": "https://localhost:7041",
+
+  // This key is used to validate the signature of a given token, which is considered to be valid only if the signature is correct.
+  "issuerSigningKey": "JWTAuthenticationHIGHsecuredPasswordVVVp1OH7Xzyr",
+
+  // Validate the the lifetime of a token. Usually, there is a due date for each token. But the system can validate against it - or not.
+  "validateLifetime": false,
+
+  // The maximum valid lifetime (in hours) of a token, defined at creation date.
+  "validLifetime": 1
+}
+```
 
 ### E-Mail
 >
