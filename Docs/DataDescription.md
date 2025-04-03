@@ -11,6 +11,9 @@ tags: ["javascript", "markdown", "metadata"]
 >__Role:__ [Advanced User](../docs/General/#roles)
 
 ## Overview
+
+This section is under construction. Please be patient with us as we work on it.
+
 ## Data Structure
 ## Variable Templates
 ## Data Types
