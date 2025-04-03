@@ -6,7 +6,7 @@ tags: ["javascript", "markdown", "metadata"]
 ---
 
 # Manage Data Description
-# Datasets
+
 >[!ROLE]
 >__Role:__ [Advanced User](../docs/General/#roles)
 
@@ -14,6 +14,7 @@ tags: ["javascript", "markdown", "metadata"]
 
 This section is under construction. Please be patient with us as we work on it.
 
+## Entity Templates
 ## Data Structure
 ## Variable Templates
 ## Data Types

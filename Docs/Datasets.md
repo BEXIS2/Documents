@@ -5,7 +5,7 @@ position: 3
 tags: ["javascript", "markdown", "metadata"]
 ---
 
-# Create & edit datasets (user)
+# Create & edit dataset
 >[!ROLE]
 >__Role:__ [User](../docs/General/#roles)
 
