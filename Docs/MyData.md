@@ -6,7 +6,7 @@ position: 4
 
 ---
 
-# MyData
+# My Data
 > [!ROLE]
 > __Role:__ [User](../docs/General/#roles)
 >

@@ -13,15 +13,13 @@ tags: ["javascript", "markdown", "metadata"]
 
 To create a new dataset, click on  'Create' in the main menu. A list of dataset types will be displayed (e.g., file, tabular data, publications). Each dataset type may have a specific metadata schema, allowed file types, and other characteristics. To choose the most appropriate dataset type for your data:
 
-* __Check its description__ 
+* __Check its description__
 * __Verify the accepted file types:__ If no file types are listed, you can upload any format supported by BEXIS2 (see the complete list here (link will be added))
 
 To select a dataset type, simply click on it. If you're unsure about the best option or your file type is not accepted, please contact your data curator or manager.
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+[image]
 
 
 
@@ -56,37 +54,31 @@ The dataset edit page of every dataset includes the following parts, though some
 
 With the __View__ button in the upper right corner, you can switch to the dataset view.
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+[image]
 
 
 
 
 ### Metadata
 
-To edit the metadata, click on the pen icon on the dataset edit page. The metadata form for your dataset will open in a new window. 
+To edit the metadata, click on the pen icon on the dataset edit page. The metadata form for your dataset will open in a new window.
 
 Use the tabs at the top of the form to navigate the specific sections. Familiarize yourself with the icons and their functions to streamline data entry (icons will be added soon).
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+[image]
 
 
 Please remember that you can return to edit the metadata form at any time to make updates. Ensure your metadata is complete and comprehensive, as this improves data discoverability and reuse, and guarantees you receive proper credit for your work.
 
-After editing the metadata, scroll to the end of the form. There, you can provide brief information about your changes in a text box. Additionally, you can validate, save, or cancel your changes. 
+After editing the metadata, scroll to the end of the form. There, you can provide brief information about your changes in a text box. Additionally, you can validate, save, or cancel your changes.
 
-The validation process checks if all mandatory fields are filled and comply with the metadata standard. Errors and missing content will be highlighted in red. Clicking the Save button also triggers validation. Once your metadata is saved, you will be directed to the view mode. 
+The validation process checks if all mandatory fields are filled and comply with the metadata standard. Errors and missing content will be highlighted in red. Clicking the Save button also triggers validation. Once your metadata is saved, you will be directed to the view mode.
 
 If you want to update your dataset further (e.g., metadata, data, etc.), click on the button in the upper right corner of the page, and you will be redirected to the dataset edit page.
 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+[image]
 
 
 
@@ -98,13 +90,10 @@ To add your data, drag and drop your file(s) to the upload box or click the uplo
 
 (1) __Upload and storage of tabular data__: One or more files with identical data structures can be uploaded per dataset. The data can be viewed and filtered in BEXIS2. If this option is possible, the edit page will contain the section [data structure](#data-structure).
 
-Once you have uploaded the file(s), they will be listed. You can now add a description or comment to the file, delete the file(s), or submit them as part of your dataset. To upload the file(s), you will need to select a [data structure](#data-structure). 
+Once you have uploaded the file(s), they will be listed. You can now add a description or comment to the file, delete the file(s), or submit them as part of your dataset. To upload the file(s), you will need to select a [data structure](#data-structure).
 
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
+<[image]
 
 
 (2) __Upload data__ (e.g., images, GIS files) __that are not saved in a tabular structure__ in BEXIS2: Several files can be uploaded. A data structure is not needed for this case.
@@ -113,10 +102,7 @@ Once you have uploaded the file(s), they will be listed. You can now add a descr
 
 
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
+[image]
 
 
 
@@ -130,10 +116,7 @@ A data structure defines all the variables of the data you wish to upload. Befor
 
 
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
+[image]
 
 
 After creating the data structure, you need to define your variables on the [data structure edit page](#data-structure-edit-page) page if you have chosen option (1) based on an existing data structure or (2) based on a file.
@@ -185,10 +168,7 @@ __2. Verifying and Adjusting File Structure Information__
 
 
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
+[image]
 
 
 __3. Handling Missing Values:__
@@ -222,12 +202,7 @@ __6. Saving the Data Structure:__
 
 
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
-
-
+[image]
 
 #### Create a new structure
 
@@ -246,7 +221,7 @@ The Data Structure Edit page consists of three main sections:
 2. Required actions _(optional)_
 3. Variables
 
-   
+
 1. __General information of a data structure__
 * __Data structure title:__ provide a meaningful title for your data. This could be based on the dataset ID or the content.
 * __Primary key:__ Each table row must contain a unique record. A primary key, consisting of one or more columns, serves as a unique identifier. This enables the updating of the dataset.
@@ -258,10 +233,7 @@ This section lists the actions required to complete the data structure if the da
 
 
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
+[image]
 
 
 
@@ -285,10 +257,7 @@ The next step is to define your variables. If you created your data structure fr
 
 
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
+[image]
 
 
 __Creating a new data structure or modifying a data structure__
@@ -307,11 +276,7 @@ You can upload additional material to your dataset as an attachment. To add atta
 
 
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
-
+[image]
 
 
 ### Links (optional)
@@ -326,7 +291,4 @@ The links are always between specific versions of datasets. You have the option 
 
 
 
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
+[image]
