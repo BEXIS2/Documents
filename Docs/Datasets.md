@@ -5,11 +5,11 @@ position: 3
 tags: ["javascript", "markdown", "metadata"]
 ---
 
-# Create & edit dataset
+# Create & Edit Datasets
 >[!ROLE]
 >__Role:__ [User](../docs/General/#roles)
 
-## Create a dataset
+## Create a Dataset
 
 To create a new dataset, click on  'Create' in the main menu. A list of dataset types will be displayed (e.g., file, tabular data, observations, publications).
 
@@ -120,7 +120,7 @@ The validation checks if all mandatory fields are filled and comply with the met
 __Figure 6.__ Metadata form.
 
 
-### File upload
+### File Upload
 
 To add your data, drag and drop your file(s) to the upload box or click the upload icon to select file(s) from your computer.
 
@@ -180,11 +180,11 @@ A data structure defines all the variables of the data you wish to upload. Befor
 After creating the data structure, you need to define your variables on the “Data Structure Edit” page if you have chosen option (1) based on an existing data structure or (2) based on a file. (LINK)
 
 
-#### Reusing data structures
+#### Reusing Data Structures
 
 The reuse of data structures within BEXIS2 ensures consistency and efficiency. This scenario applies, for example, for monitoring data or data from data loggers. Defined data structures can and should be reused for recurring data, such as data of a data logger. This data often shares similar structures (e.g., timestamp, sensor readings).
 
-__Method 1: Direct selection of an Existing Data Structure__
+__Method 1: Direct selection of an existing data structure__
 
 
 
@@ -194,7 +194,7 @@ __Method 1: Direct selection of an Existing Data Structure__
 * Begin typing the name of the desired data structure.
 * Select the correct data structure from the list.
 
-__Method 2: Creating a new dataset based on an existing dataset (LINK to my data)__
+__Method 2: Creating a new dataset based on an existing dataset__
 
 1. Access "My Data"
 
@@ -222,7 +222,7 @@ __4. Customization (Optional):__
 * You can also add new data without altering the underlying data structure.
 
 
-#### Data structure based on file oder Creating data structures from files
+#### Data Structure Based on File oder Creating data structures from files
 
 If you need a new data structure, we strongly recommend that you create it based on the file you want to upload.
 
