@@ -1,5 +1,5 @@
 ---
-title: "Search & Download Data"
+title: "Search and Download Data"
 description: "This section provides information about searching and downloading data, including citation and data access requests."
 tags: [search, download, citation, data access]
 position: 2
