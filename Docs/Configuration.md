@@ -18,6 +18,13 @@ tags: ["javascript", "markdown", "metadata"]
 
 (Short) name of the BEXIS2 instance. The name is, e.g., used in the breadcrumb or as a prefix in emails sent via the system. Avoid special characters or too-long names.
 
+[!LINK_VIEW][all datasets](../docs/General#roles)
+[!LINK_CREATE][dataset](../docs/General#roles)
+[!LINK_EDIT][datset](../docs/General#roles)
+[!LINK_DELETE][dataset](../docs/General#roles)
+[!LINK_MANAGE][manage datasets](../docs/General#roles)
+[!LINK_CONFIGURE][configure datasets](../docs/General#roles)
+
 ### Landing Page
 
 The landing page is the first page a user sees when opening the base URL of the BEXIS2 instance. There are three types of landing pages which can be configured:
@@ -546,7 +553,7 @@ The placeholders are necessary to adopt dataset-specific values into the data mo
 
 ```JSON
 {
-  // 
+  //
   "{DatasetId}": "{DatasetId}",
   "{VersionId}": "{VersionId}",
   "{VersionNumber}": "{VersionNumber}",
