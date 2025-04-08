@@ -11,7 +11,7 @@ tags: ["javascript", "markdown", "metadata"]
 
 ## Create a Dataset
 
-To create a new dataset, click on  'Create' in the main menu. A list of dataset types will be displayed (e.g., file, tabular data, publications). Each dataset type may have a specific metadata schema, allowed file types, and other characteristics. To choose the most appropriate dataset type for your data:
+To create a new dataset, click on  __Create__ in the main menu. A list of dataset types will be displayed (e.g., file, observation, publications). Each dataset type may have a specific metadata schema, allowed file types, and other characteristics. To choose the most appropriate dataset type for your data:
 
 * __Check its description__
 * __Verify the accepted file types:__ If no file types are listed, you can upload any format supported by BEXIS2 (see the complete list here (link will be added))
@@ -19,18 +19,20 @@ To create a new dataset, click on  'Create' in the main menu. A list of dataset 
 To select a dataset type, simply click on it. If you're unsure about the best option or your file type is not accepted, please contact your data curator or manager.
 
 
-[image]
+![Create dataset I](https://github.com/BEXIS2/Documents/blob/master/Docs/Images/crreate_create_dataset1.png)
 
+After selecting a dataset type, an input area will appear either on the right side or below. Enter the required metadata - such as the title and description - into the appropriate fields. Once all mandatory fields are completed, you can create the dataset by clicking the green plus sign in the bottom-right corner.
 
+![Create dataset II](https://github.com/BEXIS2/Documents/blob/master/Docs/Images/crreate_create_dataset2.png)
 
-Once you have selected a dataset type, a box will appear on the right side or below. Fill in the required metadata fields in the designated input boxes, such as title and description. Once the mandatory field(s) are completed, you can generate the dataset by clicking the green plus sign in the bottom right corner. Afterward, the general editing page of the dataset appears. From here, there are various ways to continue working:
+This action opens the dataset's general editing page, where you can proceed in several ways:
 
 * Upload data
 * Select an existing data structure
 * Add a new data structure
 * Edit the metadata
 
-Once your dataset has been created, in most BEXIS2 instances, it will typically be visible only to you (the dataset author) and users with editing rights based on their role. This usually includes co-authors and the data manager. Under [versioning](#dataset-versioning-make-the-dataset-findable-for-other-users-15), you will find a description of how to make the dataset visible to all users.
+By default, in most BEXIS2 instances, newly created datasets are only visible to you (the author) and users with editing permissions based on their roles - typically co-authors and data managers. For information on how to make your dataset accessible to all users, refer to the [versioning](../docs/MyData/#dataset-versioning) section.
 
 
 ### Dataset Edit Page (user)
