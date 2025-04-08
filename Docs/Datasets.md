@@ -23,7 +23,7 @@ To select a dataset type, simply click on it. If you're unsure about the best op
 
 After selecting a dataset type, an input area will appear either on the right side or below. Enter the required metadata - such as the title and description - into the appropriate fields. Once all mandatory fields are completed, you can create the dataset by clicking the green plus sign in the bottom-right corner.
 
-![Create dataset II](https://github.com/BEXIS2/Documents/blob/master/Docs/Images/crreate_create_dataset2.png)
+![Create dataset II](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/crreate_create_dataset2.png)
 
 This action opens the dataset's general editing page, where you can proceed in several ways:
 
