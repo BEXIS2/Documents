@@ -19,7 +19,7 @@ To create a new dataset, click on  __Create__ in the main menu. A list of datase
 To select a dataset type, simply click on it. If you're unsure about the best option or your file type is not accepted, please contact your data curator or manager.
 
 
-![Create dataset I](https://github.com/BEXIS2/Documents/blob/master/Docs/Images/crreate_create_dataset1.png)
+![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/crreate_create_dataset1.png)
 
 After selecting a dataset type, an input area will appear either on the right side or below. Enter the required metadata - such as the title and description - into the appropriate fields. Once all mandatory fields are completed, you can create the dataset by clicking the green plus sign in the bottom-right corner.
 
