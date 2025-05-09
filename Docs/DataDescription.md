@@ -67,7 +67,7 @@ You can update an existing unit to correct or clarify its information.
 2. In the Units table, locate the unit you want to update.  
 3. Click the **Edit** icon on the right.  
 4. Make the necessary changes to the relevant fields.  
-5. Click **Save** (floppy) button) to apply your changes.
+5. Click **Save** (floppy button) to apply your changes.
 
 > **Note:** If the unit is already assigned to a variable, changes will take effect immediately wherever that unit is used. Be cautious when editing units that are used in multiple places.
 
