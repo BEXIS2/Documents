@@ -12,15 +12,26 @@ position: 1
 
 ## Registration
 
-The registration form is accessible via the Register button on the right side. All fields of the form are mandatory, and it is required to agree to the *Terms and Conditions* and *Privacy Policy*. Then you are asked to confirm your email address. As the last step, you have to provide some information (e.g.,  name, affiliation to the project, organization). Based on the provided details, the project Team grants permissions within three days.
+To register, click **Register** in the top main menu. Fill out the form completely — all fields are required. You must agree to the **Terms and Conditions**, and are asked to **carefully read the Privacy Policy**.
 
-![registration](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/register.png)
+After completing the form, click the **Register** button at the bottom of the form to submit your registration.  
+You will then receive an email with a link to **confirm your email address** and to **complete your profile**. Depending on the setting of your instance, you will be asked to provide some additional details, such as your **name**, your **role in the project**, and your **affiliated organization**.
+
+Based on this information, the **administrator of your instance** will review your request and grant appropriate access permissions in due time.
+
+
+![registration](https://github.com/BEXIS2/Documents/blob/master/Docs/Images/Registration.png)
 
 ## Login
 
-Press the *Login* button on the right side. BEXIS2 redirects you to the login form, where you have to enter your account credentials (email or username and password). If the login is successful, the start page (e.g., *Dashboard* or *Search*) is loaded. Otherwise, you will see information about the status and reason for the failed login.
+To login, click **Login** in the main menu. On the login page, you have to enter your account credentials (**email or username** and **password**).  
+If the login is successful, the start page (e.g., **Search**) is loaded. Otherwise, you will see information about the status and reason for the failed login.
 
-<a href="url" title="login"><img src="https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/login.png" align="center" height="300" ></a>
+> **Forgot your password?**  
+> You can reset your password on this page by clicking **Forgot your password?**
+
+
+![login](https://github.com/BEXIS2/Documents/blob/master/Docs/Images/Login.png)
 
 
 ## API Token
