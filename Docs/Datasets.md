@@ -19,11 +19,11 @@ To create a new dataset, click on  __Create__ in the main menu. A list of datase
 To select a dataset type, simply click on it. If you're unsure about the best option or your file type is not accepted, please contact your data curator or manager.
 
 
-![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/crreate_create_dataset1.png)
+![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset01.png)
 
 After selecting a dataset type, an input area will appear either on the right side or below. Enter the required metadata - such as the title and description - into the appropriate fields. Once all mandatory fields are completed, you can create the dataset by clicking the green plus sign in the bottom-right corner.
 
-![Create dataset II](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/crreate_create_dataset2.png)
+![Create dataset II](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset02.png)
 
 This action opens the dataset's general editing page, where you can proceed in several ways:
 
@@ -50,13 +50,13 @@ The Dataset Edit Page of every dataset includes the following parts, though some
 
 1. __[Metadata](#metadata)__ _(mandatory)_: Click on the pencil button to include the dataset's essential information in the metadata.
 2. __[File upload](#file-upload):__ Upload your data files into this section by drag and drop or click to select.
-3. __Data Structure__ _(some dataset types)_: Define the variables of the tabular data. The easiest way is to create the Data Structure by uploading your data first.
-4. __Attachments__ _(some dataset types)_: Add supplementary files to support your dataset.
-5. __Link:__ Connect your dataset to others within your instance.
+3. __[Data Structure](#data-structure)__ _(some dataset types)_: Define the variables of the tabular data. The easiest way is to create the Data Structure by uploading your data first.
+4. __[Attachments](#attachments)__ _(some dataset types)_: Add supplementary files to support your dataset.
+5. __[Links](#links):__ Connect your dataset to others within your instance.
 
 With the __View__ button in the upper right corner, you can switch to the dataset view.
 
-[image]
+![DatasetEditPage](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset03_DatasetEditPage.png)
 
 
 
@@ -80,11 +80,6 @@ The validation process checks if all mandatory fields are filled and comply with
 If you want to update your dataset further (e.g., metadata, data, etc.), click on the button in the upper right corner of the page, and you will be redirected to the Dataset Edit Page.
 
 
-[image]
-
-
-
-
 
 ### File Upload
 
@@ -93,9 +88,6 @@ To add your data, drag and drop your file(s) to the upload box or click the uplo
 (1) __Upload and storage of tabular data__: One or more files with identical Data Structures can be uploaded per dataset. The data can be viewed and filtered in BEXIS2. If this option is possible, the edit page will contain the section [data structure](#data-structure).
 
 Once you have uploaded the file(s), they will be listed. You can now add a description or comment to the file, delete the file(s), or submit them as part of your dataset. To upload the file(s), you will need to select a [data structure](#data-structure).
-
-
-<[image]
 
 
 (2) __Upload data__ (e.g., images, GIS files) __that are not saved in a tabular structure__ in BEXIS2: Several files can be uploaded. A Data Structure is not needed for this case.
@@ -118,7 +110,7 @@ A Data Structure defines all the variables of the data you wish to upload. Befor
 
 
 
-[image]
+![DatasetEditPage](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset05_CreateDataStructure01.png)
 
 
 After creating the Data Structure, you need to define your variables on the [data structure edit page](#data-structure-edit-page) page if you have chosen option (1) based on an existing Data Structure or (2) based on a file.
@@ -168,11 +160,6 @@ __2. Verifying and adjusting file structure information__
 * Verify accuracy: Carefully review these settings to ensure they accurately reflect your file's format.
 * Make adjustments: If necessary, modify any of the pre-filled settings to match your file's characteristics.
 
-
-
-[image]
-
-
 __3. Handling Missing Values:__
 * System default: BEXIS2 has a predefined default Missing Value.
 * Administrator modification: An administrator can modify the default Missing Value.
@@ -204,7 +191,7 @@ __6. Saving the Data Structure:__
 
 
 
-[image]
+![DatasetEditPage](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset06_CreateDataStructure02.png)
 
 #### Create a new structure
 
