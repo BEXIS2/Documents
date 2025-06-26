@@ -95,6 +95,69 @@ You can also remove units that are not used in the system. To remove a unit:
 
 
 ## Constraints
+### Overview
+
+Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to variable templates under **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
+
+To access the constraints management section, go to **Settings → Manage Constraints**.
+
+### Types of Constraints
+
+There are three main types of constraints:
+
+- **Pattern**: Ensures values match a specific format (e.g., a date or identifier) defined using regular expressions..
+  - Example: To allow only dates in the format `YYYY-MM-DD`, use the regex pattern:  `^\d{4}-\d{2}-\d{2}$`
+- **Range**: Limits acceptable values to a defined numeric range.
+  - Example: A constraint with a minimum of `1` and a maximum of `100` allows only values within that range.
+- **Domain**: Specifies a list of valid values. There are three ways to provide domain values:
+  - Enter values manually (one per line).
+  - Upload a text file containing values.
+  - Select a dataset and extract values from one of its variables.
+
+### Creating a Constraint
+
+To create a new constraint:
+
+1. Navigate to **Settings → Manage Constraints**.
+2. Click the **Create New** button at the top right of the page.
+3. Fill out the fields in the form:
+
+   - **Name (required)**: A unique name for the constraint, visible when assigning it to variables.
+   - **Description (required)**: A short explanation of the constraint’s purpose.
+   - **Formal Description (auto-generated)**: Automatically created based on the selected type and its settings.
+   - **Constraint Type (required)**: Select between *Pattern*, *Range*, or *Domain*.
+  
+### Reload and Cancel Buttons
+
+- The **Reload** button (circular arrow icon) resets the form to its original state.
+- The **Cancel** button exits the form without saving any changes.
+
+### Editing a Constraint
+
+To edit a constraint:
+
+1. Go to **Settings → Manage Constraints**.
+2. Find the constraint in the list and click the **Edit** icon.
+3. Update the relevant fields and click **Save** (floppy disk icon) to apply the changes.
+
+### Deleting a Constraint
+
+To delete a constraint:
+
+1. Go to **Settings → Manage Constraints**.
+2. Find the constraint in the list and click the **Delete** icon.
+3. Confirm deletion in the popup window.
+
+> **Note**: Constraints currently in use in a dataset cannot be deleted until they are removed from those datasets.
+
+### Best Practices
+
+- Use descriptive names and concise descriptions to make constraints easy to understand.
+- Test regex patterns thoroughly to prevent unexpected validation behavior.
+- Use Range Constraints with clearly defined limits and appropriate data types.
+- Provide domain values that are unambiguous and relevant to the variable they constrain.
+- Only delete constraints after confirming they are no longer in use.
+
 ## Dimensions
 ## Meanings
 ## External Links
