@@ -85,12 +85,12 @@ You can also remove units that are not used in the system. To remove a unit:
 > **Note:** Units that are already used in a dataset cannot be deleted until those assignments are removed. Always check whether a unit is in use before attempting to delete it. If you try to delete a unit that is in use, an error message will appear, and the unit cannot be deleted.
 
 ### Best Practices for Managing Units
-- Use clear, standardized names and abbreviations based on international conventions.
--  Avoid creating duplicate units.
-- Use the same schema for derived units (kg·m/s²)
-- Provide meaningful descriptions to help users select the correct unit.  
-- Assign the correct data types and dimensions to prevent misuse.  
-- Only delete units after confirming they are not in use.
+- ✅ Use **descriptive and standardized names** to ensure clarity and reuse.  
+- ✅ Write **concise, meaningful descriptions** to make constraints easy to understand.  
+- ✅ **Test regular expressions (regex)** thoroughly to avoid unexpected validation issues.  
+- ✅ Define **range constraints** with clear minimum/maximum values and use appropriate data types.  
+- ✅ Provide **domain values** that are unambiguous, relevant, and well-suited to the variable they constrain.  
+- ✅ **Check dependencies** before deleting a constraint, and only remove it if it is no longer in use.
 
 
 
@@ -114,12 +114,12 @@ There are three main types of constraints:
   - Upload a text file containing values.
   - Select a dataset and extract values from one of its variables.
 
-### Creating a Constraint
+### Creating a New Constraint
 
 To create a new constraint:
 
 1. Navigate to **Settings → Manage Constraints**.
-2. Click the **Create New** button at the top right of the page.
+2.  On the **Manage Constraints** page, click the **plus icon (+)** to create a new dimension.
 3. Fill out the fields in the form:
 
    - **Name (required)**: A unique name for the constraint, visible when assigning it to variables.
@@ -152,13 +152,78 @@ To delete a constraint:
 
 ### Best Practices
 
-- Use descriptive names and concise descriptions to make constraints easy to understand.
-- Test regex patterns thoroughly to prevent unexpected validation behavior.
-- Use Range Constraints with clearly defined limits and appropriate data types.
-- Provide domain values that are unambiguous and relevant to the variable they constrain.
-- Only delete constraints after confirming they are no longer in use.
+- ✅ Use **descriptive and consistent names** to make constraints easy to identify and understand.  
+- ✅ Provide **concise and meaningful descriptions** to clarify the purpose of each constraint.  
+- ✅ **Thoroughly test regular expressions (regex)** to ensure they behave as expected and avoid unintended validation results.  
+- ✅ Define **range constraints** with clearly specified minimum and maximum values, and ensure they match the correct data type.  
+- ✅ Use **domain values** that are unambiguous, relevant, and context-appropriate for the variable they constrain.  
+- ✅ Only delete constraints after confirming they are **no longer referenced or in use** elsewhere in the system.
 
 ## Dimensions
+
+### Creating a New Dimension
+
+To define a new dimension:
+
+1. Navigate to **Settings → Manage Dimensions**.  
+2. On the **Manage Dimensions** page, click the **plus icon (+)** to create a new dimension.  
+3. Fill out the form with the required and optional fields. Fields marked with a red asterisk (*) are mandatory:
+
+   - **Name (required)**: Provide a clear and unique name, preferably based on international standards such as the *International System of Units (SI)*. Avoid abbreviations or internal codes.
+   - **Specification (required)**: Define the mathematical structure using base units.  
+     Example:  
+     ```
+     L(1,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)
+     ```
+   - **Description (required)**: Briefly describe the context or usage of the dimension, e.g., _"Used for time-based units like seconds or minutes."_
+     
+> **Note**:  
+> Dimensions refer to the physical properties of variables. In BEXIS2, a dimension consists of base dimension abbreviations (e.g., L, M) followed by a pair of exponents (positive, negative).
+
+#### Base Dimension Components
+
+| Symbol | Component              |
+|--------|------------------------|
+| **L**  | Length                 |
+| **M**  | Mass                   |
+| **T**  | Time                   |
+| **I**  | Electric Current       |
+| **Θ**  | Temperature            |
+| **N**  | Amount of Substance    |
+| **J**  | Luminous Intensity     |
+
+Once all required fields are completed, the **Save** button (floppy disk icon) becomes active. Click it to save the new dimension.
+
+To cancel the entry, click the **X** (cancel icon).
+
+### Editing a Dimension
+
+> **Note**: Editing is only possible if the dimension is not currently in use.
+
+1. Navigate to **Settings → Manage Dimensions**.  
+2. Locate the dimension in the list and click the **Edit icon** on the right-hand side.  
+3. Make your changes and click **Save** to apply them.
+
+
+### Deleting a Dimension
+
+> **Note**: Deletion is only possible if the dimension is not referenced by any unit.
+
+1. Navigate to **Settings → Manage Dimensions**.  
+2. Find the dimension and click the **Delete icon** on the right-hand side.  
+3. A confirmation dialog appears showing the dimension’s name and specification.  
+4. Click **Confirm** to permanently delete the dimension.
+
+## Best Practices for Managing Dimensions
+
+- ✅ Use **standardized and descriptive names** for better clarity and reuse.  
+- ✅ **Check existing entries** to avoid duplicates.  
+- ✅ Follow the **SI system structure** when defining specifications.  
+- ✅ Keep **descriptions concise but informative**.  
+- ✅ Regularly **review and remove unused dimensions**.
+
+
+
 ## Meanings
 ## External Links
 ## Prefix Categories
