@@ -161,6 +161,16 @@ To delete a constraint:
 
 ## Dimensions
 
+>[!ROLE]
+>__Role:__ [Administrator](../docs/General/#roles)
+
+**Dimensions** in BEXIS2 refer to fundamental physical properties such as *length*, *time*, or *mass*. They provide the structural foundation for defining units, which give precise meaning to the values in a dataset. For example, the unit *meter* is based on the dimension *Length*, while *second* is based on *Time*. Linking variables to dimensions through units ensures that measurement values are grounded in scientifically accepted principles.
+
+Each dimension in BEXIS2 is described using a structured combination of base quantities. This enables the system to consistently support a wide range of scientific measurements. Dimensions are defined using a dimension string such as `L(1,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)`. This format facilitates unit conversion and makes it easier to compare data across studies and disciplines.
+
+Usually, only administrators can create or modify dimensions. Once defined, these dimensions are available system-wide and are automatically referenced when users assign units to variables during dataset creation or editing. This design ensures consistency and prevents redundant definitions of measurement concepts.
+
+
 ### Creating a New Dimension
 
 To define a new dimension:
@@ -171,10 +181,7 @@ To define a new dimension:
 
    - **Name (required)**: Provide a clear and unique name, preferably based on international standards such as the *International System of Units (SI)*. Avoid abbreviations or internal codes.
    - **Specification (required)**: Define the mathematical structure using base units.  
-     Example:  
-     ```
-     L(1,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)
-     ```
+     Example: `L(1,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)`
    - **Description (required)**: Briefly describe the context or usage of the dimension, e.g., _"Used for time-based units like seconds or minutes."_
      
 > **Note**:  
@@ -196,6 +203,8 @@ Once all required fields are completed, the **Save** button (floppy disk icon) b
 
 To cancel the entry, click the **X** (cancel icon).
 
+![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_ManageDimension.png)
+
 ### Editing a Dimension
 
 > **Note**: Editing is only possible if the dimension is not currently in use.
@@ -214,7 +223,7 @@ To cancel the entry, click the **X** (cancel icon).
 3. A confirmation dialog appears showing the dimension’s name and specification.  
 4. Click **Confirm** to permanently delete the dimension.
 
-## Best Practices for Managing Dimensions
+### Best Practices for Managing Dimensions
 
 - ✅ Use **standardized and descriptive names** for better clarity and reuse.  
 - ✅ **Check existing entries** to avoid duplicates.  
