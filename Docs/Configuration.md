@@ -180,6 +180,19 @@ Set true to reduce the versions select for logged in users.
 Set true to reduce the versions select for logged in users.
 
 >[!SETTING]
+>__Activate Tags to Summarize Versions__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: false_)
+
+Enable to possibility for Users to define a combination of versions to a tag.
+
+>[!SETTING]
+>__Use Minor Tags__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: false_)
+
+
+Activate minor tags in order to be able to show the changes more granularly.
+
+### Citation
+
+>[!SETTING]
 >__Citation Settings__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: default values_)
 
 This section lets you configure how a "citation string" for an entity (like a dataset or a research project) is displayed and used. A citation string is the formal text you use to give credit to a source.
@@ -212,16 +225,7 @@ This section lets you configure how a "citation string" for an entity (like a da
 
 ```
 
->[!SETTING]
->__Activate Tags to Summarize Versions__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: false_)
 
-Enable to possibility for Users to define a combination of versions to a tag.
-
->[!SETTING]
->__Use Minor Tags__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: false_)
-
-
-Activate minor tags in order to be able to show the changes more granularly.
 
 
 ## Dataset Creation
