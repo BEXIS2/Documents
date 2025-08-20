@@ -129,7 +129,7 @@ The following section is the configuration of a smtp server so that the system i
 ```
 
 >[!SETTING]
->__Exception Configuration?__ (_Settings -> Application Settings -> General_) (_default: default values_)
+>__Exception Configuration__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
 **Handling Exceptions with Email Alerts**
 
@@ -175,9 +175,42 @@ Set true to enable to show metadata for not-logged in users, if the dataset is n
 Set true to reduce the versions select for logged in users.
 
 >[!SETTING]
->__Restrict to Latest Version for Logged-in Users__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: true_)
+>__Reduce Versions Select for Logged-in Users__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: true_)
 
-Set true to restrict the version select to the latest version for logged in users.
+Set true to reduce the versions select for logged in users.
+
+>[!SETTING]
+>__Citation Settings__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: default values_)
+
+This section lets you configure how a "citation string" for an entity (like a dataset or a research project) is displayed and used. A citation string is the formal text you use to give credit to a source.
+
+```JSON
+{
+  //This specifies the name of the publisher for the citation. In this case, it's the "BEXIS2 DevOps Team." This name will appear in the citation string.
+  "publisher": "BEXIS2",
+  //This is the name of the specific platform or instance from which the data is being cited. This also helps identify the source in the citation.
+  "instance": "BEXIS2",
+  //This setting indicates how many authors should be included in the citation. A value of 0 means that the citation will list any individual authors.
+  "numberOfAuthors": 0,
+  //This is a simple on/off switch. When it's set to true, the citation string will be visible and displayed to users. If it were false, the citation would be hidden.
+  "showCitation": true,
+  //This determines the default format for the citation when a user first views it. In this case, the citation will initially appear as a simple, plain Text string.
+  "defaultViewCitationFormat": "Text",
+  //This lists all the different formats that users can view the citation in on the screen. Here, users can switch between Text and APA (a common citation style).
+  "viewCitationFormats": [
+    "Text",
+    "APA"
+  ],
+  //This lists all the formats available for a user to download the citation. Users can download the citation in various formats, which can then be imported directly into citation management software. The available formats are:
+  "downloadCitationFormats": [
+    "Text",
+    "APA",
+    "RIS",
+    "BibTex"
+  ]
+}
+
+```
 
 >[!SETTING]
 >__Activate Tags to Summarize Versions__ (_Settings -> Application Settings -> Dataset Discovery_) (_default: false_)
