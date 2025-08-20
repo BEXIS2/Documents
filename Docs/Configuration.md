@@ -129,9 +129,28 @@ The following section is the configuration of a smtp server so that the system i
 ```
 
 >[!SETTING]
->__Send Exceptions?__ (_Settings -> Application Settings -> General_) (_default: false_)
+>__Exception Configuration?__ (_Settings -> Application Settings -> General_) (_default: default values_)
 
-This value determines whether information about exceptions are sent to the system e-mail address or not. If set to false, exceptions are thrown silently. The user may see an error message on the screen (within the browser or another client), but the system won't send an e-mail with stack information about the issue to the deposited e-mail address separately. If the value is set to true, this is of course the case.
+**Handling Exceptions with Email Alerts**
+
+This section focuses on how to handle and forward exceptions (errors) via email. By setting this up, you can prevent your inbox from being flooded with a large number of repetitive email alerts for the same issue. Normally, when an error occurs in a system, it might trigger an email alert every single time. This can quickly become unmanageable if the same error keeps happening. This process helps you manage this by consolidating these alerts.
+
+The goal is to ensure you are notified of critical errors without being overwhelmed by a constant stream of duplicate emails.
+```JSON
+{
+  //This is the main switch. When it's set to true, it means the system is active and will send out email alerts whenever an error or exception occurs. If this were set to false, it would not send any emails, even if errors happen.
+  "sendExceptions": true,
+  //This is a filter based on the text of the error message. Any error message that contains the text "Multiple types were found that match the controller named" will be ignored, and no email will be sent for that specific error. This is useful for stopping repetitive alerts about known, non-critical issues.
+  "excludedMessages": [
+    "Multiple types were found that match the controller named"
+  ],
+  //This is a filter based on the HTTP status code. The system will not send email alerts for any errors that have the HTTP status codes 404 (Not Found) or 400 (Bad Request). These are very common errors and are often not considered critical enough to warrant an email alert, so they are intentionally excluded here.
+  "excludedHttpStatusCodes": [
+    404,
+    400
+  ]
+}
+```
 
 >[!SETTING]
 >__Use Multimedia Module?__(_Settings -> Application Settings -> General_)(_default: false_)
@@ -139,9 +158,9 @@ This value determines whether information about exceptions are sent to the syste
 If set to true, the multimedia module is activated. This allows the visualization of multimedia files, such as images, videos, etc., in the system.
 
 >[!SETTING]
->__FAQ__ (_Settings -> Application Settings -> General_) (_default: [false](https://github.com/BEXIS2/Core/wiki/FAQ)_)
+>__FAQ__ (_Settings -> Application Settings -> General_) (_default: ["https://github.com/BEXIS2/Core/wiki/FAQ"](https://github.com/BEXIS2/Core/wiki/FAQ)_)
 
-??
+Insert a URL to a Q&A catalog here. The BEXIS2 FAQ is selected by default, but you can replace it with a catalog specific to your instance.
 
 ## Visibility & Versions (Dataset Discovery)
 
