@@ -229,10 +229,10 @@ The next step is to define your variables. If you created your Data Structure fr
 
  You have the following options to specify your variable. If not mentioned differently, the information is mandatory:
 * __Variable name:__ Is given if the Data Structure is created based on a file. Otherwise, it must be entered in the same way as it is in the file you want to upload.
-* __Template__ _(optional, depending on your instance settings)_: Select a variable template from the provided list. Templates group relate variables by content (e.g., the "temperature" template includes soil, water, and air temperature).  If you create the Data Structure based on a file, BEXIS2 will attempt to select a suitable template automatically.
-* __Data Type:__ Select the appropriate Data Type.
-* __Meaning__ _(optional)_: (If available) Select the specific meaning of the variable.
-* __Constraints__ _(optional)_: These may be pre-filled based on the chosen template or meaning. But you can also define them.
+* __Template__ _(optional, depending on your instance settings)_: Select a [Variable Template](DataDescription.md#variable-template) from the provided list. Templates group related variables by content (e.g., the "temperature" template includes soil, water, and air temperature).  If you create the Data Structure based on a file, BEXIS2 will attempt to select a suitable template automatically.
+* __Data Type:__ Select the appropriate [Data Type](DataDescription.md#data-types).
+* __Meaning__ _(optional)_: (If available) Select the specific Meaning of the variable. [Meanings](DataDescription.md#meanings) can be modified and created in the Settings.
+* __Constraints__ _(optional)_: These may be pre-filled based on the chosen template or meaning. But you can also define [Constraints](DataDescription.md#constraints).
 * __Missing Value and description__ _(optional)_: Define how Missing Values are represented and described. If you created the Data Structure based on a file, these fields are pre-filled
 * __Primary Key (slider):__ Mark a variable as part of the Primary Key.
 * __Make Values optional (slider):__
