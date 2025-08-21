@@ -151,7 +151,7 @@ __Method 2: Creating a new dataset based on an existing dataset__
 If you need a new Data Structure, we strongly recommend creating it based on the file you want to upload.
 
 __1. Uploading your file and selecting it for Data Structure creation__
-* Upload: [Upload your file](#file-upload).
+* Upload: [Upload](#file-upload) your file.
 * Select for Data Structure: After the file is uploaded, select the uploaded file as the basis for your new Data Structure under Data Structure.
 * Automatic analysis: The system will automatically analyze your file's structure. You will be directed to the next page.
 
@@ -169,7 +169,9 @@ __3. Handling Missing Values:__
     * You can add additional Missing Values (plus icon).
 * Variable-specific Missing Values:
     * If you need different Missing Values for other variables, include this information in your uploaded file and mark the row containing this information.
-    * Define these variable-specific Missing Values on the [data structure edit page](#data-structure-edit-page).
+    * Define these variable-specific Missing Values on the [Data Structure Edit Page](#data-structure-edit-page).
+ 
+> **Note**: The boolean data type does not support Missing Values.
 
 __4. Defining variables:__
 * Variable information: Each variable in your data should have a name and a description. Optionally, you can also define a unit and a placeholder for Missing Values.
@@ -239,6 +241,8 @@ The next step is to define your variables. If you created your Data Structure fr
     * It is strongly recommended to leave this option unchecked for data integrity.
     * Exceptions may include columns containing comments or notes.
     * If unchecked, BEXIS2 will validate during upload that all cells are filled and report any empty cells.
+ 
+> **Note**: The boolean data type does not support Missing Values.
 
 [image]
 
