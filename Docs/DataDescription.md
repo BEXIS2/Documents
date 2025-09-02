@@ -18,13 +18,16 @@ This section is under construction. Please be patient with us as we work on it.
 ## Data Structures
 ## Variable Templates
 ## Data Types
-## Units
-### Overview
 
+---------------------
+## Units
+>__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
+
+
+### Overview
 Units in BEXIS2 describe the measurement context for variable values in datasets.  For example, a value like 25 becomes meaningful when it is known to represent *25 degrees Celsius* or *25 meters*.  By assigning units to variables, measurements and quantities can be stored, interpreted, processed, and reused consistently and accurately.
 
 In BEXIS2 instances managed by a data management team, only administrators typically have permission to manage units.  Once defined, units are available system-wide and can be assigned to variables during the creation or editing of a [Data Structure](Dataset.md#datda-structure).
-
 
 
 ### Units
@@ -39,10 +42,9 @@ To view, edit, create, or delete a unit, navigate __Settings -> Manage Units__. 
 * __External Link__ (optional): A link to an external definition or reference (e.g., a standard vocabulary or ontology).
 
 
-
 ### Creating a New Unit
-
 To create a new unit that users can later assign to variables:
+
 1. Go to the main menu and select  *Manage Units* under Settings to open the Manage Unit page.
 2. On the Manage Unit page, click the + button to create a new unit.
 3. Fill out the required and optional fields in the form. Fields marked with a red asterisk (*) are mandatory:
@@ -60,7 +62,6 @@ The **Save** (Floppy) button becomes active only after all required information 
 
 
 ### Editing a Unit
-
 You can update an existing unit to correct or clarify its information.
 
 1. Go to the main menu and select **Manage Units** under **Settings** to open the Manage Units page.  
@@ -72,10 +73,8 @@ You can update an existing unit to correct or clarify its information.
 > **Note:** If the unit is already assigned to a variable, changes will take effect immediately wherever that unit is used. Be cautious when editing units that are used in multiple places.
 
 
-
 ### Deleting a Unit
-
-You can also remove units that are not used in the system. To remove a unit:
+You can also remove units that are not used in the repository. To remove a unit:
 
 1. Go to the main menu and select **Manage Units** under **Settings** to open the Manage Units page.  
 2. In the table, select the unit you want to delete.  
@@ -92,17 +91,17 @@ You can also remove units that are not used in the system. To remove a unit:
 - ✅ Provide **domain values** that are unambiguous, relevant, and well-suited to the variable they constrain.  
 - ✅ **Check dependencies** before deleting a constraint, and only remove it if it is no longer in use.
 
-
+-----------------------
 
 ## Constraints
-### Overview
+>__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
-Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to variable templates under **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
+### Overview
+Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to variable templates under **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
 
 To access the constraints management section, go to **Settings → Manage Constraints**.
 
 ### Types of Constraints
-
 There are three main types of constraints:
 
 - **Pattern**: Ensures values match a specific format (e.g., a date or identifier) defined using regular expressions..
@@ -115,11 +114,10 @@ There are three main types of constraints:
   - Select a dataset and extract values from one of its variables.
 
 ### Creating a New Constraint
-
 To create a new constraint:
 
 1. Navigate to **Settings → Manage Constraints**.
-2.  On the **Manage Constraints** page, click the **plus icon (+)** to create a new dimension.
+2. On the **Manage Constraints** page, click the **plus icon (+)** to create a new dimension.
 3. Fill out the fields in the form:
 
    - **Name (required)**: A unique name for the constraint, visible when assigning it to variables.
@@ -127,13 +125,13 @@ To create a new constraint:
    - **Formal Description (auto-generated)**: Automatically created based on the selected type and its settings.
    - **Constraint Type (required)**: Select between *Pattern*, *Range*, or *Domain*.
   
-### Reload and Cancel Buttons
-
-- The **Reload** button (circular arrow icon) resets the form to its original state.
-- The **Cancel** button exits the form without saving any changes.
+4. Further actions: **Save**, **Reload**, or **Cancel**
+  
+  - The **Save** button (floppy) becomes active only after all required information has been entered. You can then save the new constraint by clicking the button.
+  - The **Reload** button (circular arrow icon) resets the form to its original state.
+  - The **Cancel** button exits the form without saving any changes.
 
 ### Editing a Constraint
-
 To edit a constraint:
 
 1. Go to **Settings → Manage Constraints**.
@@ -141,7 +139,6 @@ To edit a constraint:
 3. Update the relevant fields and click **Save** (floppy disk icon) to apply the changes.
 
 ### Deleting a Constraint
-
 To delete a constraint:
 
 1. Go to **Settings → Manage Constraints**.
@@ -159,8 +156,9 @@ To delete a constraint:
 - ✅ Use **domain values** that are unambiguous, relevant, and context-appropriate for the variable they constrain.  
 - ✅ Only delete constraints after confirming they are **no longer referenced or in use** elsewhere in the system.
 
-## Dimensions
 
+----------------
+## Dimensions
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
 
@@ -172,7 +170,6 @@ Usually, only administrators can create or modify dimensions. Once defined, thes
 
 
 ### Creating a New Dimension
-
 To define a new dimension:
 
 1. Navigate to **Settings → Manage Dimensions**.  
