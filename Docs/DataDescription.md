@@ -19,9 +19,17 @@ Test
 <span style="color:rgreen;">✏️</span>
 <span style="color:green;">✅</span> Use clear and descriptive names.
 <span class="icon-delete">🗑️</span>
+
 .icon-delete { color: red; }
 
 💾, ✏️, 🗑️
+
+[!LINK_VIEW][view](../docs/General#roles)
+[!LINK_CREATE][create](../docs/General#roles)
+[!LINK_EDIT][edit](../docs/General#roles)
+[!LINK_DELETE][delete](../docs/General#roles)
+[!LINK_MANAGE][manage](../docs/General#roles)
+[!LINK_CONFIGURE][configure](../docs/General#roles)
 
 
 ## Entity Templates
