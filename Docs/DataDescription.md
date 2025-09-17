@@ -8,38 +8,29 @@ tags: ["javascript", "markdown", "metadata"]
 # Manage Data Description
 
 >[!ROLE]
->__Role:__ [Administrator](../docs/General/#roles),[Advanced User](../docs/General/#roles)
+>__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 > **Note:** This section is currently being created. Some parts are not yet available. Content will be gradually added to ensure the documentation is complete and up to date. Thank you for your understanding.
 
 ## Overview
 
-
-
-
->[[!LINK_CREATE] ](../docs/General#roles)
-
->[[!LINK_EDIT] ](../docs/General#roles)
->
->
 [[!LINK_DELETE] dataset](../docs/General#roles)
-[[!LINK_MANAGE]manage datasets](../docs/General#roles)
-[[!LINK_CONFIGURE] configure datasets](../docs/General#roles)
+
 
 xxx
->[[!LINK_CREATE]]
+[[!LINK_CREATE] ](../docs/General#roles)
 
 ## Entity Templates
 >[!ROLE]
->__Role:__ [Administrator](../docs/General/#roles),[Advanced User](../docs/General/#roles)
+>__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ## Data Structures
 >[!ROLE]
->__Role:__ [Administrator](../docs/General/#roles),[Advanced User](../docs/General/#roles)
+>__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ## Variable Templates
 >[!ROLE]
->__Role:__ [Administrator](../docs/General/#roles),[Advanced User](../docs/General/#roles)
+>__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ## Data Types
 >[!ROLE]
@@ -281,7 +272,7 @@ To view, edit, create, or delete a meaning, go to: **Settings → Manage Meaning
 - **Approved** (optional): Mark as reviewed and accepted for use.
 - **Selectable** (optional): Allow users to assign this meaning.
 - **Constraints** (optional): Select one or more [Constraints](#constraints) that restrict the allowed values.
-4. Click the **Save** button (floppy disk icon)). A confirmation message appears at the top right of the screen.
+4. Click the **Save** button (floppy disk icon). A confirmation message appears at the top right of the screen.
 
 ### Editing a Meaning
 1.	Find the meaning in the list on the **Manage Meanings** page.  
@@ -289,13 +280,15 @@ To view, edit, create, or delete a meaning, go to: **Settings → Manage Meaning
 3.	The form opens with the existing values 
 4.	Make the necessary changes.  
 5.	Click Save to apply the changes.
+
 > **Note:** If a meaning is already assigned to variables, changes will automatically apply everywhere they are used. Modify widely used meanings with caution to avoid unintentional impact on existing datasets
 
 ### Deleting a Meaning
 1.	Locate the meaning in the list on the **Manage Meanings** page.  
-2.	Click the **Delete icon** [!DELETE].
+2.	Click the **Delete icon** [[!LINK_CREATE] ](../docs/General#roles).
 3.	A confirmation dialog appears showing the name of the Meaning.  
 4.	Click **Confirm** to delete.
+
 > **Note:** Only meanings not assigned to variables or templates can be deleted. Otherwise, an error message will appear.
 
 ### Best Practices for Managing Meanings
