@@ -44,7 +44,7 @@ In BEXIS2 instances managed by a data management team, only administrators typic
 
 
 ### Units
-To view, edit, create, or delete a unit, navigate [[!LINK_CONFIGURE]](../docs/General#roles) Settings -> Manage Units. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
+To view, edit, create, or delete a unit, select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings**. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
 
 * __Name:__ The full name of the unit (e.g., meter, second, degree Celsius) based on international standards such as the __International System of Units (SI)__. Abbreviations or internal codes should be avoided.
 * __Description:__ A short explanation of what this unit measures and in which context it is used. For example: *Standard unit of temperature on the Celsius scale.*
@@ -57,7 +57,7 @@ To view, edit, create, or delete a unit, navigate [[!LINK_CONFIGURE]](../docs/Ge
 
 ### Creating a Unit
 
-1. Go to the main menu and select  *Manage Units* under [[!LINK_CONFIGURE]](../docs/General#roles) Settings to open the Manage Unit page.
+1. Go to the main menu and select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings** to open the Manage Unit page.
 2. On the Manage Unit page, click the + button to create a new unit.
 3. Fill out the required and optional fields in the form. Fields marked with a red asterisk (*) are mandatory:
    
@@ -111,7 +111,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ### Overview
-Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
+Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) undero [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
 
 To access the constraints management section, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 
@@ -129,7 +129,7 @@ There are three main types of constraints:
 
 ### Creating a Constraint
 
-1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. On the **Manage Constraints** page, click the **plus icon (+)** to create a new dimension.
 3. Fill out the fields in the form:
 
@@ -252,22 +252,22 @@ For example, a variable might be called *ID*, but the associated meaning could s
 In most BEXIS2 instances, only administrators have permission to manage meanings. Once defined, meanings are available system-wide and can be assigned to variables either directly or via [Variable Templates](#variable-templates). This promotes reuse of standard concepts and ensures consistent semantics across datasets.
 
 ### Meanings
-To view, edit, create, or delete a meaning, go to: **Settings → Manage Meanings**. On this page, you will find a table listing all defined meanings. Each entry contains the following fields:
+To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**. On this page, you will find a table listing all defined meanings. Each entry contains the following fields:
 - **Name**: The label used to identify the meaning. It should clearly describe what the variable represents (e.g., *Sample Identifier*, *Location Code*, *Observer Name*). Avoid vague or technical terms unless they are standardized.
 - **Description**: A short explanation of what this meaning represents and how it is used. For example: *A unique identifier used to track a collected biological specimen.*  
 - **Approved**: Indicates that a meaning was reviewed and approved by an administrator.
 - **Selectable**: Indicates that users can select this meaning when assigning meanings to Variables or [Variable Templates](variable-templates).
 
 ### Creating a Meaning
-1.	Go to **Settings → Manage Meanings**.  
-2.	Click the **+ button**to open a new meaning form.
+1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
+2.	Click the **+ button** to open a new meaning form.
 3.	Fill out the form fields:
-- **Name**: Provide a clear and descriptive name (e.g., *Observer ID*, *Collection Number*).  (e.g., *Specimen Identifier*)
-- **Description** (optional): Summarize when and how this meaning should be used.
-- **Relation** (optional): Click the + button to add a relation type and object (e.g., *has relation → occurrenceID*).
-- **Approved** (optional): Mark as reviewed and accepted for use.
-- **Selectable** (optional): Allow users to assign this meaning.
-- **Constraints** (optional): Select one or more [Constraints](#constraints) that restrict the allowed values.
+   - **Name**: Provide a clear and descriptive name (e.g., *Observer ID*, *Collection Number*).  (e.g., *Specimen Identifier*)
+   - **Description** (optional): Summarize when and how this meaning should be used.
+   - **Relation** (optional): Click the + button to add a relation type and object (e.g., *has relation → occurrenceID*).
+   - **Approved** (optional): Mark as reviewed and accepted for use.
+   - **Selectable** (optional): Allow users to assign this meaning.
+   - **Constraints** (optional): Select one or more [Constraints](#constraints) that restrict the allowed values.
 4. Click the **Save** button (floppy disk icon). A confirmation message appears at the top right of the screen.
 
 ### Editing a Meaning
@@ -281,7 +281,7 @@ To view, edit, create, or delete a meaning, go to: **Settings → Manage Meaning
 
 ### Deleting a Meaning
 1.	Locate the meaning in the list on the **Manage Meanings** page.  
-2.	Click [[!LINK_DELETE] ](../docs/General#roles).
+2.	Click the [[!LINK_DELETE] ](../docs/General#roles) icon to delete the meaning.
 3.	A confirmation dialog appears showing the name of the Meaning.  
 4.	Click **Confirm** to delete.
 
