@@ -44,20 +44,20 @@ In BEXIS2 instances managed by a data management team, only administrators typic
 
 
 ### Units
-To view, edit, create, or delete a unit, navigate __Settings -> Manage Units__. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
+To view, edit, create, or delete a unit, navigate [[!LINK_CONFIGURE]](../docs/General#roles) **Settings -> Manage Units**. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
 
 * __Name:__ The full name of the unit (e.g., meter, second, degree Celsius) based on international standards such as the __International System of Units (SI)__. Abbreviations or internal codes should be avoided.
 * __Description:__ A short explanation of what this unit measures and in which context it is used. For example: *Standard unit of temperature on the Celsius scale.*
 * __Abbreviation__ (required): The internationally standardized symbol or abbreviation of the unit (e.g., m, s, °C). This abbreviation will be displayed to users alongside variable names and values.
-* __Dimension:__ The physical dimension of the unit expressed in terms of base quantities (e.g., length [L], mass [M], time [T]). [Dimensions](#dimensions) are defined under Settings -> Manage Dimensions.
-* __Data Type:__ Defines which data types can be associated with values using this unit. [Data types](#data-types) can be defined under Settings -> Manage Data Types.
+* __Dimension:__ The physical dimension of the unit expressed in terms of base quantities (e.g., length [L], mass [M], time [T]). [Dimensions](#dimensions) are defined under [[!LINK_CONFIGURE]](../docs/General#roles) Settings -> Manage Dimensions.
+* __Data Type:__ Defines which data types can be associated with values using this unit. [Data types](#data-types) can be defined under [[!LINK_CONFIGURE]](../docs/General#roles) Settings -> Manage Data Types.
 * __Measurement System__ (optional): Defines the measurement system the unit belongs to, such as the Metric or Imperial system.
 * __External Link__ (optional): A link to an external definition or reference (e.g., a standard vocabulary or ontology).
 
 
 ### Creating a Unit
 
-1. Go to the main menu and select  *Manage Units* under Settings to open the Manage Unit page.
+1. Go to the main menu and select  *Manage Units* under [[!LINK_CONFIGURE]](../docs/General#roles) Settings to open the Manage Unit page.
 2. On the Manage Unit page, click the + button to create a new unit.
 3. Fill out the required and optional fields in the form. Fields marked with a red asterisk (*) are mandatory:
    
@@ -65,18 +65,18 @@ To view, edit, create, or delete a unit, navigate __Settings -> Manage Units__. 
    - __Abbreviation__ (required): Enter the internationally standardized symbol or abbreviation of the unit (e.g., m, s, °C). This abbreviation will be shown to users alongside variable names and values.
    - __Description__ (required): Provide a short explanation of what this unit measures and in which context it is used. For example: “Standard unit of temperature on the Celsius scale.”
    - __Data type__ (required): Select all [Data types](#data-types) that are compatible with this unit, such as integer, decimal, or double. This ensures the unit is only used with appropriate value types.
-   - __Dimension__ (required): Choose the physical [Dimension](#dimensions) of the unit, expressed in terms of base quantities (e.g., length, mass, time). Select 'none' if no standard dimension applies (e.g., for ratios or counts). If the required dimension is not available in the list, create it under Settings -> Manage Dimensions.
+   - __Dimension__ (required): Choose the physical [Dimension](#dimensions) of the unit, expressed in terms of base quantities (e.g., length, mass, time). Select 'none' if no standard dimension applies (e.g., for ratios or counts). If the required dimension is not available in the list, create it under [[!LINK_CONFIGURE]](../docs/General#roles) Settings -> Manage Dimensions.
    - __Measurement System__ (optional): Optionally indicate the measurement system the unit belongs to, such as Metric, Imperial, or Nautical.
    - __External Link__ (optional): Select an [External link](external-links) to an external definition or reference from the list, if needed (e.g., a standard vocabulary or ontology).
 
 The **Save** (Floppy) button becomes active only after all required information has been entered. You can then save the unit by clicking the button. Once the unit is successfully created, a confirmation message appears in the top right corner of the screen.
 
-<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png" alt="Form to create a new unit" style="border:2px solid #bee1da; padding:10px;">
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png" alt="Form to create a new unit" style="border:1px solid #bee1da; padding:10px;">
 
 
 ### Editing a Unit
 
-1. Go to the main menu and select **Manage Units** under **Settings** to open the Manage Units page.  
+1. Go to the main menu and select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings** to open the Manage Units page.  
 2. In the Units table, locate the unit you want to update.  
 3. Click the **Edit** icon on the right.  
 4. Make the necessary changes to the relevant fields.  
@@ -87,7 +87,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 
 ### Deleting a Unit
 
-1. Go to the main menu and select **Manage Units** under **Settings** to open the Manage Units page.  
+1. Go to the main menu and select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings** to open the Manage Units page.  
 2. In the table, select the unit you want to delete.  
 3. Click the **Delete** icon.  
 4. Confirm the deletion in the confirmation popup.
@@ -111,7 +111,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ### Overview
-Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
+Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
 
 To access the constraints management section, go to **Settings → Manage Constraints**.
 
@@ -129,7 +129,7 @@ There are three main types of constraints:
 
 ### Creating a Constraint
 
-1. Navigate to **Settings → Manage Constraints**.
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. On the **Manage Constraints** page, click the **plus icon (+)** to create a new dimension.
 3. Fill out the fields in the form:
 
@@ -146,13 +146,13 @@ There are three main types of constraints:
 
 ### Editing a Constraint
 
-1. Go to **Settings → Manage Constraints**.
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. Find the constraint in the list and click the **Edit** icon.
 3. Update the relevant fields and click **Save** (floppy disk icon) to apply the changes.
 
 ### Deleting a Constraint
 
-1. Go to **Settings → Manage Constraints**.
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. Find the constraint in the list and click the **Delete** icon.
 3. Confirm deletion in the popup window.
 
@@ -182,7 +182,7 @@ Usually, only administrators can create or modify dimensions. Once defined, thes
 
 ### Creating a Dimension
 
-1. Navigate to **Settings → Manage Dimensions**.  
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.  
 2. On the **Manage Dimensions** page, click the **plus icon (+)** to create a new dimension.  
 3. Fill out the form with the required and optional fields. Fields marked with a red asterisk (*) are mandatory:
 
@@ -210,11 +210,12 @@ Once all required fields are completed, the **Save** button (floppy disk icon) b
 
 To cancel the entry, click the **X** (cancel icon).
 
-![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_ManageDimension.png)
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_ManageDimension.png" alt="Form to create a new dimension" style="border:1px solid #bee1da; padding:10px;">
+
 
 ### Editing a Dimension
 
-1. Navigate to **Settings → Manage Dimensions**.  
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.  
 2. Locate the dimension in the list and click the **Edit icon** on the right-hand side.  
 3. Make your changes and click **Save** to apply them.
 
@@ -223,8 +224,8 @@ To cancel the entry, click the **X** (cancel icon).
 
 ### Deleting a Dimension
 
-1. Navigate to **Settings → Manage Dimensions**.  
-2. Find the dimension and click the **Delete icon** on the right-hand side.  
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.  
+2. Find the dimension and click the [[!LINK_DELETE]](../docs/General#roles) on the right-hand side.  
 3. A confirmation dialog appears showing the dimension’s name and specification.  
 4. Click **Confirm** to permanently delete the dimension.
 
