@@ -36,6 +36,9 @@ Test
 [[!LINK_MANAGE]manage datasets](../docs/General#roles)
 [[!LINK_CONFIGURE] configure datasets](../docs/General#roles)
 
+xxx
+>[[!LINK_CREATE]]
+
 ## Entity Templates
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles),[Advanced User](../docs/General/#roles)
