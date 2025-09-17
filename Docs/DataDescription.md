@@ -14,11 +14,6 @@ tags: ["javascript", "markdown", "metadata"]
 
 ## Overview
 
-[[!LINK_DELETE] dataset](../docs/General#roles)
-
-
-xxx
-[[!LINK_CREATE] ](../docs/General#roles)
 
 ## Entity Templates
 >[!ROLE]
@@ -77,6 +72,7 @@ To view, edit, create, or delete a unit, navigate __Settings -> Manage Units__. 
 The **Save** (Floppy) button becomes active only after all required information has been entered. You can then save the unit by clicking the button. Once the unit is successfully created, a confirmation message appears in the top right corner of the screen.
 
 ![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png)
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png" alt="Description" style="border:2px solid #000; padding:5px;">
 
 
 ### Editing a Unit
@@ -163,7 +159,7 @@ There are three main types of constraints:
 
 > **Note**: Constraints currently in use in a dataset cannot be deleted until they are removed from those datasets.
 
-### Best Practices
+### Best Practices for Managing Constraints
 
 ✅ Use **descriptive and consistent names** to make constraints easy to identify and understand.  
 ✅ Provide **concise and meaningful descriptions** to clarify the purpose of each constraint.  
@@ -202,7 +198,7 @@ Usually, only administrators can create or modify dimensions. Once defined, thes
 #### Base Dimension Components
 
 | Symbol | Component              |
-|--------|------------------------|
+|:--------|:------------------------|
 | **L**  | Length                 |
 | **M**  | Mass                   |
 | **T**  | Time                   |
