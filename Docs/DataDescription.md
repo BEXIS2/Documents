@@ -44,7 +44,7 @@ In BEXIS2 instances managed by a data management team, only administrators typic
 
 
 ### Units
-To view, edit, create, or delete a unit, navigate [[!LINK_CONFIGURE]](../docs/General#roles) **Settings -> Manage Units**. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
+To view, edit, create, or delete a unit, navigate [[!LINK_CONFIGURE]](../docs/General#roles) Settings -> Manage Units. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
 
 * __Name:__ The full name of the unit (e.g., meter, second, degree Celsius) based on international standards such as the __International System of Units (SI)__. Abbreviations or internal codes should be avoided.
 * __Description:__ A short explanation of what this unit measures and in which context it is used. For example: *Standard unit of temperature on the Celsius scale.*
@@ -89,7 +89,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 
 1. Go to the main menu and select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings** to open the Manage Units page.  
 2. In the table, select the unit you want to delete.  
-3. Click the **Delete** icon.  
+3. Click the [[!LINK_DELETE]](../docs/General#roles) icon.  
 4. Confirm the deletion in the confirmation popup.
 
 > **Note:** Units that are already used in a dataset cannot be deleted until those assignments are removed. Always check whether a unit is in use before attempting to delete it. If you try to delete a unit that is in use, an error message will appear, and the unit cannot be deleted.
@@ -113,7 +113,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 ### Overview
 Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
 
-To access the constraints management section, go to **Settings → Manage Constraints**.
+To access the constraints management section, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 
 ### Types of Constraints
 There are three main types of constraints:
@@ -153,7 +153,7 @@ There are three main types of constraints:
 ### Deleting a Constraint
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
-2. Find the constraint in the list and click the **Delete** icon.
+2. Find the constraint in the list and click the [[!LINK_DELETE]](../docs/General#roles) icon.
 3. Confirm deletion in the popup window.
 
 > **Note**: Constraints currently in use in a dataset cannot be deleted until they are removed from those datasets.
@@ -225,7 +225,7 @@ To cancel the entry, click the **X** (cancel icon).
 ### Deleting a Dimension
 
 1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.  
-2. Find the dimension and click the [[!LINK_DELETE]](../docs/General#roles) on the right-hand side.  
+2. Find the dimension and click the [[!LINK_DELETE]](../docs/General#roles) icon on the right-hand side.  
 3. A confirmation dialog appears showing the dimension’s name and specification.  
 4. Click **Confirm** to permanently delete the dimension.
 
