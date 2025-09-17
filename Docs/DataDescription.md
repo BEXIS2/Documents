@@ -14,6 +14,14 @@ tags: ["javascript", "markdown", "metadata"]
 
 ## Overview
 
+Test
+<span style="color:red;">🗑️</span> Delete only entries that are not in use.
+<span style="color:rgreen;">✏️</span>
+<span style="color:green;">✅</span> Use clear and descriptive names.
+<span class="icon-delete">🗑️</span>
+.icon-delete { color: red; }
+
+💾, ✏️, 🗑️
 
 
 ## Entity Templates
