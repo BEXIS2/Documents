@@ -285,7 +285,7 @@ To view, edit, create, or delete a meaning, go to: **Settings → Manage Meaning
 
 ### Deleting a Meaning
 1.	Locate the meaning in the list on the **Manage Meanings** page.  
-2.	Click the **Delete icon** [[!LINK_CREATE] ](../docs/General#roles).
+2.	Click [[!LINK_DELETE] ](../docs/General#roles).
 3.	A confirmation dialog appears showing the name of the Meaning.  
 4.	Click **Confirm** to delete.
 
