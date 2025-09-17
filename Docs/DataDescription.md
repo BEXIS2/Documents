@@ -71,8 +71,7 @@ To view, edit, create, or delete a unit, navigate __Settings -> Manage Units__. 
 
 The **Save** (Floppy) button becomes active only after all required information has been entered. You can then save the unit by clicking the button. Once the unit is successfully created, a confirmation message appears in the top right corner of the screen.
 
-![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png)
-<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png" alt="Description" style="border:2px solid #000; padding:5px;">
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png" alt="Form to create a new unit" style="border:2px solid #bee1da; padding:10px;">
 
 
 ### Editing a Unit
