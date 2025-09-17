@@ -24,13 +24,14 @@ Test
 
 💾, ✏️, 🗑️
 
-[!LINK_VIEW][view](../docs/General#roles)
-[!LINK_CREATE][create](../docs/General#roles)
-[!LINK_EDIT][edit](../docs/General#roles)
-[!LINK_DELETE][delete](../docs/General#roles)
-[!LINK_MANAGE][manage](../docs/General#roles)
-[!LINK_CONFIGURE][configure](../docs/General#roles)
-
+>[!LINK_VIEW]
+>
+> all datasets](../docs/General#roles)
+>[[!LINK_CREATE] dataset](../docs/General#roles)
+[[!LINK_EDIT] datset](../docs/General#roles)
+[[!LINK_DELETE] dataset](../docs/General#roles)
+[[!LINK_MANAGE]manage datasets](../docs/General#roles)
+[[!LINK_CONFIGURE] configure datasets](../docs/General#roles)
 
 ## Entity Templates
 >[!ROLE]
