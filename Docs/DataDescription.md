@@ -24,11 +24,14 @@ Test
 
 💾, ✏️, 🗑️
 
->[!LINK_VIEW]
+>[!LINK_CREATE]
+
+
+>[[!LINK_CREATE] ](../docs/General#roles)
+
+>[[!LINK_EDIT] ](../docs/General#roles)
 >
-> all datasets](../docs/General#roles)
->[[!LINK_CREATE] dataset](../docs/General#roles)
-[[!LINK_EDIT] datset](../docs/General#roles)
+>
 [[!LINK_DELETE] dataset](../docs/General#roles)
 [[!LINK_MANAGE]manage datasets](../docs/General#roles)
 [[!LINK_CONFIGURE] configure datasets](../docs/General#roles)
