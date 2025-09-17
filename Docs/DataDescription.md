@@ -14,17 +14,7 @@ tags: ["javascript", "markdown", "metadata"]
 
 ## Overview
 
-Test
-<span style="color:red;">🗑️</span> Delete only entries that are not in use.
-<span style="color:rgreen;">✏️</span>
-<span style="color:green;">✅</span> Use clear and descriptive names.
-<span class="icon-delete">🗑️</span>
 
-.icon-delete { color: red; }
-
-💾, ✏️, 🗑️
-
->[!LINK_CREATE]
 
 
 >[[!LINK_CREATE] ](../docs/General#roles)
@@ -267,6 +257,53 @@ To cancel the entry, click the **X** (cancel icon).
 ## Meanings
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
+
+### Overview
+**Meanings** in BEXIS2 describe the *semantic context* of variables used in datasets. They define what a variable represents beyond its name or data type.  
+For example, a variable might be called *ID*, but the associated meaning could specify it as a *Specimen Identifier* or *Collection Code*. By assigning meanings, datasets become more interoperable and understandable across teams, disciplines, and systems.
+
+In most BEXIS2 instances, only administrators have permission to manage meanings. Once defined, meanings are available system-wide and can be assigned to variables either directly or via [Variable Templates](#variable-templates). This promotes reuse of standard concepts and ensures consistent semantics across datasets.
+
+### Meanings
+To view, edit, create, or delete a meaning, go to: **Settings → Manage Meanings**. On this page, you will find a table listing all defined meanings. Each entry contains the following fields:
+- **Name**: The label used to identify the meaning. It should clearly describe what the variable represents (e.g., *Sample Identifier*, *Location Code*, *Observer Name*). Avoid vague or technical terms unless they are standardized.
+- **Description**: A short explanation of what this meaning represents and how it is used. For example: *A unique identifier used to track a collected biological specimen.*  
+- **Approved**: Indicates that a meaning was reviewed and approved by an administrator.
+- **Selectable**: Indicates that users can select this meaning when assigning meanings to Variables or [Variable Templates](variable-templates).
+
+### Creating a Meaning
+1.	Go to **Settings → Manage Meanings**.  
+2.	Click the **+ button**to open a new meaning form.
+3.	Fill out the form fields:
+- **Name**: Provide a clear and descriptive name (e.g., *Observer ID*, *Collection Number*).  (e.g., *Specimen Identifier*)
+- **Description** (optional): Summarize when and how this meaning should be used.
+- **Relation** (optional): Click the + button to add a relation type and object (e.g., *has relation → occurrenceID*).
+- **Approved** (optional): Mark as reviewed and accepted for use.
+- **Selectable** (optional): Allow users to assign this meaning.
+- **Constraints** (optional): Select one or more [Constraints](#constraints) that restrict the allowed values.
+4. Click the **Save** button (floppy disk icon)). A confirmation message appears at the top right of the screen.
+
+### Editing a Meaning
+1.	Find the meaning in the list on the **Manage Meanings** page.  
+2.	Click the **Edit icon** on the right-hand side.  
+3.	The form opens with the existing values 
+4.	Make the necessary changes.  
+5.	Click Save to apply the changes.
+> **Note:** If a meaning is already assigned to variables, changes will automatically apply everywhere they are used. Modify widely used meanings with caution to avoid unintentional impact on existing datasets
+
+### Deleting a Meaning
+1.	Locate the meaning in the list on the **Manage Meanings** page.  
+2.	Click the **Delete icon** [!DELETE].
+3.	A confirmation dialog appears showing the name of the Meaning.  
+4.	Click **Confirm** to delete.
+> **Note:** Only meanings not assigned to variables or templates can be deleted. Otherwise, an error message will appear.
+
+### Best Practices for Managing Meanings
+✅ Use **short, clear names** that describe the variable’s purpose.  
+✅ Always provide a **description** for clarity.  
+✅ Use **relations** to connect meanings with external (or internal) vocabularies.  
+✅ Define **constraints** to enforce valid and consistent data.  
+
 
 ## External Links
 >[!ROLE]
