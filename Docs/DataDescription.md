@@ -302,7 +302,7 @@ For example, you can link a variable to a Darwin Core term like *occurrenceID*. 
 
 In most BEXIS2 instances, only administrators can manage External Links. Once created, an External Link is available system-wide and can be reused in meanings or constraints that reference external vocabularies.  
 
-To access and manage external links, go to: [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage External Links**. On the Manage External Links page, you will find a table listing all defined external links. Each entry contains the following fields:
+To access and manage external links, go to **Settings → Manage External Links**. On the Manage External Links page, you will find a table listing all defined external links. Each entry contains the following fields:
 
 
 - **ID**: A system-generated identifier for each external link.  
@@ -315,7 +315,7 @@ To access and manage external links, go to: [[!LINK_CONFIGURE]](../docs/General#
 
 ### Creating an External Link
 
-1. Navigate to **Settings → Manage External Links**.  
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage External Links**.  
 2. On the Manage External Links page, click the **+** button to open the creation form.  
 3. Fill out the form fields:  
    - **Name**: Enter a clear label for the link (e.g., `dwc`, `hasDwcTerm`). This is how the link will be referenced in the system.  
@@ -330,7 +330,7 @@ To access and manage external links, go to: [[!LINK_CONFIGURE]](../docs/General#
 
 ### Editing an External Link
 
-1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links **.
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links**.
 2. Locate the external link in the list and click the **Edit** button next to the entry.  
 3. Update the relevant fields and click **Save** to apply the changes.  
 
@@ -338,7 +338,7 @@ To access and manage external links, go to: [[!LINK_CONFIGURE]](../docs/General#
 
 ### Deleting an External Link
 
-1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links **.
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links**.
 2. Find the External Link and click the [[!LINK_DELETE]](../docs/General#roles) icon next to the entry.    
 3. A confirmation dialog will appear with the link’s name.  
 4. Confirm the deletion.  
