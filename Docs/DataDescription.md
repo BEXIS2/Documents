@@ -76,7 +76,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 
 ### Editing a Unit
 
-1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page. 
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page.
 2. In the Units table, locate the unit you want to update and click the **Edit** icon on the right..  
 3. Make the necessary changes to the relevant fields.  
 4. Click **Save** (floppy button) to apply your changes.
@@ -86,7 +86,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 
 ### Deleting a Unit
 
-1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page..
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page.
 2. In the table, select the unit you want to delete and click the [[!LINK_DELETE]](../docs/General#roles) icon.   
 3. Confirm the deletion in the confirmation popup.
 
