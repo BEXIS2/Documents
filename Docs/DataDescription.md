@@ -181,7 +181,7 @@ Usually, only administrators can create or modify dimensions. Once defined, thes
 
 ### Creating a Dimension
 
-1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.
 2. On the **Manage Dimensions** page, click the **plus icon (+)** to create a new dimension.  
 3. Fill out the form with the required and optional fields. Fields marked with a red asterisk (*) are mandatory:
 
@@ -251,7 +251,7 @@ For example, a variable might be called *ID*, but the associated meaning could s
 In most BEXIS2 instances, only administrators have permission to manage meanings. Once defined, meanings are available system-wide and can be assigned to variables either directly or via [Variable Templates](#variable-templates). This promotes reuse of standard concepts and ensures consistent semantics across datasets.
 
 ### Meanings
-To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**. On this page, you will find a table listing all defined meanings. Each entry contains the following fields:
+To view, edit, create, or delete a meaning, go to **Settings → Manage Meanings**. On this page, you will find a table listing all defined meanings. Each entry contains the following fields:
 - **Name**: The label used to identify the meaning. It should clearly describe what the variable represents (e.g., *Sample Identifier*, *Location Code*, *Observer Name*). Avoid vague or technical terms unless they are standardized.
 - **Description**: A short explanation of what this meaning represents and how it is used. For example: *A unique identifier used to track a collected biological specimen.*  
 - **Approved**: Indicates that a meaning was reviewed and approved by an administrator.
@@ -270,7 +270,7 @@ To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/Ge
 4. Click the **Save** button (floppy disk icon). A confirmation message appears at the top right of the screen.
 
 ### Editing a Meaning
-1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**. and select the meaning in the list.  
+1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
 2.	Find the meaning in the list and click the **Edit icon** on the right-hand side. 
 3.	The form opens with the existing values 
 4.	Make the necessary changes.  
@@ -280,7 +280,7 @@ To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/Ge
 
 ### Deleting a Meaning
 1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
-2.	Select the meaning in the list.Click the [[!LINK_DELETE] ](../docs/General#roles) icon to delete the meaning.
+2.	Select the meaning in the list and click the [[!LINK_DELETE] ](../docs/General#roles) icon to delete the meaning.
 3.	A confirmation dialog appears showing the name of the Meaning.  
 4.	Click **Confirm** to delete.
 
