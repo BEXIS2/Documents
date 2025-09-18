@@ -297,6 +297,61 @@ To view, edit, create, or delete a meaning, go to **Settings → Manage Meanings
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
 
+In BEXIS2, External Links connect internal system elements such as variables to external vocabularies, standards, or reference systems. This improves interoperability and makes datasets easier to share and understand across platforms.
+For example, you can link a variable to a Darwin Core term like *occurrenceID*. This makes the dataset clearer to others and ensures that it follows widely accepted standards.  
+
+In most BEXIS2 instances, only administrators can manage External Links. Once created, an External Link is available system-wide and can be reused in meanings or constraints that reference external vocabularies.  
+
+To access and manage external links, go to: [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage External Links**. On the Manage External Links page, you will find a table listing all defined external links. Each entry contains the following fields:
+
+
+- **ID**: A system-generated identifier for each external link.  
+- **Name**: The internal label used to identify the external link. 
+- **URI**: The web address or identifier that points to the external resource.  
+- **Type**: Defines the kind of external resource. Options include prefix, link, entity, link, characteristics, vocabulary, relationship.
+- **Prefix**: An optional namespace or prefix associated with the link.
+- **Link** button: Opens the used external source.
+- ** Edit & Delete**: Option to edit and delete the External Link
+
+### Creating an External Link
+
+1. Navigate to **Settings → Manage External Links**.  
+2. On the Manage External Links page, click the **+** button to open the creation form.  
+3. Fill out the form fields:  
+   - **Name**: Enter a clear label for the link (e.g., `dwc`, `hasDwcTerm`). This is how the link will be referenced in the system.  
+   - **Type**: Select the appropriate type. Choosing the correct type is important, because it determines how BEXIS2 interprets the link.  
+   - **Prefix** (optional): Add a prefix if needed, for example when defining vocabulary or namespaces.  
+  - **Prefix Category** (optional):
+   - **URI (optional):** Provide a full URI (e.g., `http://rs.tdwg.org/dwc/terms/`). Using stable URIs ensures the link remains valid and interoperable.  
+
+4. Once all required fields are filled, the **Save** button becomes active.  
+5. Click **Save** to create the external link.  
+6. A confirmation message will appear at the top-right of the screen.  
+
+### Editing an External Link
+
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links **.
+2. Locate the external link in the list and click the **Edit** button next to the entry.  
+3. Update the relevant fields and click **Save** to apply the changes.  
+
+> **Note:** If the link is already referenced in other parts of the system (for example in meanings or constraints), the changes will automatically apply wherever the link is used.  
+
+### Deleting an External Link
+
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links **.
+2. Find the External Link and click the [[!LINK_DELETE]](../docs/General#roles) icon next to the entry.    
+3. A confirmation dialog will appear with the link’s name.  
+4. Confirm the deletion.  
+
+> **Note:** You can only delete external links that are not currently in use. If the link is referenced elsewhere in the system, deletion will be blocked, and an error message will appear.  
+
+### Best Practices for Managing External Links
+
+✅ Use clear, descriptive names that make it easy to identify the purpose of the link.  
+✅ Choose the correct type to ensure the link behaves as expected.  
+✅ Prefer valid and persistent URIs that point to stable external resources.  
+✅ Check for existing entries to avoid duplication.  
+
 ## Prefix Categories
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
