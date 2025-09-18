@@ -44,7 +44,7 @@ In BEXIS2 instances managed by a data management team, only administrators typic
 
 
 ### Units
-To view, edit, create, or delete a unit, select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings**. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
+Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to view, edit, create, or delete a unit. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
 
 * __Name:__ The full name of the unit (e.g., meter, second, degree Celsius) based on international standards such as the __International System of Units (SI)__. Abbreviations or internal codes should be avoided.
 * __Description:__ A short explanation of what this unit measures and in which context it is used. For example: *Standard unit of temperature on the Celsius scale.*
@@ -57,8 +57,8 @@ To view, edit, create, or delete a unit, select **Manage Units** under [[!LINK_C
 
 ### Creating a Unit
 
-1. Go to the main menu and select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings** to open the Manage Unit page.
-2. On the Manage Unit page, click the + button to create a new unit.
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Unit page.
+2. On the Manage Unit page, click the **+ button** to create a new unit.
 3. Fill out the required and optional fields in the form. Fields marked with a red asterisk (*) are mandatory:
    
    - __Name__ (required): Enter the internationally standardized name of the unit (e.g., meter, second, degree Celsius). Do not use abbreviations or internal codes.
@@ -76,21 +76,19 @@ The **Save** (Floppy) button becomes active only after all required information 
 
 ### Editing a Unit
 
-1. Go to the main menu and select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings** to open the Manage Units page.  
-2. In the Units table, locate the unit you want to update.  
-3. Click the **Edit** icon on the right.  
-4. Make the necessary changes to the relevant fields.  
-5. Click **Save** (floppy button) to apply your changes.
+1.  Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page.  
+2. In the Units table, locate the unit you want to update and click the **Edit** icon on the right..  
+3. Make the necessary changes to the relevant fields.  
+4. Click **Save** (floppy button) to apply your changes.
 
 > **Note:** If the unit is already assigned to a variable, changes will take effect immediately wherever that unit is used. Be cautious when editing units that are used in multiple places.
 
 
 ### Deleting a Unit
 
-1. Go to the main menu and select **Manage Units** under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings** to open the Manage Units page.  
-2. In the table, select the unit you want to delete.  
-3. Click the [[!LINK_DELETE]](../docs/General#roles) icon.  
-4. Confirm the deletion in the confirmation popup.
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page..
+2. In the table, select the unit you want to delete and click the [[!LINK_DELETE]](../docs/General#roles) icon.   
+3. Confirm the deletion in the confirmation popup.
 
 > **Note:** Units that are already used in a dataset cannot be deleted until those assignments are removed. Always check whether a unit is in use before attempting to delete it. If you try to delete a unit that is in use, an error message will appear, and the unit cannot be deleted.
 
@@ -111,9 +109,10 @@ The **Save** (Floppy) button becomes active only after all required information 
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ### Overview
-Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
+Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings  → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
 
 To access the constraints management section, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
+
 
 ### Types of Constraints
 There are three main types of constraints:
@@ -182,7 +181,7 @@ Usually, only administrators can create or modify dimensions. Once defined, thes
 
 ### Creating a Dimension
 
-1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.  
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.
 2. On the **Manage Dimensions** page, click the **plus icon (+)** to create a new dimension.  
 3. Fill out the form with the required and optional fields. Fields marked with a red asterisk (*) are mandatory:
 
@@ -271,8 +270,8 @@ To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/Ge
 4. Click the **Save** button (floppy disk icon). A confirmation message appears at the top right of the screen.
 
 ### Editing a Meaning
-1.	Find the meaning in the list on the **Manage Meanings** page.  
-2.	Click the **Edit icon** on the right-hand side.  
+1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**. and select the meaning in the list.  
+2.	Find the meaning in the list and click the **Edit icon** on the right-hand side. 
 3.	The form opens with the existing values 
 4.	Make the necessary changes.  
 5.	Click Save to apply the changes.
@@ -280,8 +279,8 @@ To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/Ge
 > **Note:** If a meaning is already assigned to variables, changes will automatically apply everywhere they are used. Modify widely used meanings with caution to avoid unintentional impact on existing datasets
 
 ### Deleting a Meaning
-1.	Locate the meaning in the list on the **Manage Meanings** page.  
-2.	Click the [[!LINK_DELETE] ](../docs/General#roles) icon to delete the meaning.
+1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
+2.	Select the meaning in the list.Click the [[!LINK_DELETE] ](../docs/General#roles) icon to delete the meaning.
 3.	A confirmation dialog appears showing the name of the Meaning.  
 4.	Click **Confirm** to delete.
 
