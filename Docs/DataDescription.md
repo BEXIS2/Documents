@@ -184,7 +184,6 @@ Usually, only administrators can create or modify dimensions. Once defined, thes
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.
 2. On the **Manage Dimensions** page, click the **plus icon (+)** to create a new dimension.  
 3. Fill out the form with the required and optional fields. Fields marked with a red asterisk (*) are mandatory:
-
    - **Name (required)**: Provide a clear and unique name, preferably based on international standards such as the *International System of Units (SI)*. Avoid abbreviations or internal codes.
    - **Specification (required)**: Define the mathematical structure using base units.  
      Example: `L(1,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)`
