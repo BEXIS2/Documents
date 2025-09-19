@@ -106,8 +106,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ### Overview
-Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usually created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings  → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
-
+Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usually created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under  [!LINK_CONFIGURE]](../docs/General#roles) **Settings  → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
 To access the constraints management section, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 
 ### Types of Constraints
