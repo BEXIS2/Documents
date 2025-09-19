@@ -133,7 +133,7 @@ There are three main types of constraints:
 3. Fill out the fields in the form:
 
    - **Name** (required): A unique name for the constraint, visible when assigning it to variables.
-   - **Descriptio**n (required): A short explanation of the constraint’s purpose.
+   - **Description** (required): A short explanation of the constraint’s purpose.
    - **Formal Description** (auto-generated): Automatically created based on the selected type and its settings.
    - **Constraint Type** (required): Select between *Pattern*, *Range*, or *Domain*.
   
