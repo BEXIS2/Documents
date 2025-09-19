@@ -45,7 +45,6 @@ In BEXIS2 instances managed by a data management team, only administrators typic
 
 ### Units
 Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to view, edit, create, or delete a unit. On this page, you will find a table listing all units and their properties in your BEXIS2 instance. Each unit is defined by the following information:
-
 * __Name:__ The full name of the unit (e.g., meter, second, degree Celsius) based on international standards such as the __International System of Units (SI)__. Abbreviations or internal codes should be avoided.
 * __Description:__ A short explanation of what this unit measures and in which context it is used. For example: *Standard unit of temperature on the Celsius scale.*
 * __Abbreviation__ (required): The internationally standardized symbol or abbreviation of the unit (e.g., m, s, °C). This abbreviation will be displayed to users alongside variable names and values.
@@ -60,7 +59,6 @@ Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** t
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Unit page.
 2. On the Manage Unit page, click the **+ button** to create a new unit.
 3. Fill out the required and optional fields in the form. Fields marked with a red asterisk (*) are mandatory:
-   
    - __Name__ (required): Enter the internationally standardized name of the unit (e.g., meter, second, degree Celsius). Do not use abbreviations or internal codes.
    - __Abbreviation__ (required): Enter the internationally standardized symbol or abbreviation of the unit (e.g., m, s, °C). This abbreviation will be shown to users alongside variable names and values.
    - __Description__ (required): Provide a short explanation of what this unit measures and in which context it is used. For example: “Standard unit of temperature on the Celsius scale.”
@@ -109,14 +107,13 @@ The **Save** (Floppy) button becomes active only after all required information 
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
 ### Overview
-Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usally created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings  → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
+Constraints in BEXIS2 are rules that define acceptable values for a variable. They help ensure data consistency, enforce formats, and guide users in entering valid information. Constraints are usually created and managed centrally by administrators and are available throughout the system when designing or editing data structures. Constraints can also be assigned to [Variable Templates](variable-templates) under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings  → Manage Variable Templates**, which is a common use case for ensuring consistent rules across datasets.
 
 To access the constraints management section, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 
 
 ### Types of Constraints
 There are three main types of constraints:
-
 - **Pattern**: Ensures values match a specific format (e.g., a date or identifier) defined using regular expressions.
   - Example: To allow only dates in the format `YYYY-MM-DD`, use the regex pattern:  `^\d{4}-\d{2}-\d{2}$`
 - **Range**: Limits acceptable values to a defined numeric range.
@@ -131,14 +128,12 @@ There are three main types of constraints:
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. On the **Manage Constraints** page, click the **plus icon (+)** to create a new dimension.
 3. Fill out the fields in the form:
-
    - **Name** (required): A unique name for the constraint, visible when assigning it to variables.
    - **Description** (required): A short explanation of the constraint’s purpose.
    - **Formal Description** (auto-generated): Automatically created based on the selected type and its settings.
    - **Constraint Type** (required): Select between *Pattern*, *Range*, or *Domain*.
   
 4. Further actions: **Save**, **Reload**, or **Cancel**
-  
    - The **Save** button (floppy) becomes active only after all required information has been entered. You can then save the new constraint by clicking the button.
    - The **Reload** button (circular arrow icon) resets the form to its original state.
    - The **Cancel** button exits the form without saving any changes.
