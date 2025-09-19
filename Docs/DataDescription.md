@@ -53,7 +53,6 @@ Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** t
 * __Measurement System__ (optional): Defines the measurement system the unit belongs to, such as the Metric or Imperial system.
 * __External Link__ (optional): A link to an external definition or reference (e.g., a standard vocabulary or ontology).
 
-
 ### Creating a Unit
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Unit page.
@@ -111,7 +110,6 @@ Constraints in BEXIS2 are rules that define acceptable values for a variable. Th
 
 To access the constraints management section, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 
-
 ### Types of Constraints
 There are three main types of constraints:
 - **Pattern**: Ensures values match a specific format (e.g., a date or identifier) defined using regular expressions.
@@ -132,7 +130,6 @@ There are three main types of constraints:
    - **Description** (required): A short explanation of the constraint’s purpose.
    - **Formal Description** (auto-generated): Automatically created based on the selected type and its settings.
    - **Constraint Type** (required): Select between *Pattern*, *Range*, or *Domain*.
-  
 4. Further actions: **Save**, **Reload**, or **Cancel**
    - The **Save** button (floppy) becomes active only after all required information has been entered. You can then save the new constraint by clicking the button.
    - The **Reload** button (circular arrow icon) resets the form to its original state.
