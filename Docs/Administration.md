@@ -8,78 +8,107 @@ position: 6
 >__Role:__ [Administrator](../docs/General/#roles)
 
 ## Manage User
+>[!ROLE]
+>__Role:__ [Administrator](../docs/General/#roles)
 
-User accounts are used to assign permissions and track actions like creating a dataset. Accounts can be linked to the party module and the actual user name is shown instead of the account name.
+User accounts are used to assign permissions and to track activities such as creating datasets.  
+Accounts can be linked to the **Party Module** so that the actual user name is shown instead of the individual account name.
 
-![users](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/users.png)
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageUser.png" alt="Manage user page" style="border:1px solid #bee1da; padding:10px;">
 
-### Create a user
+### Create a User Account
 
-In addition to the self-registration procedure, the administrator can also create accounts. This feature is available here: *Settings > Manage Users > Create User*. The system supports you with the validation of all entered information.
+In addition to the self-registration procedure, administrators can manually create new accounts. This feature is available under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Users → Create User**. The system validates all entered information to ensure data consistency (e.g., unique user name and valid email address).
 
-![create_user](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/create_user.png)
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageUser_CreateUser.png" alt="Create a user account" style="border:1px solid #bee1da; padding:10px;">
 
-### Edit or Delete a user
 
-Under *Settings > Manage Users* it is possible to view, modify, and delete user information using the following options:
+### Edit or Delete a User Account
 
-| Button | Description
-|-|-
-| Edit | Not all fields can be modified for security and usability reasons (e.g., user name).
-| Group | show the membership in a group <br/> status can be changed by (un)selecting the corresponding checkbox
-| Delete | Delete a user account (exception: user accounts already used)
+Under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Users**, it is possible to view, edit, and delete user information. 
 
-![edit_user](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/edit_user.png)
+| Button | Description |
+|:--|:--|
+| **Edit** | Modify user information. For security reasons, not all fields (e.g., username) can be changed. |
+| **Group** | View the user’s group memberships. The status can be changed by (un)selecting the corresponding checkboxes. |
+| **Delete** | Delete a user account (only possible if the account has not been used). |
+
 
 ## Manage Groups
+>[!ROLE]
+>__Role:__ [Administrator](../docs/General/#roles)
 
-Groups combine a set of permissions for their members. Users can be assigned to different groups.
+Groups define sets of permissions that can be assigned to several users. A user can belong to one or multiple groups.
 
-![groups](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/groups.png) 
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageGroups.png" alt="Menue for managing user groups" style="border:1px solid #bee1da; padding:10px;">
 
-### Create a group
 
-This feature is available under *Settings > Manage Groups > Create Group*. A new group can be defined.
+### Create a User Group
 
-![create_group](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/create_group.png) 
+A new group can be created under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Groups → Create Group**. Enter a group name and, optionally, a description.
 
-### Edit or Delete a group
 
-Under *Settings > Mange Groups* it is possible to view and modify group information.
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageGroups_CreateGroup.png" alt="Menue to create a new user group" style="border:1px solid #bee1da; padding:10px;">
 
-| Button | Description
-|-|-
-| Edit | Change group name or description
-| Group | Members of a group can be (un)selected
-| Delete | Delete a group (exception: Groups already used)
+### Edit or Delete a User Group
 
-![edit_group](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/edit_group.png) 
+Under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Groups**, you can view, edit and delete existing groups.
+
+| Button | Description |
+|:--|:--|
+| **Edit** | Change the group name or description. |
+| **Group** | Add or remove members by (un)selecting them. |
+| **Delete** | Delete a group (only possible if it is not in use). |
 
 
 
 ## Manage Parties
-An administrator can see, create, edit, and delete parties. Parties are the central smaller entities in BEXIS2. They can be persons, organizations, projects, etc.
+>[!ROLE]
+>__Role:__ [Administrator](../docs/General/#roles)
 
-On the overview page, you can see and manage all the available entities. The red warning icon in the "action-required" column shows that this party needs some relationships to be valid.
+Parties are core entities in BEXIS2. They can represent **persons**, **organizations**, **projects**, or similar objects. User create a party (person) in their registration process. In most BEXIS2 instances, only administrators have permission to manage meanings.
 
-<figure class="image">
-  <img src="https://github.com/BEXIS2/Documents/raw/master/Manuals/BAM/Images/view_parties.png" alt="Overview parties">
-  <figcaption style="display: block; text-align: center;">Overview parties</figcaption>
-</figure>
+To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**. On this page, you find several tables listing all registered parties. The first table displays all Parties. Select a tab to view a specific party type. Each entry contains the following fields:
 
-### Create and Edit
-A new party can be created under *Settings > Manage Parties > Create Party*. In the first step, select a party type and its date range, if applicable. Click on Next to continue.
+- **ID**: A system-generated identifier for each prefix category.
+- **Name**: The name of the person, organization, project etc.
+- **Type**: The type of the party (e.g., person, organization, project)
+- **Start date**: Start date of the party.
+- **End date**: End date of the party (this date is used in the Allumni Tool)
+- **View, Edit, Delet button**: Buttons to view, edit and delte a party
+- **Action required**: The red warning icon in this column indicates that this party needs a relation to an other party type to be valid ((e.g., a person belongs to an organization))
 
-In the next step, you will see additional attributes based on the selected party type. Required fields are marked with a red asterisk. Click on Save or on Next to continue.
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageParty.png" alt="Menue to manage parties (e.g., persons, organizations, projects)" style="border:1px solid #bee1da; padding:10px;">
 
-In some party types, you must create relationships with others (e.g., a person belongs to an organization). If you do not do it, the party will be saved, but it is invalid. You can also add a relationship  later.
+### Create a Party
 
-To edit a party, click on "Edit" in the party overview. You can change all the fields except for the party type.
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Parties**
+2. On the **Manage Parties** page, click the **Create Party** button to open the party form.
+3. Fill in the fields in the form:
+   - **Party Type**: Select the appropriate party type from the dropdown list.
+   - **Start Date** (optional): Set a start date if applicable.
+   - **End Date** (optional): Set a start date if applicable.
+   - **Description**(optional): Add further useful information if needed.
+4. Click **Next** to continue. The next form displays additional fields depending on the selected party type. Required fields are marked with a red asterisk (*).
+5. Click **Save** to save the entry, or return to the Manage Parties page without saving by clicking **Back to party manager**
+6. If the selected party type requires one or more relationships, you will be directed to a page to define these relationships (e.g., linking a person to an organization or project). Select the appropriate relationships from the list provided. 
 
-![Create party](https://github.com/BEXIS2/Documents/raw/master/Manuals/BAM/Images/create_party.png)
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageParty_Create.png" alt="Form to crea parties (e.g., persons, organizations, projects)" style="border:1px solid #bee1da; padding:10px;">
 
-### Delete
-Only parties not in use or linked can be deleted under *Settings > Manage Parties*.
+### Edit a Party
+
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Parties**
+2. On the **Manage Parties** page select the party you want to edit and click the **Edit icon** on the right-hand side.
+3. The form opens with the existing values
+4. Make the necessary changes and click **Save** to apply them, or **Back to party manager** to return to the overview table without saving. 
+
+
+### Delete a party
+
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Parties**.
+2. Find the party in the table and click the [[!LINK_DELETE]](../docs/General#roles) icon.
+3. The party form opens. Click **Delete** to remove the party or **Back** to return to the overview table without deleting.
+
 
 ## Manage Relationships
 ### Create
