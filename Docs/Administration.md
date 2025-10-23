@@ -20,8 +20,6 @@ Accounts can be linked to the **Party Module** so that the actual user name is s
 
 In addition to the self-registration procedure, administrators can manually create new accounts. This feature is available under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Users → Create User**. The system validates all entered information to ensure data consistency (e.g., unique user name and valid email address).
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageUser_CreateUser.png" alt="Create a user account" style="border:1px solid #bee1da; padding:10px;">
-
-
 ### Edit or Delete a User Account
 
 Under [[!LINK_CONFIGURE]](../docs/General#roles)**Settings → Manage Users**, it is possible to view, edit, and delete user information. 
@@ -30,7 +28,6 @@ Under [[!LINK_CONFIGURE]](../docs/General#roles)**Settings → Manage Users**, i
 | **Edit** | Modify user information. For security reasons, not all fields (e.g., username) can be changed. |
 | **Group** | View the user’s group memberships. The status can be changed by (un)selecting the corresponding checkboxes. |
 | **Delete** | Delete a user account (only possible if the account has not been used). |
-
 ## Manage Groups
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
