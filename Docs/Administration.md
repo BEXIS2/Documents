@@ -31,7 +31,6 @@ Under [[!LINK_CONFIGURE]](../docs/General#roles)**Settings → Manage Users**, i
 | **Group** | View the user’s group memberships. The status can be changed by (un)selecting the corresponding checkboxes. |
 | **Delete** | Delete a user account (only possible if the account has not been used). |
 
-
 ## Manage Groups
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
