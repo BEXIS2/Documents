@@ -19,14 +19,12 @@ Accounts can be linked to the **Party Module** so that the actual user name is s
 ### Create a User Account
 
 In addition to the self-registration procedure, administrators can manually create new accounts. This feature is available under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Users → Create User**. The system validates all entered information to ensure data consistency (e.g., unique user name and valid email address).
-
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageUser_CreateUser.png" alt="Create a user account" style="border:1px solid #bee1da; padding:10px;">
 
 
 ### Edit or Delete a User Account
 
-Under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Users**, it is possible to view, edit, and delete user information. 
-
+Under [[!LINK_CONFIGURE]](../docs/General#roles)**Settings → Manage Users**, it is possible to view, edit, and delete user information. 
 | Button | Description |
 |:--|:--|
 | **Edit** | Modify user information. For security reasons, not all fields (e.g., username) can be changed. |
@@ -45,7 +43,7 @@ Groups define sets of permissions that can be assigned to several users. A user 
 
 ### Create a User Group
 
-A new group can be created under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Groups → Create Group**. Enter a group name and, optionally, a description.
+A new group can be created under [[!LINK_CONFIGURE]](../docs/General#roles)**Settings → Manage Groups → Create Group**. Enter a group name and, optionally, a description.
 
 
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageGroups_CreateGroup.png" alt="Menue to create a new user group" style="border:1px solid #bee1da; padding:10px;">
