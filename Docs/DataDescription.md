@@ -53,7 +53,7 @@ Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** t
 * __Measurement System__ (optional): Defines the measurement system the unit belongs to, such as the Metric or Imperial system.
 * __External Link__ (optional): A link to an external definition or reference (e.g., a standard vocabulary or ontology).
 
-### Creating a Unit
+### Create a Unit
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Unit page.
 2. On the Manage Unit page, click the **+ button** to create a new unit.
@@ -64,14 +64,14 @@ Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** t
    - __Data type__ (required): Select all [Data types](#data-types) that are compatible with this unit, such as integer, decimal, or double. This ensures the unit is only used with appropriate value types.
    - __Dimension__ (required): Choose the physical [Dimension](#dimensions) of the unit, expressed in terms of base quantities (e.g., length, mass, time). Select 'none' if no standard dimension applies (e.g., for ratios or counts). If the required dimension is not available in the list, create it under [[!LINK_CONFIGURE]](../docs/General#roles) Settings -> Manage Dimensions.
    - __Measurement System__ (optional): Optionally indicate the measurement system the unit belongs to, such as Metric, Imperial, or Nautical.
-   - __External Link__ (optional): Select an [External link](external-links) to an external definition or reference from the list, if needed (e.g., a standard vocabulary or ontology).
+   - __External Link__ (optional): Select an [External link](#external-links) to an external definition or reference from the list, if needed (e.g., a standard vocabulary or ontology).
 
 The **Save** (Floppy) button becomes active only after all required information has been entered. You can then save the unit by clicking the button. Once the unit is successfully created, a confirmation message appears in the top right corner of the screen.
 
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_CreateUnit.png" alt="Form to create a new unit" style="border:1px solid #bee1da; padding:10px;">
 
 
-### Editing a Unit
+### Edit a Unit
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page.
 2. In the Units table, locate the unit you want to update and click the **Edit** icon on the right..  
@@ -81,7 +81,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 > **Note:** If the unit is already assigned to a variable, changes will take effect immediately wherever that unit is used. Be cautious when editing units that are used in multiple places.
 
 
-### Deleting a Unit
+### Delete a Unit
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** to open the Manage Units page.
 2. In the table, select the unit you want to delete and click the [[!LINK_DELETE]](../docs/General#roles) icon.   
@@ -90,7 +90,7 @@ The **Save** (Floppy) button becomes active only after all required information 
 > **Note:** Units that are already used in a dataset cannot be deleted until those assignments are removed. Always check whether a unit is in use before attempting to delete it. If you try to delete a unit that is in use, an error message will appear, and the unit cannot be deleted.
 
 
-### Best Practices for Managing Units
+### Best Practices to Manage Units
 
 ✅ Use **descriptive and standardized names** to ensure clarity and reuse.  
 ✅ Write **concise, meaningful descriptions** to make constraints easy to understand.  
@@ -120,7 +120,7 @@ There are three main types of constraints:
   - Upload a text file containing values.
   - Select a dataset and extract values from one of its variables.
 
-### Creating a Constraint
+### Create a Constraint
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. On the **Manage Constraints** page, click the **plus icon (+)** to create a new dimension.
@@ -134,13 +134,13 @@ There are three main types of constraints:
    - The **Reload** button (circular arrow icon) resets the form to its original state.
    - The **Cancel** button exits the form without saving any changes.
 
-### Editing a Constraint
+### Edit a Constraint
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. Find the constraint in the list and click the **Edit** icon.
 3. Update the relevant fields and click **Save** (floppy disk icon) to apply the changes.
 
-### Deleting a Constraint
+### Delete a Constraint
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Constraints**.
 2. Find the constraint in the list and click the [[!LINK_DELETE]](../docs/General#roles) icon.
@@ -148,7 +148,7 @@ There are three main types of constraints:
 
 > **Note**: Constraints currently in use in a dataset cannot be deleted until they are removed from those datasets.
 
-### Best Practices for Managing Constraints
+### Best Practices to Manage Constraints
 
 ✅ Use **descriptive and consistent names** to make constraints easy to identify and understand.  
 ✅ Provide **concise and meaningful descriptions** to clarify the purpose of each constraint.  
@@ -170,7 +170,7 @@ Each dimension in BEXIS2 is described using a structured combination of base qua
 Usually, only administrators can create or modify dimensions. Once defined, these dimensions are available system-wide and are automatically referenced when users assign units to variables during dataset creation or editing. This design ensures consistency and prevents redundant definitions of measurement concepts.
 
 
-### Creating a Dimension
+### Create a Dimension
 
 1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.
 2. On the **Manage Dimensions** page, click the **plus icon (+)** to create a new dimension.  
@@ -202,7 +202,7 @@ To cancel the entry, click the **X** (cancel icon).
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/DataDescription_ManageDimension.png" alt="Form to create a new dimension" style="border:1px solid #bee1da; padding:10px;">
 
 
-### Editing a Dimension
+### Edit a Dimension
 
 1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.  
 2. Locate the dimension in the list and click the **Edit icon** on the right-hand side.  
@@ -211,7 +211,7 @@ To cancel the entry, click the **X** (cancel icon).
 > **Note**: Editing is only possible if the dimension is not currently in use.
 
 
-### Deleting a Dimension
+### Delete a Dimension
 
 1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.  
 2. Find the dimension and click the [[!LINK_DELETE]](../docs/General#roles) icon on the right-hand side.  
@@ -220,7 +220,7 @@ To cancel the entry, click the **X** (cancel icon).
 
 > **Note**: Deletion is only possible if the dimension is not referenced by any unit.
 
-### Best Practices for Managing Dimensions
+### Best Practices to Manage Dimensions
 
 ✅ Use **standardized and descriptive names** for better clarity and reuse.  
 ✅ **Check existing entries** to avoid duplicates.  
@@ -247,7 +247,7 @@ To view, edit, create, or delete a meaning, go to **Settings → Manage Meanings
 - **Approved**: Indicates that a meaning was reviewed and approved by an administrator.
 - **Selectable**: Indicates that users can select this meaning when assigning meanings to Variables or [Variable Templates](variable-templates).
 
-### Creating a Meaning
+### Creat a Meaning
 1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
 2.	Click the **+ button** to open a new meaning form.
 3.	Fill out the form fields:
@@ -259,7 +259,7 @@ To view, edit, create, or delete a meaning, go to **Settings → Manage Meanings
    - **Constraints** (optional): Select one or more [Constraints](#constraints) that restrict the allowed values.
 4. Click the **Save** button (floppy disk icon). A confirmation message appears at the top right of the screen.
 
-### Editing a Meaning
+### Edit a Meaning
 1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
 2.	Find the meaning in the list and click the **Edit icon** on the right-hand side. 
 3.	The form opens with the existing values 
@@ -268,7 +268,7 @@ To view, edit, create, or delete a meaning, go to **Settings → Manage Meanings
 
 > **Note:** If a meaning is already assigned to variables, changes will automatically apply everywhere they are used. Modify widely used meanings with caution to avoid unintentional impact on existing datasets
 
-### Deleting a Meaning
+### Delete a Meaning
 1.	Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
 2.	Select the meaning in the list and click the [[!LINK_DELETE] ](../docs/General#roles) icon to delete the meaning.
 3.	A confirmation dialog appears showing the name of the Meaning.  
@@ -276,7 +276,7 @@ To view, edit, create, or delete a meaning, go to **Settings → Manage Meanings
 
 > **Note:** Only meanings not assigned to variables or templates can be deleted. Otherwise, an error message will appear.
 
-### Best Practices for Managing Meanings
+### Best Practices to Manage Meanings
 ✅ Use **short, clear names** that describe the variable’s purpose.  
 ✅ Always provide a **description** for clarity.  
 ✅ Use **relations** to connect meanings with external (or internal) vocabularies.  
@@ -301,9 +301,9 @@ To access and manage external links, go to **Settings → Manage External Links*
 - **Type**: Defines the kind of external resource. Options include prefix, link, entity, link, characteristics, vocabulary, relationship.
 - **Prefix**: An optional namespace or prefix associated with the link.
 - **Link** button: Opens the used external source.
-- ** Edit & Delete**: Option to edit and delete the External Link
+- **Edit & Delete**: Option to edit and delete the External Link
 
-### Creating an External Link
+### Create an External Link
 
 1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage External Links**.  
 2. On the Manage External Links page, click the **+** button to open the creation form.  
@@ -311,14 +311,14 @@ To access and manage external links, go to **Settings → Manage External Links*
    - **Name**: Enter a clear label for the link (e.g., `dwc`, `hasDwcTerm`). This is how the link will be referenced in the system.  
    - **Type**: Select the appropriate type. Choosing the correct type is important, because it determines how BEXIS2 interprets the link.  
    - **Prefix** (optional): Add a prefix if needed, for example when defining vocabulary or namespaces.  
-  - **Prefix Category** (optional):
+   - **Prefix Category** (optional):
    - **URI (optional):** Provide a full URI (e.g., `http://rs.tdwg.org/dwc/terms/`). Using stable URIs ensures the link remains valid and interoperable.  
 
 4. Once all required fields are filled, the **Save** button becomes active.  
 5. Click **Save** to create the external link.  
 6. A confirmation message will appear at the top-right of the screen.  
 
-### Editing an External Link
+### Edit an External Link
 
 1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links**.
 2. Locate the external link in the list and click the **Edit** button next to the entry.  
@@ -326,7 +326,7 @@ To access and manage external links, go to **Settings → Manage External Links*
 
 > **Note:** If the link is already referenced in other parts of the system (for example in meanings or constraints), the changes will automatically apply wherever the link is used.  
 
-### Deleting an External Link
+### Delete an External Link
 
 1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → External Links**.
 2. Find the External Link and click the [[!LINK_DELETE]](../docs/General#roles) icon next to the entry.    
@@ -335,7 +335,7 @@ To access and manage external links, go to **Settings → Manage External Links*
 
 > **Note:** You can only delete external links that are not currently in use. If the link is referenced elsewhere in the system, deletion will be blocked, and an error message will appear.  
 
-### Best Practices for Managing External Links
+### Best Practices to Manage External Links
 
 ✅ Use clear, descriptive names that make it easy to identify the purpose of the link.  
 ✅ Choose the correct type to ensure the link behaves as expected.  
@@ -345,3 +345,52 @@ To access and manage external links, go to **Settings → Manage External Links*
 ## Prefix Categories
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
+
+In BEXIS2, Prefix Categories define the classification or context of prefixes used in [External Links](#external-links). They help organize and interpret prefixes that relate to vocabularies, namespaces, or semantic references. This ensures that external links are consistently structured and clearly understood throughout the system.
+
+In most BEXIS2 instances, only administrators can manage **Prefix Categories**. Once created, a Prefix Category is available system-wide and can be reused in External Links, particularly when linking to standardized vocabularies or metadata schemes.
+To access and manage Prefix Categories, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Prefix Categories**. On this page, you will find a table listing all defined categories. Each entry contains the following fields:
+
+- **ID**: A system-generated identifier for each prefix category.
+- **Name**: The internal name used to identify the prefix category.
+- **Description**(optional): An explanation of the prefix category’s purpose or context.
+- **Edit & Delete**: Options to modify or remove the prefix category if not in use.
+
+### Create a Prefix Category
+
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Prefix Categories**.
+2. On the Prefix Category page, click the **+** button to open the creation form.
+3. Fill out the form fields:
+   - **Name**: Enter a short and descriptive name for the category (e.g., `dwc`, `gbif`). This identifies the category within the system and will be shown when selecting prefixes.
+   - **Description** (optional): Provide context or an explanation of how this prefix category should be used. This helps users understand its purpose when linking external resources.
+4. Once all required fields are filled out, the **Save** button becomes active.
+5. Click **Save** to create the prefix category.
+6. A confirmation message will appear, and the new category will be listed in the main table.
+
+### Edite a Prefix Category
+
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Prefix Categories**.
+2. Locate the prefix category in the list and click the **Edit** button.
+3. The prefix category form opens above the table. Update the desired fields and click **Save** to apply changes.
+> **Note:** If the prefix category is already used in **External Links**, all updates will automatically apply wherever it is referenced.
+
+### Deleting a Prefix Category
+
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Prefix Categories**.
+2. Find the prefix category and click the [[!LINK_DELETE]](../docs/General#roles) icon next to it.
+3. A confirmation dialog will appear with the name of the prefix category.
+4. Confirm the deletion.
+> **Note:** Only prefix categories that are not currently used in external links can be deleted.
+
+### Best Practices to Manage Prefix Categories
+
+Use clear and descriptive names to make categories easily identifiable.
+✅ Add meaningful descriptions to help other users understand their purpose.
+✅ Check for existing categories before creating new ones to avoid duplication.
+
+
+
+
+
+
+
