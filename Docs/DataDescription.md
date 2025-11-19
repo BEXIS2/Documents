@@ -95,7 +95,7 @@ Go to  [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Units** 
 * __Description:__ A short explanation of what this unit measures and in which context it is used (for example: standard unit of temperature on the Celsius scale.)
 * __Abbreviation:__ The internationally standardized symbol or abbreviation of the unit (e.g., m, s, °C). This abbreviation will be displayed to users alongside variable names and values.
 * __Dimension:__ The physical dimension of the unit expressed in terms of base quantities (e.g., length [L], mass [M], time [T]). [Dimensions](#dimensions) are defined under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings -> Manage Dimensions**.
-* __Data Type:__ Defines which [data types] (#data-types) can be associated with values using this unit. This ensures the unit is only used with appropriate value types. Data types can be defined under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings -> Manage Data Types**.
+* __Data Type:__ Defines which [data types](#data-types) can be associated with values using this unit. This ensures the unit is only used with appropriate value types. Data types can be defined under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings -> Manage Data Types**.
 * __Measurement System__ (optional): Defines the measurement system the unit belongs to, such as the ,etric or imperial system.
 * __External Link__ (optional): A link to an external definition or reference (e.g., a standard vocabulary or ontology).
 
@@ -158,9 +158,9 @@ To access the constraints management section, go to  [[!LINK_CONFIGURE]](../docs
 ### Types of Constraints
 There are three main types of constraints:
 - **Pattern**: Ensures values match a specific format (e.g., a date or identifier) defined using regular expressions.
-  - Example: To allow only dates in the format `YYYY-MM-DD`, use the regex pattern:  `^\d{4}-\d{2}-\d{2}$`
+  - Example: To allow only dates in the format *YYYY-MM-DD*, use the regex pattern:  *^\d{4}-\d{2}-\d{2}$*
 - **Range**: Limits acceptable values to a defined numeric range.
-  - Example: A constraint with a minimum of `1` and a maximum of `100` allows only values within that range.
+  - Example: A constraint with a minimum of *1** and a maximum of *100*`* allows only values within that range.
 - **Domain**: Specifies a list of valid values. There are three ways to provide domain values:
   - Enter values manually (one per line).
   - Upload a text file containing values.
@@ -230,13 +230,13 @@ Usually, only administrators can create or modify dimensions. Once defined, thes
 ### Create a Dimension
 
 1. Go to  [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Dimensions**.
-2. On the **Manage Dimensions** page, click the **+ icon** to create a new dimension.  
+2. On the **Manage Dimensions** page, click the **+ button** to create a new dimension.  
 3. Fill out the form with the required and optional fields. Fields marked with a red asterisk (*) are mandatory:
    - **Name**: Provide a clear and unique name, preferably based on international standards such as the *International System of Units (SI)*. Avoid abbreviations or internal codes.
    - **Specification**: Define the mathematical structure using base units.  
-     Example: *L(1,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)*`*
+     Example: *L(1,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)*
    - **Description**: Briefly describe the context or usage of the dimension, e.g., _"Used for time-based units like seconds or minutes."_
-4. Once all required fields are completed, the **Save** button (floppy disk icon) becomes active. Click it to save the new dimension. To cancel the entry, click the **X** (cancel icon).
+4. Once all required fields are completed, the **Save** button (floppy icon) becomes active. Click it to save the new dimension. To cancel the entry, click the **X** (cancel icon).
      
 > **Note**:  
 > Dimensions refer to the physical properties of variables. In BEXIS2, a dimension consists of base dimension abbreviations (e.g., L, M) followed by a pair of exponents (positive, negative).
@@ -287,7 +287,7 @@ To view, edit, create, or delete a meaning, go to  [[!LINK_CONFIGURE]](../docs/G
 - **Name**: The label used to identify the meaning. It should clearly describe what the variable represents (e.g., *Sample Identifier*, *Location Code*, *Observer Name*). Avoid vague or technical terms unless they are standardized.
 - **Description**: A short explanation of what this meaning represents and how it is used. For example: *A unique identifier used to track a collected biological specimen.*  
 - **Approved**: Indicates that a meaning was reviewed and approved by an administrator.
-- **Selectable**: Indicates that users can select this meaning when assigning meanings to Variables or [variable templates](variable-templates).
+- **Selectable**: Indicates that users can select this meaning when assigning meanings to variables or [variable templates](variable-templates).
 
 ### Creat a Meaning
 1.	Go to  [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
@@ -313,8 +313,7 @@ To view, edit, create, or delete a meaning, go to  [[!LINK_CONFIGURE]](../docs/G
 ### Delete a Meaning
 1.	Go to  [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**.  
 2.	Select the meaning in the list and click the  [[!LINK_DELETE] ](../docs/General#roles) icon to delete the meaning.
-3.	A confirmation dialog appears showing the name of the Meaning.  
-4.	Click **Confirm** to delete.
+3.	A confirmation dialog appears showing the name of the Meaning. Click **Confirm** to delete.
 
 > **Note:** Only meanings not assigned to variables or templates can be deleted. Otherwise, an error message will appear.
 
@@ -412,7 +411,7 @@ To access and manage Prefix Categories, go to  [[!LINK_CONFIGURE]](../docs/Gener
 2. Locate the prefix category in the list and click [[!LINK_EDIT]](../docs/General#roles).
 3. The prefix category form opens above the table. Update the desired fields and click **Save** to apply changes.
 
-> **Note:** If the prefix category is already used in **External Links**, all updates will automatically apply wherever it is referenced.
+> **Note:** If the prefix category is already used in external links, all updates will automatically apply wherever it is referenced.
 
 ### Delete a Prefix Category
 
@@ -424,13 +423,6 @@ To access and manage Prefix Categories, go to  [[!LINK_CONFIGURE]](../docs/Gener
 
 ### Best Practices to Manage Prefix Categories
 
-✅ Use a **clear and descriptive names** to make categories easily identifiable.
-✅ Add **meaningful descriptions** to help other users understand their purpose.
+✅ Use a **clear and descriptive names** to make categories easily identifiable.   
+✅ Add **meaningful descriptions** to help other users understand their purpose.   
 ✅ Check for existing categories before creating new ones to **avoid duplication**.
-
-
-
-
-
-
-
