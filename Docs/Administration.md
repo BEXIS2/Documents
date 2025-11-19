@@ -18,16 +18,19 @@ Accounts can be linked to the **Party Module** so that the actual user name is s
 
 ### Create a User Account
 
-In addition to the self-registration procedure, administrators can manually create new accounts. This feature is available under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Users → Create User**. The system validates all entered information to ensure data consistency (e.g., unique user name and valid email address).
+In addition to the self-registration procedure, administrators can manually create new accounts. This feature is available under [[!LINK_CONFIGURE]] **Settings → Manage Users → Create User**. The system validates all entered information to ensure data consistency (e.g., unique user name and valid email address).
+
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageUser_CreateUser.png" alt="Create a user account" style="border:1px solid #bee1da; padding:10px;">
 ### Edit or Delete a User Account
 
-Under [[!LINK_CONFIGURE]](../docs/General#roles)**Settings → Manage Users**, it is possible to view, edit, and delete user information. 
+Under [[!LINK_CONFIGURE]][def] **Settings → Manage Users**, it is possible to view, edit, and delete user information. 
+
 | Button | Description |
 |:--|:--|
 | **Edit** | Modify user information. For security reasons, not all fields (e.g., username) can be changed. |
 | **Group** | View the user’s group memberships. The status can be changed by (un)selecting the corresponding checkboxes. |
 | **Delete** | Delete a user account (only possible if the account has not been used). |
+
 ## Manage Groups
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
@@ -39,14 +42,14 @@ Groups define sets of permissions that can be assigned to several users. A user 
 
 ### Create a User Group
 
-A new group can be created under [[!LINK_CONFIGURE]](../docs/General#roles)**Settings → Manage Groups → Create Group**. Enter a group name and, optionally, a description.
+A new group can be created under [[!LINK_CONFIGURE]][def] **Settings → Manage Groups → Create Group**. Enter a group name and, optionally, a description.
 
 
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Administration_ManageGroups_CreateGroup.png" alt="Menue to create a new user group" style="border:1px solid #bee1da; padding:10px;">
 
 ### Edit or Delete a User Group
 
-Under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Groups**, you can view, edit and delete existing groups.
+Under [[!LINK_CONFIGURE]][def] **Settings → Manage Groups**, you can view, edit and delete existing groups.
 
 | Button | Description |
 |:--|:--|
@@ -60,9 +63,9 @@ Under [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Groups**,
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
 
-Parties are core entities in BEXIS2. They can represent **persons**, **organizations**, **projects**, or similar objects. User create a party (person) in their registration process. In most BEXIS2 instances, only administrators have permission to manage meanings.
+Parties are core entities in BEXIS2. They can represent **persons**, **organizations**, **projects**, or similar objects. During the configuration of a new BEXIS2 instance the **party types**, their **attributes** and their **relationships** are defined by the administrator ([Configuration Server/Initial Configuration/Manage Parties](#manage-parties)). Users create a party (person) during the registration process. In most BEXIS2 instances, only administrators have permission to manage parties.
 
-To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Meanings**. On this page, you find several tables listing all registered parties. The first table displays all Parties. Select a tab to view a specific party type. Each entry contains the following fields:
+To view, edit, create, or delete a party, go to [[!LINK_CONFIGURE]][def] **Settings → Manage Parties**. On this page, you find several tables listing all registered parties. The first table displays all parties. Select a tab to view a specific party type. Each entry contains the following fields:
 
 - **ID**: A system-generated identifier for each prefix category.
 - **Name**: The name of the person, organization, project etc.
@@ -76,7 +79,7 @@ To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/Ge
 
 ### Create a Party
 
-1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Parties**
+1. Go to [[!LINK_CONFIGURE]][def] **Settings → Manage Parties**
 2. On the **Manage Parties** page, click the **Create Party** button to open the party form.
 3. Fill in the fields in the form:
    - **Party Type**: Select the appropriate party type from the dropdown list.
@@ -91,41 +94,50 @@ To view, edit, create, or delete a meaning, go to [[!LINK_CONFIGURE]](../docs/Ge
 
 ### Edit a Party
 
-1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Parties**
-2. On the **Manage Parties** page select the party you want to edit and click the **Edit icon** on the right-hand side.
-3. The form opens with the existing values
+1. Go to [[!LINK_CONFIGURE]][def] **Settings → Manage Parties**
+2. On the **Manage Parties** page select the party you want to edit and click the [[!LINK_EDIT]][def] icon on the right-hand side.
+3. The form of the party opens.
 4. Make the necessary changes and click **Save** to apply them, or **Back to party manager** to return to the overview table without saving. 
 
 
 ### Delete a party
 
-1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Parties**.
-2. Find the party in the table and click the [[!LINK_DELETE]](../docs/General#roles) icon.
+1. Go to [[!LINK_CONFIGURE]][def] **Settings → Manage Parties**.
+2. Find the party in the table and click the [[!LINK_DELETE]][def] icon.
 3. The party form opens. Click **Delete** to remove the party or **Back** to return to the overview table without deleting.
 
 
 ## Manage Relationships
-### Create
-Every party could have relationships with the other parties. The party relationships tab in Edit or create a party is to manage these relationships.
-  To create a new relationship, click Create and see the following window. Here, you see all the available party relationship types, which depend on the definitions we already have. The numbers in parentheses show the number of current relationships and the maximum number of relationships that this party to this relationship type can have.
+Relationships between parties are predefined by administrators during the configuration of a BEXIS2 instance. These definitions determine which party types can be related to each other and how.
+
+The relationships of a party are managed in the **Relationships** tab in the party form.
+
+### Create a Relationship
+
+1. Go to [[!LINK_CONFIGURE]][def] **Settings → Manage Parties**. 
+2. Open the **Relationships** tab in the Create Party or Edit Party form.
+3. Click the **Add** button to open the **New Party Relation** window. This window lists all available relationship types.
+4. Select the desired relationship type by checking the corresponding checkbox. This action expands the section and displays all available parties that can be linked.
+5. Select one or more (if possible) target parties and provide the required details which may vary depending on the party like start date, end date, description.
+6. Click **Save** to create the relationship.
+
+### View or Edit a Relationship
+
+1. Go to [[!LINK_CONFIGURE]][def] **Settings → Manage Parties**. 
+2. On the **Manage Parties** page select the party whose relationship you want to edit or view.
+    - Click [[!LINK_VIEW]][def] on the right-hand side to open and review the details of the party. You find the Relationships in the relationsship tab.
+    - Click [[!LINK_EDIT]][def] on the right-hand side to open an editable form of the party. Go to the relationships tab and apply your changes. 
+3. After making your changes, click **Save** to apply them or **Cancel** to discard them.
 
 
-Clicking on one of them shows more options and available parties to make a relationship.
+### Delete a Relationship
 
-Selecting a party asks you to enter some information; by default, it fills some fields. Title here is the title of this relationship, start and end date are essential and will set the duration of this relationship. This duration should fit the source and target parties' duration; otherwise, you will face an error.
+1. Go to [[!LINK_CONFIGURE]][def] **Settings → Manage Parties**. 
+2. On the **Manage Parties** page select the party whose relationship you want to delete. Click [[!LINK_EDIT]][def] on the right-hand side to open an editable form of the party.
+3. In the relationships tab, locate the **Relationship** you want to remove. Click the [[!LINK_DELETE]][def] icon on the right-hand side of the relationship entry.
+4. Confirm the deletion in the dialog window.
 
-You will face this error if no party or party relationship type is defined.
-
-
-### Edit and view a relationship
-You can edit the relationship by clicking on the edit icon (pencil figure) on the last column of each relationship. Moreover, by clicking on the view icon (eye figure), you are able to see the details of a relationship.
-
-
-
-
-### Delete a relationship
-Clicking on the delete icon (trash figure) on the last column of each relationship, you can delete a relationship if the minimum cardinality of its relationship type is preserved.
-
+> Note: A relationship can only be deleted if the minimum cardinality defined for its relationship type is preserved. If this rule is violated, a message window will appear indicating that the relationship cannot be deleted.
 
 
 
@@ -255,3 +267,5 @@ The Summary page is an overview of the created metadata structure.
 ## Manage Requests
 
 Requests are used to ask for permission to access a dataset. The request is sent to the dataset owner and in copy to the administrator. The request can be accepted or rejected.
+
+[def]: ../docs/General#roles

@@ -27,6 +27,55 @@ tags: ["javascript", "markdown", "metadata"]
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
+In BEXIS2, Variable Templates are predefined, reusable blueprints that define the properties and semantics of variables used in datasets. They specify key aspects such as data type (e.g., string, integer, date), unit (e.g., kg, m), and constraints (e.g., value ranges). These templates ensure consistency, comparability, and standardization across datasets by allowing users to apply the same variable definition to similar variables (e.g. temp, T, Tmin for temperature) without redefining it each time.
+
+When defining a dataset’s [data structure](#data-structures), users can select an existing Variable Template. Its information is then automatically copied into the data structure, providing a consistent starting point while still allowing for adjustments if needed. This improves data integration and sharing, and supports semantic querying across datasets, standardization, and interoperability..
+
+In most BEXIS2 instances, only administrators or data managers can create and manage Variable Templates. Once created, they are available system-wide and can be reused in any dataset where tabular data variables are defined.
+
+
+### Create a Variable Template
+
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**.
+2. On the Manage Variable Templates page, click  [[!LINK_CREATE]](../docs/General#roles) to open the template.
+3. Fill in the form fields:
+   - **Name**: Enter a clear, specific name. This name appears in the selection list when users choose a template.
+   - **Description** (optional): Add a short description to help users identify the correct template.
+   - **Unit** (optional): Select a [unit](#units) from the list if the variable has a physical unit.
+   - **Data Type**: Choose the [data type](#data-types) that best matches the expected values.
+   - **Meaning** (optional): Select a [meaning](#meanings), if available, to link the template to a defined concept.
+   - **Constraint** (optional): Choose a constraint if values must follow certain rules (e.g., codes, ranges, or formats).
+4. Once all required fields are completed, the **Save** button becomes active. 
+5. Click **Save** to create the Variable Template. A confirmation message appears in the upper right corner, and the new template is listed in the table.
+
+
+### Edit a Variable Template
+
+1. Go to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**.
+2. Find the template in the list and click [[!LINK_EDIT]](../docs/General#roles).
+3. Update any fields as needed (e.g., name, description, unit, data type, meaning, or constraints).
+4. Click **Save** to apply the changes.
+
+> **Note:** Changes affect only future use of the template. Existing datasets that already include variables based on this template are not updated automatically.
+
+
+### Delete a Variable Template
+
+1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Variable Templates**.
+2. Locate the template and click [[!LINK_DELETE]](../docs/General#roles) next to it.
+3. A confirmation dialog appears showing the template name — confirm the deletion to permanently remove it.
+
+> **Note:** Templates that are in use or required by the system cannot be deleted.
+
+
+### Best Practices to Manage Variable Templates
+
+✅ Use clear and descriptive names so users can easily identify the correct template.
+✅ Always add a short description explaining the intended use.
+✅ Link units, meanings, and constraints to support standardization and semantic clarity.
+✅ Review templates regularly and remove duplicates or outdated entries.
+
+
 ## Data Types
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles)
@@ -374,7 +423,7 @@ To access and manage Prefix Categories, go to [[!LINK_CONFIGURE]](../docs/Genera
 3. The prefix category form opens above the table. Update the desired fields and click **Save** to apply changes.
 > **Note:** If the prefix category is already used in **External Links**, all updates will automatically apply wherever it is referenced.
 
-### Deleting a Prefix Category
+### Delete a Prefix Category
 
 1. Navigate to [[!LINK_CONFIGURE]](../docs/General#roles) **Settings → Manage Prefix Categories**.
 2. Find the prefix category and click the [[!LINK_DELETE]](../docs/General#roles) icon next to it.
