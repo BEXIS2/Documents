@@ -11,112 +11,138 @@ tags: ["javascript", "markdown", "metadata"]
 
 ## Create a Dataset
 
-To create a new dataset, click on  __Create__ in the main menu. A list of dataset types will be displayed (e.g., file, observation, publications). Each dataset type may have a specific metadata schema, allowed file types, and other characteristics. To choose the most appropriate dataset type for your data:
+Click __Create__ in the main menu to start a new dataset. You will see a list of dataset types (e.g., file, observation, publication). Each type has its own metadata schema, allowed file types and further characteristics. To choose the most appropriate dataset type for your data:
 
 * __Check its description__
-* __Verify the accepted file types:__ If no file types are listed, you can upload any format supported by BEXIS2 (see the complete list here (link will be added))
+* __Verify the accepted file types:__ If no file types are listed, you can upload any format supported by BEXIS2 (see the complete list here - link will be added)
 
 To select a dataset type, simply click on it. If you're unsure about the best option or your file type is not accepted, please contact your data curator or manager.
 
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset01.png" alt="Select an appropriate dataset typ to start creating a dataset" style="border:1px solid #bee1da; padding:10px;">
 
-![Create dataset I](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset01.png)
+After selecting a dataset type, an input area will appear either on the right side or below. Fill in the required metadata (e.g., title, description). Once all mandatory fields are completed, click the green plus sign to create the dataset.
 
-After selecting a dataset type, an input area will appear either on the right side or below. Enter the required metadata - such as the title and description - into the appropriate fields. Once all mandatory fields are completed, you can create the dataset by clicking the green plus sign in the bottom-right corner.
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset02.png" alt="Fill in the required metadata (e.g., title, description)" style="border:1px solid #bee1da; padding:10px;">
 
-![Create dataset II](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset02.png)
 
 This action opens the dataset's general editing page, where you can proceed in several ways:
 
 * Upload data
-* Select an existing Data Structure
-* Add a new Data Structure
+* Select an existing data structure
+* Add a new data sStructure
 * Edit the metadata
 
-By default, in most BEXIS2 instances, newly created datasets are only visible to you (the author) and users with editing permissions based on their roles - typically co-authors and data managers. For information on how to make your dataset accessible to all users, refer to the [versioning](../docs/MyData/#dataset-versioning) section.
+> **Note:** By default, in most BEXIS2 instances, newly created datasets are only visible to you (the author) and users with editing permissions based on their roles - typically co-authors and data managers. For information on how to make your dataset accessible to all users, refer to the [versioning](../docs/MyData/#dataset-versioning) section.
+
+### Best Practices to Create a Dataset
+
+✅ Choose the **dataset type that best fits your data**.   
+✅ Provide the **key information** for your dataset (e.g., title, abstract).
 
 
-### Dataset Edit Page (user)
 
-The Dataset Edit Page is your workspace for managing and customizing your dataset. It provides tools for editing metadata, uploading files, defining Data Structures, adding attachments, and linking datasets. Use it to ensure your dataset is comprehensive, organized, and ready for sharing. Depending on the chosen dataset type, not all features might be available.
+### Dataset Edit Page
 
-There are several ways to access the Dataset Edit Page, depending on your workflow:
+The Dataset Edit Page is the central area for managing a dataset. Here you can edit metadata, upload files, define the data structure, add attachments, and create links to other datasets. Depending on the dataset type, some features may not be available.
 
-1. __After creating a dataset__: The edit page opens automatically when you create a new dataset.
-2. __From the dataset view page__: If you're viewing a dataset, use the edit button to switch to the edit page.
-3. __From ‘My Data’__: Locate your dataset under the My Data section, then click the pen icon.
-4. __Using search__: If the dataset is at least internally open, search for it, view it, and switch to the edit mode using the toggle (similar to option 2).
+There are several ways to open the Dataset Edit Page, depending on your workflow:
 
-The Dataset Edit Page of every dataset includes the following parts, though some features may not be available for a dataset type or in an instance.
+* __After creating a dataset__: The edit page opens automatically.
+* __From My Data__: Find the dataset and click [[!LINK_VIEW]](../docs/General#roles).
+* __Via search__:  Search for the dataset, open it by clicking [[!LINK_VIEW]](../docs/General#roles), and switch to edit mode by clicking the **Edit Button** and go to the dataset edit page.
+* __From the dataset landing page__: Click the **Edit Button** to switch to edit mode.
 
-1. __[Metadata](#metadata)__ _(mandatory)_: Click on the pencil button to include the dataset's essential information in the metadata.
-2. __[File upload](#file-upload):__ Upload your data files into this section by drag and drop or click to select.
-3. __[Data Structure](#data-structure)__ _(some dataset types)_: Define the variables of the tabular data. The easiest way is to create the Data Structure by uploading your data first.
-4. __[Attachments](#attachments)__ _(some dataset types)_: Add supplementary files to support your dataset.
-5. __[Links](#links):__ Connect your dataset to others within your instance.
+The Edit Page gives you access to all options for updating and managing your dataset. Depending on the dataset type, you may see some or all of the following sections:
+
+* __[Metadata](#metadata)__ _(mandatory)_: Click [[!LINK_EDIT]](../docs/General#roles) to add or update the metadata of your dataset.
+* __[File upload](#file-upload):__ Upload data files using drag-and-drop or file selection.
+* __[Data Structure](#data-structure)__ _(some dataset types)_: Define the variables of your tabular data. Often, the easiest way is to upload your data first so the structure can be created semi-automatically.
+* __[Attachments](#attachments)__ _(some dataset types)_: Add supporting files such as documents or images.
+* __[Links](#links):__ Connect your dataset to related datasets or publications.
 
 With the __View__ button in the upper right corner, you can switch to the dataset view.
 
-![DatasetEditPage](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset03_DatasetEditPage.png)
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset03_DatasetEditPage.png" alt="The Dataset Edit Page is the central area for managing a dataset. Here you can edit metadata, upload files, define the data structure, add attachments, and create links to other datasets. Depending on the dataset type, some features may not be available." style="border:1px solid #bee1da; padding:10px;">
+
+## Edit Metadata
+
+Metadata are “data about data”. They describe essential information about a dataset — such as who collected the data, when, where, how, and for what purpose. Good metadata provide context (e.g., methods) so that others can correctly interpret, and reuse the data.. Well-structured metadata also make datasets easier to find, understand, and reuse, supporting the FAIR principles.
+
+1. __Open the metadata page:__. There are several ways to open the Metadata Edit Page, depending on your workflow:
+There are several ways to access the Metadata Edit Page, depending on your workflow:
+    * __From My Data__: Locate your dataset and click [[!LINK_EDIT]](../docs/General#roles).
+    * __Via search__:  Search for the dataset, open it via [[!LINK_VIEW]](../docs/General#roles), then switch to edit mode by clicking the **Edit Button**.
+    * __From the dataset edit page__: To edit the metadata, click [[!LINK_EDIT]](../docs/General#roles). The metadata form opens in a new window.
+    * __From the dataset landing page__: Click [[!LINK_EDIT]](../docs/General#roles) to switch to edit mode.
+2. __Fill in your metadata:__. Use the tabs at the top of the form to navigate  through different sections.  Icons in the form help indicate field types and available actions.
+
+    | Icon | Description |
+    |------|-------------|
+    | ℹ️ | Offers help when filling out the metadata fields; the info-button on the top shows all help texts |
+    | <span style="color:red;">*</span> | Indicates mandatory fields |
+    | ![info](./35aa291f-fe83-45f0-9363-a1892230bec7.png)  | Opens or closes subsections. |
+    | + / - | Adds or deletes an additional field |
+    | ▼ / ▲ | Reorders items in a list |
+    | ☐ | Subsections are closed by default; ticking opens the subsection |
+
+3. __Provide change message:__ After making edits, scroll to the bottom and briefly describe what you changed. This helps maintain a transparent version history.
+4. __Validate metadata__ _(optional)_: Click the __Validation button__ to check whether all mandatory fields are filled in and whether your entries follow the required metadata standard.Missing or invalid information is highlighted in red.
+5. __Save or cancel:__ Save your edits or discard them. Saving also triggers validation. After saving, you will be redirected to the dataset landing page.
+
+> **Note:** You can return to the metadata form at any time to update your dataset.
+
+### Best Practices for Metadata
+
+✅ Provide **complete and clear** metadata to increase discoverability, usability, and scientific credit.  
+✅ Use a **meaningful title**, a **concise descriptive abstract**, and **clear descriptions of methods and workflows**.  
+✅ Ensure terminology,naming, and units are **consistent** across the dataset.  
+✅ Add enough context so others (and your future self) can **understand the data without additional explanation**.
+
+## Upload File
+
+There are two options for file upload:
+
+(1) Tabular data: Data can be viewed and filtered directly in BEXIS2. If this option is available, the dataset edit page will include the section [data structure](#data-structure).  
+(2) Non-tabluar data (e.g., documents, images, scripts)
+
+### Upload Tabluar Data
+1. Open the dataset edit page of your dataset (see [dataset edit page](#dataset-edit-page))
+2. Drag and drop your file(s) into the upload box or click the upload icon to select files from your computer. Once uploaded, the files will be listed.
+3. Add a description or comment for each file. You can also delete files.
+4. To finalize the upload, create or select a [data structure](#data-structure).
+
+> **Note:** All files must share the same data structure. One or more files with identical variables can be uploaded per dataset. These files can be viewed and filtered in BEXIS2.
+
+### Upload Non-Tabluar Data
+1. Open the dataset edit page of your dataset (see [dataset edit page](#dataset-edit-page))
+2. Drag and drop your file(s) into the upload box or click the upload icon to select files from your computer. Once uploaded, the files will be listed.
+3. Add a description or comment for each file. You can also delete files.
+4. Delete the file(s), or submit them. You have to confirm the submission.
+
+### Best Practices for File Upload
+✅ **Prepare your files** to ensure they have the correct structure before uploading.   
+✅ **Provide meaningful comments** for each file to improve reuse.
+
+## Create Data Structure
+
+A Data Structure defines all variables in the data you want to upload. Before uploading your tabluar primary data, you must define the Data Structure. On the Dataset Edit Page, you can create it using the Data Structure drop-down menu. The following options are available:
+
+* __[Structure](#reusing-data-structures):__ Based on an existing Data Structure. Best Practice: Reuse existing Data Structures whenever possible to ensure consistency and save time.
+* __[File data](#data-structure-based-on-file):__ Based on the uploaded file. Best Practice: Recommended if you cannot reuse an existing structure. Make sure your file includes variable names, units, and variable description for easier setup.
+* __[Options](#create-a-new-structure):__ Create a new Data Structure from scratch.
+
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset05_CreateDataStructure01.png" alt="Before uploading your tabluar primary data, you must define the Data Structure. On the Dataset Edit Page, you can create it using the Data Structure drop-down menu." style="border:1px solid #bee1da; padding:10px;">
 
 
 
+### Best Practices for Data Structures
 
-### Metadata
-
-To edit the metadata, click on the pen icon on the Dataset Edit Page. The metadata form for your dataset will open in a new window.
-
-Use the tabs at the top of the form to navigate the specific sections. Familiarize yourself with the icons and their functions to streamline data entry (icons will be added soon).
-
-
-[image]
-
-
-Please remember that you can return to edit the metadata form at any time to make updates. Ensure your metadata is complete and comprehensive, as this improves data discoverability and reuse, and guarantees you receive proper credit for your work.
-
-After editing the metadata, scroll to the end of the form. There, you can provide brief information about your changes in a text box. Additionally, you can validate, save, or cancel your changes.
-
-The validation process checks if all mandatory fields are filled and comply with the metadata standard. Errors and missing content will be highlighted in red. Clicking the Save button also triggers validation. Once your metadata is saved, you will be directed to the view mode.
-
-If you want to update your dataset further (e.g., metadata, data, etc.), click on the button in the upper right corner of the page, and you will be redirected to the Dataset Edit Page.
+✅ **Reuse first** - Always check if an existing Data Structure fits your dataset.   
+✅ Prepare your file and **include variable names, descriptions, and units** in your file for automatic detection.
 
 
 
-### File Upload
-
-To add your data, drag and drop your file(s) to the upload box or click the upload icon to select file(s) from your computer. We distinguish two different options for the file upload.
-
-(1) __Upload and storage of tabular data__: One or more files with identical Data Structures can be uploaded per dataset. The data can be viewed and filtered in BEXIS2. If this option is possible, the edit page will contain the section [data structure](#data-structure).
-
-Once you have uploaded the file(s), they will be listed. You can now add a description or comment to the file, delete the file(s), or submit them as part of your dataset. To upload the file(s), you will need to select a [data structure](#data-structure).
-
-
-(2) __Upload data__ (e.g., images, GIS files) __that are not saved in a tabular structure__ in BEXIS2: Several files can be uploaded. A Data Structure is not needed for this case.
-
-Once you have uploaded the file(s), they will be listed. You can now add a description or comment to the file, delete the file(s), or submit them as part of your dataset. Only after pressing the submit button will the data be part of your dataset.
-
-
-
-[image]
-
-
-
-### Data Structure
-
-A Data Structure defines all the variables of the data you wish to upload. Before uploading the primary data, the Data Structure must be determined. On the Dataset Edit Page, it can be created via the "Data Structure" drop-down menu. The following options are available:
-
-1. __[Structure](#reusing-data-structures):__ Based on an existing Data Structure. We recommend reusing existing Data Structures whenever possible!
-2. __[File data](#data-structure-based-on-file):__ Based on the uploaded file. This option is recommended if you cannot reuse an existing Data Structure.
-3. __[Options](#create-a-new-structure):__ Create a new Data Structure.
-
-
-
-![DatasetEditPage](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset05_CreateDataStructure01.png)
-
-
-After creating the Data Structure, you need to define your variables on the [data structure edit page](#data-structure-edit-page) page if you have chosen option (1) based on an existing Data Structure or (2) based on a file.
-
-
-#### Reusing Data Structures
+### Reusing Data Structures
 
 The reuse of Data Structures within BEXIS2 ensures consistency and efficiency. This scenario applies, for example, for monitoring data or data from data loggers. Defined Data Structures can and should be reused for recurring data, such as data of a data logger. This data often shares similar structures (e.g., timestamp, sensor readings).
 
@@ -146,7 +172,7 @@ __Method 2: Creating a new dataset based on an existing dataset__
 * You can also add new data without altering the underlying Data Structure.
 
 
-#### Data Structure Based on File
+### Data Structure Based on File
 
 If you need a new Data Structure, we strongly recommend creating it based on the file you want to upload.
 
@@ -195,7 +221,7 @@ __6. Saving the Data Structure:__
 
 ![DatasetEditPage](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset06_CreateDataStructure02.png)
 
-#### Create a new structure
+### Create a new structure
 
 There is also the option to create a Data Structure from scratch.
 
@@ -203,7 +229,7 @@ There is also the option to create a Data Structure from scratch.
 * Select "Create New": Select "Create New" from the drop-down list under Data Structure. You will be redirected to the [data structure edit page](#data-structure-edit-page).
 
 
-#### Data Structure Edit Page
+### Data Structure Edit Page
 
 On the Data Structure Edit Page, you define the variables for your data. Whether you choose the "Data Structure Based on File" or "Create a New Structure" is a crucial step in the Data Structure creation process.
 
@@ -256,7 +282,7 @@ If you create a Data Structure from scratch or if you modify a copy of an existi
 * __Delete variable:__ use the bin button to delete a variable.
 
 
-### Attachments
+## Attachments
 
 You can upload additional material to your dataset as an attachment. To add attachments, drag and drop your file(s) into the upload box or click the upload icon to select files from your computer. Enter a description or comment for each attachment in the box behind the file. The files will be uploaded to your dataset immediately. To delete an attachment, click the delete button.
 
@@ -265,8 +291,7 @@ You can upload additional material to your dataset as an attachment. To add atta
 [image]
 
 
-### Links (optional)
-
+## Links
 __Note:__ Currently, you can't set links between datasets on the Dataset Edit Page. However, they can be added on the dataset view page in the Link tab.
 
 It is possible to link datasets independently of the dataset type (e.g., dataset, publication). Links always refer to a specific version of a dataset.
