@@ -18,6 +18,7 @@ Use the search to explore all datasets and other entities such as publications a
 The search is based on the information provided in the metadata of datasets and their data structures. The content of the primary data is not yet searchable.
 
 > Note: Search results will depend on your user status. 
+>
 > - **Not logged-in users** can view and download only public datasets. 
 > - **Logged-in user**, typically project members, can view all datasets. They have access to the metadata and, depending on their permissions, also to primary data and attachments.
 
@@ -41,7 +42,8 @@ The search categories on the left side of the page are based on metadata details
 
 
 > Notes:
-> - Categories may contain more than five terms — click **More** to view the complete list.
+>
+> - Categories may contain more than five terms - click **more** to view the complete list.
 > - The number next to each term indicates how many datasets contain that term.
 > - The available categories and terms are automatically update based on your current selections.
 
