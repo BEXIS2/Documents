@@ -284,22 +284,34 @@ If you create a Data Structure from scratch or if you modify a copy of an existi
 
 ## Attachments
 
-You can upload additional material to your dataset as an attachment. To add attachments, drag and drop your file(s) into the upload box or click the upload icon to select files from your computer. Enter a description or comment for each attachment in the box behind the file. The files will be uploaded to your dataset immediately. To delete an attachment, click the delete button.
+You can upload additional material to a dataset as attachments. To add attachments, drag and drop one or more files into the upload box or click the upload icon to select files from your computer. For each attachment, you can enter a description or comment in the field next to the file. The files are uploaded to the dataset immediately. To remove an attachment, click [[!LINK_DELETE]](../docs/General#roles).
+
+### Best Practices
+
+✅ Choose **meaningful file names** for your attachments.   
+✅ Provide a **clear description or comment** for each uploaded attachment. 
 
 
 
-[image]
+
 
 
 ## Links
-__Note:__ Currently, you can't set links between datasets on the Dataset Edit Page. However, they can be added on the dataset view page in the Link tab.
+> __Note:__ Links between datasets cannot currently be created on the [Dataset Edit Page](#dataset-edit-page). To add links, open the dataset view and switch to the **Link** tab.
 
-It is possible to link datasets independently of the dataset type (e.g., dataset, publication). Links always refer to a specific version of a dataset.
+You can link datasets regardless of their type (e.g. dataset, publication). Each link always refers to a specific version of a dataset.
 
-The page shows links from the current dataset to another dataset (link to) and links from another dataset to the current dataset (link from). This shows the link's direction and clearly defines the source and target. The table also shows the relationship between the linked dataset and comments (optional).
+The links page displays:
+- **Links to** other datasets (outgoing links)
+- **Links from** other datasets to the current one (incoming links)
 
-The links are always between specific versions of datasets. You have the option to view this specific version of the linked dataset (eye button) or the latest version of the linked dataset (... button).
+This makes the direction of each link explicit and clearly defines the source and target. For each link, the table shows the relationship between the datasets and any optional comments.
 
+Because links are version-specific, you can:
+- open the linked **referenced version** clicking [[!LINK_VIEW]](../docs/General#roles)
+- navigate to the **latest version** of the linked dataset using skip icon
 
+### Best Practices
 
-[image]
+✅ Link datasets when there is a **clear and meaningful relationship** between them.  
+✅ Choose the **appropriate relationship type** to clearly describe how the datasets are connected.  
