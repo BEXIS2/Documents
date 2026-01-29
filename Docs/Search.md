@@ -17,10 +17,7 @@ Use the search to explore all datasets and other entities such as publications a
 
 The search is based on the information provided in the metadata of datasets and their data structures. The content of the primary data is not yet searchable.
 
-> Note: Search results will depend on your user status. 
->
-> - **Not logged-in users** can view and download only public datasets. 
-> - **Logged-in user**, typically project members, can view all datasets. They have access to the metadata and, depending on their permissions, also to primary data and attachments.
+> Note: Search results will depend on your user status. **Not logged-in users** can view and download only public datasets. **Logged-in user**, typically project members, can view all datasets. They have access to the metadata and, depending on their permissions, also to primary data and attachments.   
 
 ## Search
 
@@ -41,11 +38,7 @@ Your active keywords appear below the search field. You can remove any of them b
 The search categories on the left side of the page are based on metadata details such as person, or projects.
 
 
-> Notes:
->
-> - Categories may contain more than five terms - click **more** to view the complete list.
-> - The number next to each term indicates how many datasets contain that term.
-> - The available categories and terms are automatically update based on your current selections.
+> Notes: (i) Categories may contain more than five terms - click **more** to view the complete list. (ii) The number next to each term indicates how many datasets contain that term. (iii) The available categories and terms are automatically update based on your current selections.
 
 Selected category filters are displayed below the free-text search field. If you select more than three terms from the same category, only the category name is shown. Click on the number next to the category to open a window showing all selected terms for that category. Filters can be removed by clicking on them.
 
@@ -56,20 +49,20 @@ The dataset overview in the center of the page can be displayed either as a **Ta
 The columns shown in the **Table View** depend on your instance configuration and may include ID, type, title, and other metadata categories.
 
 Available sorting and filtering options:
-- Click the **Filter Icon** in a column header to **Filter** its content. Enter a search term and choose an option (e.g., contains, is equal to).
-- Click the **Column Header** to **Sort** by that column.
+- Click the **filter icon** in a column header to **filter** its content. Enter a search term and choose an option (e.g., contains, is equal to).
+- Click the **column header** to **sort** by that column.
 - When applying free-text search or category filters, the table automatically updates to display matching results.
 
 The **List View** provides a more comprehensive overview of each dataset. The main components of the tiles usually include the title, authors, entity type (e.g., dataset, publication), license, DOI, and primary data type (e.g., tabular data, file).
 
 ## View a Dataset
 When you find a dataset you are interested in, you can open it as follows:
-- In the Table View: Click the **Eye Icon** to open the dataset.
-- In the List View:  Click the **Tile** to open the dataset.
+- In the Table View: Click [[!LINK_EDIT]](../docs/General#roles) to open the dataset.
+- In the List View:  Click the **tile** to open the dataset.
 
 The dataset opens on a new page. Depending on the dataset’s content, your user permissions, and the configuration of your BEXIS2 instance, different tabs are displayed.
 
-Usually, you will see at least the **Metadata** and **Data** tabs. Additional tabs may include **Data Structure**, **Links**, **Attachments**, **Permissions**, **Submit**, **Publish**, and **Quality**.
+Usually, you will see at least the **metadata** and **data** tabs. Additional tabs may include **[data structure](#DataDescription.md#data-structures)**, **links**, **attachments**, **permissions**, **submit**, **publish**, and **quality**.
 
 ## Download a Dataset
 
