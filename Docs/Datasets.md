@@ -11,33 +11,37 @@ tags: ["javascript", "markdown", "metadata"]
 
 ## Create a Dataset
 
-Click __Create__ in the main menu to start a new dataset. You will see a list of dataset types (e.g., file, observation, publication). Each type has its own metadata schema, allowed file types and further characteristics. To choose the most appropriate dataset type for your data:
+Click __Create__ in the main menu to start creating a new dataset. You will see a list of dataset types which may include file, observation and publication. Each type is defined by a specific metadata schema, the allowed file types and additional characteristics relevant for this type of data. To choose the most suitableate dataset type for your data, consider the following::
 
-* __Check its description__
-* __Verify the accepted file types:__ If no file types are listed, you can upload any format supported by BEXIS2 (see the complete list here - link will be added)
+* Read the dataset type description to understand its intended use
+* Check the accepted file types. If no file types are listed, you can upload any supported file format supported
 
-To select a dataset type, simply click on it. If you're unsure about the best option or your file type is not accepted, please contact your data curator or manager.
+To select a dataset type, simply click on it. If you are unsure which dataset type to choose or if your file type is not supported, contact your data curator or adminstrator for guidance.
+
+Note: The screenshots in this manual are taken from the BEXIS2 demo instance. Depending on customizations made by your administrator, the appearance in your local instance may differ slightly.
 
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset01.png" alt="Select an appropriate dataset typ to start creating a dataset" style="border:1px solid #bee1da; padding:10px;">
 
-After selecting a dataset type, an input area will appear either on the right side or below. Fill in the required metadata (e.g., title, description). Once all mandatory fields are completed, click the green plus sign to create the dataset.
+After selecting a dataset type, a metadata input area will appear either on the right side or below he list. Enter the required metadata (e.g., title, description). Once all mandatory fields are completed, click the "Create and Continue" button to create the dataset.
+
+Once all mandatory fields are completed, click the green plus icon to create the dataset.
 
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset02.png" alt="Fill in the required metadata (e.g., title, description)" style="border:1px solid #bee1da; padding:10px;">
 
 
-This action opens the dataset's general editing page, where you can proceed in several ways:
+After creation, you are taken to the dataset’s general editing page. From here, you can:
 
-* Upload data
-* Select an existing data structure
-* Add a new data sStructure
 * Edit the metadata
+* Upload data
+* Select an existing data structure or crate a new data structure
 
-> **Note:** By default, in most BEXIS2 instances, newly created datasets are only visible to you (the author) and users with editing permissions based on their roles - typically co-authors and data managers. For information on how to make your dataset accessible to all users, refer to the [versioning](../docs/MyData/#dataset-versioning) section.
+
+> **Note:** By default, in most BEXIS2 instances, newly created datasets are only visible to you (the author) and to users with editing permissions based on their roles (e.g., co-authors and data curators). o make your dataset visible to other users or publicly accessible see the section on [versioning](../docs/MyData/#dataset-versioning) section.
 
 ### Best Practices to Create a Dataset
 
-✅ Choose the **dataset type that best fits your data**.   
-✅ Provide the **key information** for your dataset (e.g., title, abstract).
+✅ Select the **dataset type that best matches** your data.   
+✅ Provide **clear and meaningful key information**, such as a descriptive title and a concise abstract.
 
 
 
