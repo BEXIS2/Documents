@@ -42,18 +42,18 @@ Within **My Datasets** in the tab **own**, you can see general information about
 
 > Note: Datasets highlighted in red indicate incomplete or missing mandatory metadata.
 
-<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_01_Own_V4.2.1" alt="My Data dashboard showing datasets grouped by permission level. My Data is your personal dashboard providing an overview of all datasets you have access to." style="border:1px solid #bee1da; padding:10px;">
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_01_Own_V4.2.1.png" alt="My Data dashboard showing datasets grouped by permission level. My Data is your personal dashboard providing an overview of all datasets you have access to." style="border:1px solid #bee1da; padding:10px;">
 
 ### My Requests
 My Requests lists all your pending and answered data access requests. Pending requests can be withdrawn if they are no longer needed by clicking ([[!LINK_DELETE]](../docs/General#roles)) on the right.
 
-<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_02_Request_V4.2.1(BExIS)" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_02_Request_V4.2.1(BExIS).png" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
 
 
 ### Decision
 In Decisions, you can review all pending and answered access requests for your datasets. Pending requests can be approved (✓) or rejected (−). The requester is automatically informed of your decision via email.
 
-<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_03_Decision_V1.18" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_03_Decision_V1.18.png" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
 
 ## Permissions & Visibility
 
@@ -75,7 +75,7 @@ BEXIS2 supports two versioning modes:
   * No explicit release action is required.
   * **Every version** created by any change in the dataset is shown on the dataset landing page.
 * Versioning with minor/major versions (releases)
-   * Before release, the dataset is visible **only to users with editing permissions** (e.g. dataset authors or administrators) in the My Data dashboard.
+   * Before release, the dataset is visible **only to users with editing permissions** (e.g., dataset authors or administrators) in the My Data dashboard.
    * A dataset becomes **searchable only after a major/minor version** has been released.
    * Only released major/minor versions are visible on the dataset landing page.
 
