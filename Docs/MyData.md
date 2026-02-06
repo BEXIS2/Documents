@@ -95,7 +95,8 @@ To manage dataset releases (major/minor versions):
       * Open the [version table](#dataset-version-table). Select and release the desired version as a major or minor release.
 
 
-  <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_10_Versioning03_VersiontableV4.2.1" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
+  <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_10_Versioning03_VersiontableV4.2.1.png" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
+
 
 After a dataset has been released:
 
