@@ -36,7 +36,7 @@ After creation, you are taken to the dataset’s general editing page. From here
 * Select an existing data structure or crate a new data structure
 
 
-> **Note:** By default, in most BEXIS2 instances, newly created datasets are only visible to you (the author) and to users with editing permissions based on their roles (e.g., co-authors and data curators). o make your dataset visible to other users or publicly accessible see the section on [versioning](../docs/MyData/#dataset-versioning) section.
+> **Note:** By default, in most BEXIS2 instances, newly created datasets are only visible to you (the author) and to users with editing permissions based on their roles (e.g., co-authors and data curators). To make your dataset visible to other users or publicly accessible see the section on [Versioning](../docs/MyData/#dataset-versioning) section.
 
 ### Best Practices to Create a Dataset
 
@@ -47,24 +47,28 @@ After creation, you are taken to the dataset’s general editing page. From here
 
 ### Dataset Edit Page
 
-The Dataset Edit Page is the central area for managing a dataset. Here you can edit metadata, upload files, define the data structure, add attachments, and create links to other datasets. Depending on the dataset type, some features may not be available.
+The Dataset Edit Page is the central area for managing a dataset. Here you can edit metadata, upload and manage data files, define the data structure, and add attachments. Depending on the dataset type, some options may not be available.
 
-There are several ways to open the Dataset Edit Page, depending on your workflow:
+#### How to Open the Dataset Edit Page
+You can access the Dataset Edit Page in several ways, depending on your workflow:
 
-* __After creating a dataset__: The edit page opens automatically.
+* __After creating a dataset__: The Dataset Edit Page opens automatically.
 * __From My Data__: Find the dataset and click [[!LINK_VIEW]](../docs/General#roles).
-* __Via search__:  Search for the dataset, open it by clicking [[!LINK_VIEW]](../docs/General#roles), and switch to edit mode by clicking the **Edit Button** and go to the dataset edit page.
-* __From the dataset landing page__: Click the **Edit Button** to switch to edit mode.
+* __Via the Search__:  Search for the dataset in the Search menu, open it using [[!LINK_VIEW]](../docs/General#roles), then click the **Edit** button to switch to Dataset Edit Page.
 
-The Edit Page gives you access to all options for updating and managing your dataset. Depending on the dataset type, you may see some or all of the following sections:
+> **Note:** Newly created datasets may not appear in search results immediately. In this case, open My data and request a dataset release by clicking the release tab (see [Versioning](../docs/MyData/#dataset-versioning)).
 
-* __[Metadata](#metadata)__ _(mandatory)_: Click [[!LINK_EDIT]](../docs/General#roles) to add or update the metadata of your dataset.
+#### Available Sections on the Dataset Edit Page
+
+The Dataset Edit Page provides access to all options for updating and managing your dataset. Depending on the dataset type, you may see some or all of the following sections:
+
+* __[Metadata](#metadata)__ _(mandatory)_: Click [[!LINK_EDIT]](../docs/General#roles) to add or update the dataset metadata.
 * __[File upload](#file-upload):__ Upload data files using drag-and-drop or file selection.
-* __[Data Structure](#data-structure)__ _(some dataset types)_: Define the variables of your tabular data. Often, the easiest way is to upload your data first so the structure can be created semi-automatically.
-* __[Attachments](#attachments)__ _(some dataset types)_: Add supporting files such as documents or images.
-* __[Links](#links):__ Connect your dataset to related datasets or publications.
+* __[Data Structure](#data-structure)__: Define the variables of your tabular data. In many cases, uploading the data file first allows the data structure to be created semi-automatically.
+* __Data__: A preview of the uploaded data table is displayed here.
+* __[Attachments](#attachments)__: Add supplementary files such as documents, images, or additional material.
 
-With the __View__ button in the upper right corner, you can switch to the dataset view.
+Use the __View__ button in the upper right corner to switch from edit mode to the dataset view.
 
 <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset03_DatasetEditPage.png" alt="The Dataset Edit Page is the central area for managing a dataset. Here you can edit metadata, upload files, define the data structure, add attachments, and create links to other datasets. Depending on the dataset type, some features may not be available." style="border:1px solid #bee1da; padding:10px;">
 
