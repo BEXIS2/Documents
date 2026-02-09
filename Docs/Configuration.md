@@ -24,6 +24,8 @@ tags: ["javascript", "markdown", "metadata"]
 [[!LINK_DELETE] dataset](../docs/General#roles)
 [[!LINK_MANAGE]manage datasets](../docs/General#roles)
 [[!LINK_CONFIGURE] configure datasets](../docs/General#roles)
+[[!LINK_COPY] copy](../docs/General#roles)
+[[!LINK_TAG] tag](../docs/General#roles)
 
 ### Landing Page
 
