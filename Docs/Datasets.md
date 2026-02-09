@@ -62,7 +62,7 @@ You can access the Dataset Edit Page in several ways, depending on your workflow
 
 The Dataset Edit Page provides access to all options for updating and managing your dataset. Depending on the dataset type, you may see some or all of the following sections:
 
-* __[Metadata](#metadata)__ _(mandatory)_: Click [[!LINK_EDIT]](../docs/General#roles) to add or update the dataset metadata.
+* __[Metadata](#metadata)__: Click [[!LINK_EDIT]](../docs/General#roles) to add or update the dataset metadata.
 * __[File upload](#file-upload):__ Upload data files using drag-and-drop or file selection.
 * __[Data Structure](#data-structure)__: Define the variables of your tabular data. In many cases, uploading the data file first allows the data structure to be created semi-automatically.
 * __Data__: A preview of the uploaded data table is displayed here.
@@ -116,15 +116,19 @@ There are two options for file upload:
 ### Upload Tabluar Data
 1. Open the dataset edit page of your dataset (see [dataset edit page](#dataset-edit-page))
 2. Drag and drop your file(s) into the upload box or click the upload icon to select files from your computer. Once uploaded, the files will be listed.
-3. Add a description or comment for each file. You can also delete files.
-4. To finalize the upload, create or select a [data structure](#data-structure).
+3. Add a description for each file. You can also delete files.
+4. Create or select a [data structure](#data-structure) for your file.
+5. Once the Data Structure is validated, you can submit your file by clicking the **Submit button**. Variables that cannot be validated are highlighted in **red** and accompanied by an error message. Expand the message panel to read the full details and upaded the variable definition by adding the data structure.
 
 > **Note:** All files must share the same data structure. One or more files with identical variables can be uploaded per dataset. These files can be viewed and filtered in BEXIS2.
+
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset07_DataUpload.png"
+     alt="Validation of data and datastructure" style="border:1px solid #bee1da; padding:10px;">
 
 ### Upload Non-Tabluar Data
 1. Open the dataset edit page of your dataset (see [dataset edit page](#dataset-edit-page))
 2. Drag and drop your file(s) into the upload box or click the upload icon to select files from your computer. Once uploaded, the files will be listed.
-3. Add a description or comment for each file. You can also delete files.
+3. Add a description for each file. You can also delete files.
 4. Delete the file(s), or submit them. You have to confirm the submission.
 
 ### Best Practices for File Upload
@@ -133,162 +137,153 @@ There are two options for file upload:
 
 ## Create Data Structure
 
-A Data Structure defines all variables in the data you want to upload. Before uploading your tabluar primary data, you must define the Data Structure. On the Dataset Edit Page, you can create it using the Data Structure drop-down menu. The following options are available:
 
-* __[Structure](#reusing-data-structures):__ Based on an existing Data Structure. Best Practice: Reuse existing Data Structures whenever possible to ensure consistency and save time.
-* __[File data](#data-structure-based-on-file):__ Based on the uploaded file. Best Practice: Recommended if you cannot reuse an existing structure. Make sure your file includes variable names, units, and variable description for easier setup.
-* __[Options](#create-a-new-structure):__ Create a new Data Structure from scratch.
+A Data Structure defines all variables of the data you want to upload (e.g. names, data types, units, missing values). Before you can upload **tabular primary data**, a Data Structure must be defined.
 
-<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset05_CreateDataStructure01.png" alt="Before uploading your tabluar primary data, you must define the Data Structure. On the Dataset Edit Page, you can create it using the Data Structure drop-down menu." style="border:1px solid #bee1da; padding:10px;">
+You can create or assign a Data Structure on the [dataset edit page](#dataset-edit-page) using the Data Structure drop-down menu. The following options are available:
 
+- **[Reuse an existing structure](#reusing-data-structures)**: Use an already defined Data Structure. **Best practice:** Reuse existing Data Structures whenever possible to ensure consistency and save time.
+- **[Based on a file](#data-structure-based-on-a-file)**: Create a Data Structure from an uploaded file.  
+  **Best practice:** Recommended if no suitable structure exists. Prepare your file with variable names, units, and descriptions for easier setup.
+- **[Create from scratch](#create-a-new-structure-from-scratch)**: Manually define a new Data Structure.
+
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset05_CreateDataStructure01.png" alt="Create a Data Structure on the Dataset Edit Page using the Data Structure drop-down menu." style="border:1px solid #bee1da; padding:10px;">
 
 
 ### Best Practices for Data Structures
 
-✅ **Reuse first** - Always check if an existing Data Structure fits your dataset.   
-✅ Prepare your file and **include variable names, descriptions, and units** in your file for automatic detection.
+✅ **Reuse first** - Check whether an existing Data Structure already fits your data.   
+✅ **Prepare your file** – Include variable names, descriptions, and units to enable automatic detection.
 
-
+---
 
 ### Reusing Data Structures
 
-The reuse of Data Structures within BEXIS2 ensures consistency and efficiency. This scenario applies, for example, for monitoring data or data from data loggers. Defined Data Structures can and should be reused for recurring data, such as data of a data logger. This data often shares similar structures (e.g., timestamp, sensor readings).
-
-__Method 1: Direct selection of an existing Data Structure__
-
-1. Access the Dataset Edit Page
-2. Search and select the Data Structure
-* On the edit page, open the dropdown list labeled "Data Structure".
-* Begin typing the name of the desired Data Structure.
-* Select the correct Data Structure from the list.
-
-__Method 2: Creating a new dataset based on an existing dataset__
-
-1. Access "My Data"
-2. Select the source dataset
-* Select datasets and view the tab “Own/Edit”
-* From the list of datasets, locate the dataset whose Data Structure you want to reuse.
-* You only see the dataset where you have permission to edit this dataset (data creator or edit rights).
-
-3. Create a new dataset
-* Click on the copy symbol on the right side
-* BEXIS2 will automatically create a new dataset based on the copied one
-* You will be automatically directed to the Dataset Edit Page for the newly created dataset
-
-4. Customization _(optional)_:
-* After the new dataset is created, you can customize metadata (e.g., descriptions) as needed.
-* You can also add new data without altering the underlying Data Structure.
+Reusing Data Structures in BEXIS2 improves consistency and efficiency. This is especially useful for **recurring or monitoring data**, such as measurements from data loggers, where datasets often share the same structure (e.g. timestamp, sensor values).
 
 
-### Data Structure Based on File
+__Option 1: Direct selection of an existing Data Structure__
 
-If you need a new Data Structure, we strongly recommend creating it based on the file you want to upload.
+1. Open the [dataset edit page](#dataset-edit-page)
+2. Open the **Data Structure** drop-down list and select the appropriate Data Structure. *Tip*: Start typing the name of the Data Structure to filter the list and find it faster.
 
-__1. Uploading your file and selecting it for Data Structure creation__
-* Upload: [Upload](#file-upload) your file.
-* Select for Data Structure: After the file is uploaded, select the uploaded file as the basis for your new Data Structure under Data Structure.
-* Automatic analysis: The system will automatically analyze your file's structure. You will be directed to the next page.
 
-__2. Verifying and adjusting file structure information__
-* Review pre-filled settings: The system will pre-fill file structure information such as delimiter, decimal separator, text marker, and encoding.
-* Verify accuracy: Carefully review these settings to ensure they accurately reflect your file's format.
-* Make adjustments: If necessary, modify any of the pre-filled settings to match your file's characteristics.
+__Option 2: Creating a new dataset based on an existing dataset__
 
-__3. Handling Missing Values:__
-* System default: BEXIS2 has a predefined default Missing Value.
-* Administrator modification: An administrator can modify the default Missing Value.
-* Customize Missing Values:
-    * You can delete the existing Missing Value (bin icon).
-    * You can edit the existing Missing Value.
-    * You can add additional Missing Values (plus icon).
-* Variable-specific Missing Values:
-    * If you need different Missing Values for other variables, include this information in your uploaded file and mark the row containing this information.
-    * Define these variable-specific Missing Values on the [Data Structure Edit Page](#data-structure-edit-page).
+1. Go to [my data](#MyData.md/) and select a dataset under [my datasets](#MyData.md/my-datasets) in the *Edit* or *Own* tab.
+2. Click the **copy** icon on the right side. BEXIS2 creates a new dataset based on the selected one and redirects you to the [dataset edit page](#dataset-edit-page), where you can adjust metadata (e.g. title or description) as needed.
+
+
+### Data Structure Based on a File
+
+If you need a new Data Structure, we strongly recommend creating it **based on the file you want to upload**.
+
+#### 1. Uploading your file and selecting it for Data Structure creation
+-  Upload your file via [Upload](#file-upload).
+- Select the uploaded file as the basis for the Data Structure. BEXIS2 automatically analyzes the file and forwards you to the next step.
+  
+
+#### 2. Verifying and adjusting file structure information
+- Verify automatically detected settings for delimiter, decimal separator, text marker, and encoding. Adjust these settings if necessary.
+
+#### 3. Handling Missing Values:
+- System default: BEXIS2 uses a predefined default missing value (commonly `na`). Administrators can change this [default missing value](#configuration.md/#data-structure) in the configuration, so it may differ in your instances.
+- Global missing values: You can edit or remove ([[!LINK_Delete]](../docs/General#roles)) predefined missing values and add additional ones (plus icon). These apply to all variables of your file.
+    * Variable-specific missing values: If variables require specific missing values, either include them in your file and mark the corresponding row or define them later on the [data structure edit page](#data-structure-edit-page).
  
 > **Note**: The boolean data type does not support Missing Values.
 
-__4. Defining variables:__
-* Variable information: Each variable in your data should have a name and a description. Optionally, you can also define a unit and a placeholder for Missing Values.
-* Optimize creation: For efficient Data Structure creation, include variable information (description, unit) directly in your uploaded file.
-* Row selection:
-    * To specify which rows contain variable information (e.g., variable name, description), double-click the corresponding row or click the arrow and select the appropriate button (e.g., variable, unit).
-    * At a minimum, you must select the row containing the variable name and the first row of data.
-* Reset selection:__ Use the "reset" button to undo any selections.
-* Delete and return: To delete the Data Structure and return to the Dataset Edit Page, click the "x" button.
+#### 4. Defining variables
+- Mandatory selection: Select the row containing the **variable names** and the row containing the **first data record**. These two selections are required to continue. 
+- How to select: Select a row by clicking on `>` or double-click on the row  and select the appropriate content (e.g., variable, unit) by clicking on the corresponding button. Use the "reset" button to undo any selections.
+- Optional variable information: Each variable should have a description and may also include a unit and a placeholder value. For faster and more accurate setup, include this information directly in your uploaded file and assign the corresponding rows.
+   * Delete and return: To discard the Data Structure and return to the Dataset Edit Page, click `×`.
 
-__5. Selecting columns for upload _(optional)___
-* Column selection: If you only want to upload specific columns, you can select them.
-* Upload filter: Only the selected columns will be uploaded.
+#### 5. Selecting columns or rows for upload _(optional)_
+* You may limit the upload to specific columns or rows. Only selected data will be imported.
 
-__6. Saving the Data Structure:__
-* Mandatory information: Ensure you have provided the mandatory information: variable names and the first row of data.
-* Save action: Once the mandatory information is provided, the "save" button (floppy disk icon) will be enabled. Click it to save.
-* Data Structure Edit Page: After saving, you will be redirected to the [data structure edit page](#data-structure-edit-page).
+#### 6. Saving the Data Structure:__
+* Once all mandatory information is provided, ([[!LINK_SAVE]](../docs/General#roles)) button becomes active. Click it to store the Data Structure.
+* You will be redirected to the [data structure edit page](#data-structure-edit-page).
 
 
 
-![DatasetEditPage](https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset06_CreateDataStructure02.png)
-
-### Create a new structure
-
-There is also the option to create a Data Structure from scratch.
-
-* Access the Dataset Edit Page
-* Select "Create New": Select "Create New" from the drop-down list under Data Structure. You will be redirected to the [data structure edit page](#data-structure-edit-page).
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset06_CreateDataStructure02.png"
+     alt="Data Structure creation – variable definition step" style="border:1px solid #bee1da; padding:10px;">
 
 
+#### Best Practices for Data Structures
+✅ **Review detected settings** for file structure and missing values carefully.  
+✅ **Prepare files in advance** to minimize manual addtions.
+
+
+
+### Create a New Structure from Scratch
+
+You can also create a Data Structure manually.
+
+1. Open the [dataset edit page](#dataset-edit-page).
+2. In the **Data Structure** drop-down list, select **Create New**. You will be redirected to the [data structure edit page](#data-structure-edit-page), where you can define all variables manually.
+
+---
 ### Data Structure Edit Page
 
-On the Data Structure Edit Page, you define the variables for your data. Whether you choose the "Data Structure Based on File" or "Create a New Structure" is a crucial step in the Data Structure creation process.
-
-The Data Structure Edit Page consists of three main sections:
-* General information
-* Required actions _(optional)_
-* Variables
-
-__1. General information of a Data Structure__
-* __Data Structure title:__ provide a meaningful title for your data. This could be based on the dataset ID or the content.
-* __Primary key:__ Each table row must contain a unique record. A Primary Key, consisting of one or more columns, serves as a unique identifier. This enables the updating of the dataset.
-
-__2. Section with required actions__
-This section lists the actions required to complete the Data Structure if the Data Structure already contains variables. This may include:
-* Defining the Primary Key.
-* Revising the listed variables. These are variables that are still incomplete or incorrectly defined. You will be directed to the corresponding editing area by clicking on a variable.
+On the **Data Structure Edit Page**, you define and manage the variables of your dataset. Regardless of whether you created the Data Structure [based on a file](#data-structure-based-on-a-file) or [from scratch](#create-a-new-structure-from-scratch), this page is the next step in the Data Structure creation process.
 
 
+The page is divided into three main sections:
+- **General information** (title and description)
+- **Required actions** *(optional)*
+- **Variable definitions** (detailed list of variables)
 
-[image]
+#### 1. General information
+* **Title and description:** Provide a meaningful title and a short description of the Data Structure. This can be based on the dataset ID and/or the dataset content.
 
-__3. Defining your Variables__
 
-The next step is to define your variables. If you created your Data Structure from a file, some information may already be pre-filled, such as variable name, data type, description, and unit if they were defined in the prior step (LINK).  If your file contains only the variable name, BEXIS2 will attempt to select a suitable template automatically.
+#### 2. Section with required actions__
+This section highlights actions that must be completed before the Data Structure can be saved and used. It is shown when variables are already present and may include:
+- **Define a primary key:** Each row must be uniquely identifiable. A primary key consists of one or more variables and is required to enable dataset updates.
+- **Complete incomplete variables:** Variables with missing or invalid definitions are listed. Click the variable name to jump directly to it.
+* **Darwin Core validation (optional):** If you plan to publish species data to GBIF, you can validate whether your Data Structure meets the requirements for a Darwin Core Occurrence dataset or extensions (e.g., Taxon, EMoF, Humboldt).
 
- You have the following options to specify your variable. If not mentioned differently, the information is mandatory:
-* __Variable name:__ Is given if the Data Structure is created based on a file. Otherwise, it must be entered in the same way as it is in the file you want to upload.
-* __Template__ _(optional, depending on your instance settings)_: Select a [Variable Template](DataDescription.md#variable-template) from the provided list. Templates group related variables by content (e.g., the "temperature" template includes soil, water, and air temperature).  If you create the Data Structure based on a file, BEXIS2 will attempt to select a suitable template automatically.
-* __Data Type:__ Select the appropriate [Data Type](DataDescription.md#data-types).
-* __Meaning__ _(optional)_: (If available) Select the specific Meaning of the variable. [Meanings](DataDescription.md#meanings) can be modified and created in the Settings.
-* __Constraints__ _(optional)_: These may be pre-filled based on the chosen template or meaning. But you can also define [Constraints](DataDescription.md#constraints).
-* __Missing Value and description__ _(optional)_: Define how Missing Values are represented and described. If you created the Data Structure based on a file, these fields are pre-filled
-* __Primary Key (slider):__ Mark a variable as part of the Primary Key.
-* __Make Values optional (slider):__
-    * It is strongly recommended to leave this option unchecked for data integrity.
-    * Exceptions may include columns containing comments or notes.
-    * If unchecked, BEXIS2 will validate during upload that all cells are filled and report any empty cells.
- 
+
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset06_CreateDataStructure03.png"
+     alt="Data structure edit page – general information and requiered action section" style="border:1px solid #bee1da; padding:10px;">
+
+#### 3. Defining your variables
+
+In this step, you define the variables of your Data Structure. If the Data Structure was [created from a file](#data-structure-based-on-a-file), some information (e.g. variable name, data type, description, unit) may already be pre-filled. If only variable names are available, BEXIS2 attempts to select suitable defaults automatically.
+
+
+The following settings are available. Unless stated otherwise, they are mandatory:
+- **Variable name:**  Automatically set when created from a file; otherwise, enter it exactly as it appears in the upload file.
+- **Template** _(optional, instance-dependent)_: Select a [Variable Template](DataDescription.md#variable-template) to group variables by content (e.g., temperature, mass). When creating from a file, BEXIS2 may preselect a suitable template.
+- **Data type:** Choose the appropriate [Data Type](DataDescription.md#data-types). When possible, this is detected automatically.
+**Meaning** _(optional, instance-dependent)_: Specify the semantic meaning of the variable, if available. [Meanings](DataDescription.md#meanings) are managed in the system settings, usually by an administrator.
+- **Constraints** _(optional)_: These may be pre-filled based on the chosen template or meaning. But you can also define constraints. Accee my be limited. If you can not access [manage constraints](DataDescription.md#constraints) please contact your administrator and ask for assistance. 
+- **Missing values** _(optional)_:   Define how missing values are represented and described. When created from a file, these values are pre-filled but can be adjusted.
+- **Primary Key (toggle):** ark the variable as part of the primary key.
+- **Make values optional (toggle):**   It is recommended to keep this disabled to ensure data integrity. Enable it only for variables such as comments or notes. If disabled, BEXIS2 validates that all cells are filled during upload.
+- **Variable actions (icons):** Icons next to each variable allow you to:
+    - copy the whole variale description except the name to the next variable
+    - copy the whole variale description except the name to all following variables
+    - copy the variable. A copy of the variable will be inserted after the varibale with the action
+    - delete the variable
+    - move the variable up and down
+- **Add variable:** Use the **plus** button at the end of the list to add an empty variable.
+
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/CreateDataset06_CreateDataStructure04.png"
+     alt="Data structure edit page – Defining a variable" style="border:1px solid #bee1da; padding:10px;">
+
 > **Note**: The boolean data type does not support Missing Values.
 
-[image]
+### Best Practices for the Data Structure Edit Page
 
-__Creating a new Data Structure or modifying a Data Structure__
-
-If you create a Data Structure from scratch or if you modify a copy of an existing Data Structure, you also have the following options.
-* __Add empty variable:__ use the plus button at the end of the page to add new variables.
-* __Copy a variable:__ use the copy button to insert copies of an existing variable. Do not forget to modify the variable name based on the variables in our file.
-* __Copy the variable's characteristic to the next variable:__ the xxx button allows you to copy all variable attributes (e.g., description, template, unit) to the following variable in your list. The variable name is not copied.
-* __Copy the variable's characteristic to all following variables:__ the xxx button allows you to copy all variable attributes (e.g., description, template, unit) to all following variables in your list. The variable name is not copied.
-* __Delete variable:__ use the bin button to delete a variable.
-
+✅ Select a **primary key that uniquely identifies each record** and is unlikely to change (e.g. timestamp + station ID). This is essential for updating datasets.
+✅ **Avoid empty cells.** Required values improve data completeness and validation.
+✅ Always **check pre-filled information** (data types, units, missing values) and adjust it if necessary.
+✅ **Use existing variable templates** whenever possible to ensure consistency across datasets and reduce manual work.
+✅ Provide **meaningful descriptions, correct data types, and appropriate units**. Well-defined variables improve data quality and reusability.
 
 ## Attachments
 
@@ -298,9 +293,6 @@ You can upload additional material to a dataset as attachments. To add attachmen
 
 ✅ Choose **meaningful file names** for your attachments.   
 ✅ Provide a **clear description or comment** for each uploaded attachment. 
-
-
-
 
 
 

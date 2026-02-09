@@ -57,10 +57,11 @@ In Decisions, you can review all pending and answered access requests for your d
 
 ## Permissions & Visibility
 
+### Permissions
 > **Note:** This section is currently being created. Content will be gradually added to ensure the documentation is complete and up to date. Thank you for your understanding.
 
-### Permissions
 ### Visibility
+> **Note:** This section is currently being created. Content will be gradually added to ensure the documentation is complete and up to date. Thank you for your understanding.
 
 ## Dataset Versioning
 In BEXIS2, every change to a dataset creates a new dataset version. This includes changes such as editing metadata, uploading or updating data files, and adding or deleting attachments.
