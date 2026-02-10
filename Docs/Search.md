@@ -10,77 +10,120 @@ position: 2
 > [!ROLE]
 > __Role:__ [User](../General/#roles)
 
-Under construction. We are working on it.
+This section explains how to find datasets, open  and download them, and request access to data in BEXIS2.
 
-## Overview
-Use the search to explore all datasets and other entities such as publications available in your BEXIS2 instance. You can search by keywords, filter by categories, or sort results to quickly locate the data most relevant to your work.
+With the search you can:
 
-The search is based on the information provided in the metadata of datasets and their data structures. The content of the primary data is not yet searchable.
+- find datasets and other entities (e.g. publications),
+- refine results using categories, keywords, and filters,
+- open a dataset to view metadata and data, and download the dataset
 
-> Note: Search results will depend on your user status. **Not logged-in users** can view and download only public datasets. **Logged-in user**, typically project members, can view all datasets. They have access to the metadata and, depending on their permissions, also to primary data and attachments.   
+The search is based on dataset metadata and data structure definitions. The content of primary data files is currently not searchable.
 
-## Search
+> **Access rights:**  
+> Search results depend on your **login status** and your **permissions** .  
+> - **Not logged-in users** can view and download all public datasets. They may be also able to view the metadata of internal datasets.  
+> - **Logged-in users** (e.g., project members) can see public and internal datasets; data access depends on permissions.
 
-The search interface is configured by your BEXIS2 instance administrator (see [Manage Search](#configuration-ui/manage-search)) and may therefore look different from the example shown in this manual. However, the main components — [Free-Text Search](#free-text-search), [Categories](#search-categories), and [Filter](#filter-and-sorting-options) — are available in all instances.
+
+## Search Interface
+
+Use the search page to explore all available datasets in your BEXIS2 instance. The exact layout may differ depending on your [instance configuration](#configuration-ui/manage-search).
+
+Search results are shown either as:
+
+- **List view** (tiles), or
+- **Table view** (rows and columns)
+
+You can switch between both views in the upper-right corner.
+
+The main components of the search are:
+- [Free-text search](#free-text-search) - available in both views, 
+- [Search categories](#search-categories) - available in both views,
+- [Filter and sorting option](#filter-and-sorting-options)  -  only available in the table view. 
+
+
+ <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search01_CardView_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
+
 
 
 ### Free-Text Search
 
-Use the search field at the top of the page to search for keywords or phrases.
+Use the search bar at the top of the page to search metadata.
 
-- The left dropdown field allows you to restrict the search to a specific topic (e.g., title, owner name).
-- In the second field, enter your search term. An autocomplete function suggests words and phrases based on  metadata after entering at least three characters.
-
-Your active keywords appear below the search field. You can remove any of them by clicking on the term.
+- Select a metadata field (e.g. title, owner) from the dropdown menu.
+- Enter a keyword or phrase. Autocomplete suggestions appear after three characters.
+- Active search terms are displayed below the search field and can be removed by clicking on them.
 
 ### Search Categories
 
-The search categories on the left side of the page are based on metadata details such as person, or projects.
+Categories on the left side allow you to refine results based on metadata such as persons or projects.
+
+- Numbers next to the keyword indicate how many datasets nclude that term.
+- Click **more** to see all terms in a category.
+- Categories update automatically based on your current search.
+
+Selected categories appear below the free-text search and can be removed at any time. If you select more than three terms from the same category, only the category name is shown. Click the number next to it to see all selected terms.
 
 
-> Notes: (i) Categories may contain more than five terms - click **more** to view the complete list. (ii) The number next to each term indicates how many datasets contain that term. (iii) The available categories and terms are automatically update based on your current selections.
+ <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search02_CardView_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
 
-Selected category filters are displayed below the free-text search field. If you select more than three terms from the same category, only the category name is shown. Click on the number next to the category to open a window showing all selected terms for that category. Filters can be removed by clicking on them.
+### Refine Results - Filter and Sorting Options
 
-### Filter and Sorting Options
+In Table View, you can further refine results:
+- **Filter:** Click the filter icon in a column header and enter a search term and operation (e.g., contains, equals).
+- **Sort:** Click a column header to sort results.
 
-The dataset overview in the center of the page can be displayed either as a **Table** or a **List**. It shows all searchable datasets and other entities (if available) based on your account permissions (e.g., guest or member). You can switch between the two views in the upper-right corner of the page.
 
-The columns shown in the **Table View** depend on your instance configuration and may include ID, type, title, and other metadata categories.
+## Open a Dataset
 
-Available sorting and filtering options:
-- Click the **filter icon** in a column header to **filter** its content. Enter a search term and choose an option (e.g., contains, is equal to).
-- Click the **column header** to **sort** by that column.
-- When applying free-text search or category filters, the table automatically updates to display matching results.
+To open a dataset:
+- **Table View:** Click [[!LINK_VIEW]](../docs/General#roles) to open the dataset.
+- **List View:** Click the dataset **tile**.
 
-The **List View** provides a more comprehensive overview of each dataset. The main components of the tiles usually include the title, authors, entity type (e.g., dataset, publication), license, DOI, and primary data type (e.g., tabular data, file).
+The dataset opens on its landing page, showing metadata and available content. Depending on the dataset and your permissions, the following **tabs** may be available:
 
-## View a Dataset
-When you find a dataset you are interested in, you can open it as follows:
-- In the Table View: Click [[!LINK_EDIT]](../docs/General#roles) to open the dataset.
-- In the List View:  Click the **tile** to open the dataset.
+- Data: 
+    - Tabular data: shown as a searchable table
+    - Non-tabular data: listed as files
+- [Data structure](DataDescription.md#data-structures): Variable definitions for tabular data
+- [Link](Datasets.md#dlinks): References to related datasets 
+- [Attachment](Datasets.md#attachments): Additional materials such as documents or images
 
-The dataset opens on a new page. Depending on the dataset’s content, your user permissions, and the configuration of your BEXIS2 instance, different tabs are displayed.
+ <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search03_DatasetLandingPage_V4.2.1" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
 
-Usually, you will see at least the **metadata** and **data** tabs. Additional tabs may include **[data structure](#DataDescription.md#data-structures)**, **links**, **attachments**, **permissions**, **submit**, **publish**, and **quality**.
 
 ## Download a Dataset
 
-You can download a dataset either directly from the **Dataset Page** or via the **API**.
+Depending on your permissions, you can download:
+- Metadata only  
+- The complete dataset (metadata, data, and related files)
 
-### Download via Datset Page
+You can download data directly from the dataset landing page:
+- **Download Metadata:** Button on the left side of the metadata page. Downloads metadata as HTML or XML.
 
-On the dataset page,  the following download options are available:
+- **Download Dataset:** Button in the upper-right corner. Downloads the complete dataset. The downloaded ZIP file includes:
+    - Metadata files,
+    - Data structure files,
+    - Dataset summary information (general_metadata.json),
+    - Metadata schema definitions (schema folder),
+    - The instance’sterms and conditions.
 
-- Download Metadata - Button on the left side of the metadata page: Downloads only the metadata as an HTML or XML file.
-- Download Dataset - Button on the right upper corner: Download the entire dataset, including primary data. For tabular data, you can select a preferred format (e.g., CSV, TSV). The downloaded **ZIP File** contains:
-    - Metadata as an **XML File**
-    - Metadata as an **HTML File**
-    - A **Schema Folder** containing the metadata XSD
-    - A **general_metadata.json File** with key information about the dataset (ID, version, title, source, download date, etc.)
+> **Note:**
+If you are not allowed to access the data, the **Download Dataset** button is not available.
 
+## Request Access to Restricted Data
 
-> Note: If you don’t have permission to view the data of a dataset, the Download Dataset button will not be available. As logged-in user you have option to request access via the **Request dataset** button.
+If a dataset is restricted (e.g., embargo):
+
+- Click Request Access on the dataset page.
+- Provide a short justification (required).
+- You will be notified once access is granted.
+- You can view all your requests under My Data.
+
+> **Note:**
+If the request button is not shown, you may not have permission to request access. Please contact your instance administrator for support.
+
 
 ### Download via API
 
@@ -90,11 +133,13 @@ Detailed instructions and examples will be added to this manual in a future upda
 
 ## Cite a Dataset
 
-A copyable citation suggestion is provided at the top of the dataset page. It includes all necessary information (e.g., authors, title, year, version, DOI) to correctly reference the dataset.
+Each dataset provides a ready-to-use citation at the top of its landing page.
 
-In addition, you may have the option to download the citation in different formats via the **Download Citation** button. Available formats are BibTeX, RIS, and plain text.
+You may also download the citation using the **Download Citation** button (if available) in citation formats BibTeX, RIS and plain text.
 
 
-## Request Data Access
+## Advanced Download Options 
+Download via API
 
-As looged in user you can request access to data which is not yet freely available. Do so by clicking the Request Access button on  the right side of the dataset page. You will be notified when access was granted to you. You can view your open request under My Data (#)
+An API for downloading datasets is available for advanced use cases.
+Detailed instructions and examples will be added in a future update of this manual.

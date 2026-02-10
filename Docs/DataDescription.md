@@ -19,9 +19,13 @@ tags: ["javascript", "markdown", "metadata"]
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
 
+> **Note:** This section is currently being created. Content will be gradually added to ensure the documentation is complete and up to date. Thank you for your understanding.
+
 ## Data Structures
 >[!ROLE]
 >__Role:__ [Administrator](../docs/General/#roles), [Advanced User](../docs/General/#roles)
+
+> **Note:** This section is currently being created. Content will be gradually added to ensure the documentation is complete and up to date. Thank you for your understanding.
 
 ## Variable Templates
 >[!ROLE]
