@@ -87,9 +87,9 @@ To open a dataset:
 The dataset opens on its landing page, showing metadata and available content. Depending on the dataset and your permissions, the following **tabs** may be available:
 
 - **Data**: **Tabular data**: shown as a searchable table-. **Non-tabular data**: filea are listed.
-- **[Data structure](../docs/DataDescription/#data-structures)**: Variable definitions for tabular data
-- **[Link](../docs/Datasets#links)**: References to related datasets 
-- **[Attachments](../docs/Datasets#attachments)**: Additional materials such as documents or images
+- [**Data structure**](../docs/DataDescription#data-structures): Variable definitions for tabular data
+- [**Link**](../docs/Datasets#links): References to related datasets 
+- [**Attachments**](../docs/Datasets#attachments): Additional materials such as documents or images
 
  <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search04_DatasetLandingPage_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
 
@@ -124,7 +124,7 @@ If a dataset is restricted (e.g., embargo):
 - Click the **Request Access** button on the dataset page.
 - Provide a brief justification (required).
 - You will be notified once access is granted.
-- You can view all your requests under **[My Data](MyData#my-requests)**.
+- You can view all your requests under [**My Data**](../docs/MyData#my-requests).
 
 > **Note:**
 If the request button is not shown, you may not have permission to request access. Please contact your instance administrator for support.
