@@ -28,7 +28,7 @@ The search is based on dataset metadata and data structure definitions. The cont
 ---
 ## Search Interface
 
-Use the search page to explore all available datasets in your BEXIS2 instance. The exact layout may differ depending on your [instance configuration](configuration-ui/#manage-search).
+Use the search page to explore all available datasets in your BEXIS2 instance. The exact layout may differ depending on your __[instance configuration](configuration-ui/#manage-search)__.
 
 Search results are shown either as:
 
@@ -38,9 +38,9 @@ Search results are shown either as:
 You can switch between both views in the upper-right corner.
 
 The main components of the search are:
-- [Free-text search](#free-text-search) - available in both views, 
-- [Search categories](#search-categories) - available in both views,
-- [Filter and sorting option](#refine-results---filter-and-sorting-options)  -  only available in the table view. 
+* __[Free-text search](#free-text-search)__ - available in both views, 
+* __[Search categories](#search-categories)__ - available in both views,
+* __[Filter and sorting option](#refine-results---filter-and-sorting-options)__  -  only available in the table view. 
 
 
  <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search01_CardView_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
@@ -86,10 +86,10 @@ To open a dataset:
 
 The dataset opens on its landing page, showing metadata and available content. Depending on the dataset and your permissions, the following **tabs** may be available:
 
-- **Data**: **Tabular data**: shown as a searchable table-. **Non-tabular data**: filea are listed.
-- [Data structure](../docs/DataDescription#data-structures): Variable definitions for tabular data
-- [Link](../docs/Datasets#links): References to related datasets 
-- [Attachments](../docs/Datasets#attachments): Additional materials such as documents or images
+- **Data**: **Tabular data**: shown as a searchable table. **Non-tabular data**: filea are listed.
+* __[Data structure](../docs/DataDescription#data-structures)__: Variable definitions for tabular data
+* __[Link](../docs/Datasets#links)__: References to related datasets 
+* __[Attachments](../docs/Datasets#attachments)__: Additional materials such as documents or images
 
  <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search04_DatasetLandingPage_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
 
@@ -124,7 +124,7 @@ If a dataset is restricted (e.g., embargo):
 - Click the **Request Access** button on the dataset page.
 - Provide a brief justification (required).
 - You will be notified once access is granted.
-- You can view all your requests under [My Data](../docs/MyData#my-requests).
+- You can view all your requests under __[My Data](../docs/MyData#my-requests)__.
 
 > **Note:**
 If the request button is not shown, you may not have permission to request access. Please contact your instance administrator for support.
