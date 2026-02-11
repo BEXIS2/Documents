@@ -71,8 +71,11 @@ Selected categories appear below the free-text search and can be removed at any 
 ### Refine Results - Filter and Sorting Options
 
 In Table View, you can further refine results:
-- **Filter:** Click the filter icon in a column header and enter a search term and operation (e.g., contains, equals).
-- **Sort:** Click a column header to sort results.
+- **Filter:** Click the **filter icon** in a column header and enter a search term and operation (e.g., contains, equals).
+- **Sort:** Click a **column header** to sort results.
+
+ <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search03_TableView_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
+
 
 ---
 ## Open a Dataset
@@ -84,11 +87,11 @@ To open a dataset:
 The dataset opens on its landing page, showing metadata and available content. Depending on the dataset and your permissions, the following **tabs** may be available:
 
 - **Data**: **Tabular data**: shown as a searchable table-. **Non-tabular data**: filea are listed.
-- **[Data structure](DataDescription.md#data-structures)**: Variable definitions for tabular data
-- **[Link](Datasets.md#links)**: References to related datasets 
-- **[Attachments](Datasets.md#attachments)**: Additional materials such as documents or images
+- **[Data structure](../docs/DataDescription/#data-structures)**: Variable definitions for tabular data
+- **[Link](../docs/Datasets#links)**: References to related datasets 
+- **[Attachments](../docs/Datasets#attachments)**: Additional materials such as documents or images
 
- <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search03_DatasetLandingPage_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
+ <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search04_DatasetLandingPage_V4.2.1.png" alt="Search card view" style="border:1px solid #bee1da; padding:10px;">
 
 ---
 ## Download a Dataset
@@ -109,9 +112,9 @@ You can download data directly from the dataset landing page:
     - the instance’s terms and conditions.
 
 > **Note:**
-If you are not allowed to access the data, the **Download Dataset** button is not available. But you may be able to request access to the data.However, you may be able to **[request access](#request-access-to-restricted-data)** to the data. 
+If you are not allowed to access the data, the **Download Dataset** button is not available. But you may be able to request access to the data. However, you may be able to **[request access](#request-access-to-restricted-data)** to the data. 
 
- <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search04_Download_V4.2.1.png" alt="Download a dataset" style="border:1px solid #bee1da; padding:10px;">
+ <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search05_Download_V4.2.1.png" alt="Download a dataset" style="border:1px solid #bee1da; padding:10px;">
 
 ---
 ## Request Access to Restricted Data
@@ -121,7 +124,7 @@ If a dataset is restricted (e.g., embargo):
 - Click the **Request Access** button on the dataset page.
 - Provide a brief justification (required).
 - You will be notified once access is granted.
-- You can view all your requests under **[My Data](MyData.md/#my-requests)**.
+- You can view all your requests under **[My Data](MyData#my-requests)**.
 
 > **Note:**
 If the request button is not shown, you may not have permission to request access. Please contact your instance administrator for support.
@@ -143,6 +146,4 @@ An API for downloading datasets is available for advanced use cases. Under your 
 
 The API enables automated access to datasets.
 
- <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search05_API01_V4.2.1.png" alt="API for dataset download" style="border:1px solid #bee1da; padding:10px;">
-
-> **Note:** This section is currently being created. Content will be gradually added to ensure the documentation is complete and up to date. Thank you for your understanding.
+ <img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/Search06_API01_V4.2.1.png" alt="API for dataset download" style="border:1px solid #bee1da; padding:10px;">
