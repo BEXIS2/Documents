@@ -47,7 +47,7 @@ Within **My Datasets** in the tab **own**, you can see general information about
 ### My Requests
 My Requests lists all your pending and answered data access requests. Pending requests can be withdrawn if they are no longer needed by clicking ([[!LINK_DELETE]](../docs/General#roles)) on the right.
 
-<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_02_Request_V4.2.1(BExIS).png" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
+<img src="https://github.com/BEXIS2/Documents/raw/master/Docs/Images/MyData_02_Request_V4.2.1_BExIS.png" alt="My Data dashboard showing a list of pending and answered data access requests." style="border:1px solid #bee1da; padding:10px;">
 
 
 ### Decision
