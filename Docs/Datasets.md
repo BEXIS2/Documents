@@ -140,6 +140,8 @@ There are two options for file upload:
 
 A Data Structure defines all variables of the data you want to upload (e.g. names, data types, units, missing values). Before you can upload **tabular primary data**, a Data Structure must be defined.
 
+> **Note:** After data upload, variables in the data structure cannot be added, removed, or reordered.
+
 You can create or assign a Data Structure on the [dataset edit page](#dataset-edit-page) using the Data Structure drop-down menu. The following options are available:
 
 - **[Reuse an existing structure](#reusing-data-structures)**: Use an already defined Data Structure. **Best practice:** Reuse existing Data Structures whenever possible to ensure consistency and save time.
