@@ -313,6 +313,35 @@ Because links are version-specific, you can:
 - open the linked **referenced version** clicking [[!LINK_VIEW]](../docs/General#roles)
 - navigate to the **latest version** of the linked dataset using skip icon
 
+### Link Relations
+The following link types describe relationships between the **current dataset** and a **linked dataset**. Wherever possible, the definitions are based on DataCite relation types, which serve as the default seed set for this feature; however, individual BEXIS2 instances may use only a subset of these types or provide additional instance-specific link types.
+
+# Link Types
+
+The following link types describe relationships between the resoure beeing edited (current dataset or publication) and a related resource (linked dataset or publication). Wherever possible, the definitions are based on [DataCite relation types](https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/relationType/#relationtype). Depending on the local BEXIS2 instance, only a subset of these types may be available, or additional instance-specific link types may be provided.
+
+## Markdown table
+
+| Link type | Description |
+| :--- | :--- |
+| **IsSupplementTo** | Indicates that the current resource (A) is a supplement to the linked resource (B). Usually used to indicate that a dataset (A) is supplementary material to a publication (B). |
+| **IsSupplementedBy** | Indicates that the current resource (A) is supplemented by the linked resource (B). Usually used to indicate that a publication (A) uses a dataset (B) as supplementary material. |
+| **IsNewVersionOf** | Indicates that the current resource (A) is a newer version of the linked resource (B). Usually used to link a revised or updated dataset to an older version of the data. |
+| **IsPreviousVersionOf** | Indicates that the current resource (A) is an older version of the linked resource (B).|
+| **IsContinuedBy** | Indicates that the current resource (A) is continued by the linked resource (B). Usually used for sequential datasets, for example in a time series. |
+| **Continues** | Indicates that the current resource (A) continues the linked resource (B). Usually used for sequential datasets, for example in a time series. |
+| **IsDerivedFrom** | Indicates that the current resource (A) is derived from the linked resource (B). Usually used when a dataset is created based on another datasets, for example in a synthesis or aggregated dataset. |
+| **IsSourceOf** | Indicates that the current resource (A) is a source of the linked resource (B). |
+| **Collection** | Indicates that the current resource (A) belongs to a thematically related set of resources with the linked resource (B), where no other relation type is appropriate. Usually used for related datasets such as an OTU abundance table and a taxonomy table. |
+| **dwc:Occurrence extension** | Indicates that the current dataset includes a Darwin Core Occurrence extension.|
+| **dwc:Event extension** | Indicates that the current dataset includes a Darwin Core Event extension. |
+| **dwc:Taxon extension** | Indicates that the current dataset includes a Darwin Core Taxon extension. |
+| **dwc:Humboldt extension** | Indicates that the current dataset includes a Humboldt extension. Usually used when the linked dataset describes sampling processes, inventory design, or other ecological inventory context. |
+| **dwc:EMoF extension** | Indicates that the current dataset includes an Extended Measurement or Fact extension.|
+| **dwc:MoF extension** | Indicates that the current dataset includes a Measurement or Fact extension.|
+
+
+
 ### Best Practices
 
 ✅ Link datasets when there is a **clear and meaningful relationship** between them.  
