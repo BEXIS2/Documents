@@ -207,6 +207,10 @@ There are three main types of constraints:
 ✅ Use **domain values** that are unambiguous, relevant, and context-appropriate for the variable they constrain.  
 ✅ Only delete constraints after confirming they are **no longer referenced or in use** elsewhere in the system.
 
+---
+## Data Type
+
+In BEXIS2, Data Types define how values are stored and validated, for example as text, numbers, or dates. They support consistent data entry and correct system validation. Data Types are predefined and cannot be modified or extended, which ensures uniform use across the system.
 
 ---
 ## Dimensions
